@@ -1,0 +1,127 @@
+﻿ht_declare_war = {
+	type = diplomacy
+	category = CATEGORY_HT_ACTIONS
+	ai_tick = never
+	use_enroute = no
+
+	potential = {
+		scope:actor = { is_host = yes }
+	}
+
+	allow = { }
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_first_country
+		source = world
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+	select_trigger = {
+		allow_self = no
+		looking_for_a = country
+		target_flag = target
+		name = ht_select_second_country
+		source = world
+
+		show_if = { exists = scope:recipient }
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+			NOT = { this = scope:recipient }
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = scope:recipient
+					exists = scope:target
+				}
+				ht_declare_war_effect = yes
+			}
+		}
+	}
+}
+
+ht_white_peace = {
+	type = diplomacy
+	category = CATEGORY_HT_ACTIONS
+	ai_tick = never
+	use_enroute = no
+
+	potential = {
+		scope:actor = { is_host = yes }
+	}
+
+	allow = { }
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_first_country
+		source = world
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+	select_trigger = {
+		allow_self = no
+		looking_for_a = country
+		target_flag = target
+		name = ht_select_second_country
+		source = world
+
+		show_if = { exists = scope:recipient }
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+			NOT = { this = scope:recipient }
+		}
+
+		enabled = {
+			scope:recipient = { is_at_war_with = prev }
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = scope:recipient
+					exists = scope:target
+				}
+				ht_white_peace_effect = yes
+			}
+		}
+	}
+}

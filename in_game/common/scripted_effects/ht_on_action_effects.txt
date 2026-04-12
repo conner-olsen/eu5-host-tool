@@ -1,0 +1,63 @@
+﻿# ── CMM Registration ─────────────────────────────────────────────────────────────
+# Scope: country (called from cmf_on_mod_registration hook)
+
+ht_cmm_register_mod = {
+	cmm_register_global_numeric_setting = {
+		mod_id = ht
+		setting_id = gold_amount
+		tab_id = settings
+		group_id = amounts
+		default_value = 1000
+		min_value = 100
+		max_value = 100000
+		step_value = 100
+	}
+	cmm_register_global_numeric_setting = {
+		mod_id = ht
+		setting_id = manpower_amount
+		tab_id = settings
+		group_id = amounts
+		default_value = 50000
+		min_value = 5000
+		max_value = 500000
+		step_value = 5000
+	}
+	cmm_register_global_numeric_setting = {
+		mod_id = ht
+		setting_id = stability_amount
+		tab_id = settings
+		group_id = amounts
+		default_value = 1
+		min_value = 1
+		max_value = 100
+		step_value = 1
+	}
+	cmm_register_global_numeric_setting = {
+		mod_id = ht
+		setting_id = prestige_amount
+		tab_id = settings
+		group_id = amounts
+		default_value = 25
+		min_value = 5
+		max_value = 100
+		step_value = 5
+	}
+	cmm_register_global_numeric_setting = {
+		mod_id = ht
+		setting_id = truce_years
+		tab_id = settings
+		group_id = amounts
+		default_value = 5
+		min_value = 1
+		max_value = 25
+		step_value = 1
+	}
+}
+
+# ── Callback Handler ─────────────────────────────────────────────────────────────
+# Scope: country (called from cmf_on_callback hook)
+# Settings are read directly from the CMM map at effect time — no callbacks needed.
+
+ht_handle_callback = {
+	if = { limit = { always = no } }
+}

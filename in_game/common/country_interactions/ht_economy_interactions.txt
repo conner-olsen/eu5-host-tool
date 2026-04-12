@@ -1,0 +1,239 @@
+﻿ht_add_gold = {
+	type = diplomacy
+	category = CATEGORY_HT_ACTIONS
+	ai_tick = never
+	use_enroute = no
+
+	potential = {
+		scope:actor = { is_host = yes }
+	}
+
+	allow = { }
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_any_to_continue
+		source = world
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = target
+		name = ht_select_target
+		source = world
+
+		show_if = { exists = scope:recipient }
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = scope:target
+				}
+				ht_add_gold_effect = yes
+			}
+		}
+	}
+}
+
+ht_add_manpower = {
+	type = diplomacy
+	category = CATEGORY_HT_ACTIONS
+	ai_tick = never
+	use_enroute = no
+
+	potential = {
+		scope:actor = { is_host = yes }
+	}
+
+	allow = { }
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_any_to_continue
+		source = world
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = target
+		name = ht_select_target
+		source = world
+
+		show_if = { exists = scope:recipient }
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = scope:target
+				}
+				ht_add_manpower_effect = yes
+			}
+		}
+	}
+}
+
+ht_add_stability = {
+	type = diplomacy
+	category = CATEGORY_HT_ACTIONS
+	ai_tick = never
+	use_enroute = no
+
+	potential = {
+		scope:actor = { is_host = yes }
+	}
+
+	allow = { }
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_any_to_continue
+		source = world
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = target
+		name = ht_select_target
+		source = world
+
+		show_if = { exists = scope:recipient }
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = scope:target
+				}
+				ht_add_stability_effect = yes
+			}
+		}
+	}
+}
+
+ht_add_prestige = {
+	type = diplomacy
+	category = CATEGORY_HT_ACTIONS
+	ai_tick = never
+	use_enroute = no
+
+	potential = {
+		scope:actor = { is_host = yes }
+	}
+
+	allow = { }
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_any_to_continue
+		source = world
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = target
+		name = ht_select_target
+		source = world
+
+		show_if = { exists = scope:recipient }
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = scope:target
+				}
+				ht_add_prestige_effect = yes
+			}
+		}
+	}
+}

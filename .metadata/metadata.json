@@ -1,37 +1,23 @@
 ﻿{
-	"name": "[Mod Name] Dev",
-	"id": "[modname].dev",
+	"name": "Host Tool Dev",
+	"id": "host.tool.dev",
 	"version": "0.1",
 	"game_id": "eu5",
 	"supported_game_version": "1.1.*",
-	"short_description": "[Short Description]",
+	"short_description": "Multiplayer host tool for managing the game with full transparency logging.",
 	"tags": [
-		"Government and Estates",
-		"Trade and Economics",
-		"Alternative history",
-		"Characters",
-		"Textures",
 		"Utilities",
-		"Culture & Art",
-		"Events",
-		"Military",
-		"Translation",
 		"Diplomacy",
-		"User Interface",
-		"Fixes",
-		"Overhaul",
-		"Religion",
-		"Sound",
-		"Flags",
-		"Missions",
-		"Loading Screen",
-		"International Organizations",
-		"Gameplay",
-		"Balance",
-		"Map",
-		"Historical",
-		"Advancements"
+		"Gameplay"
 	],
-	"relationships": [],
+	"relationships": [
+		{
+			"rel_type": "dependency",
+			"id": "community_mod_framework",
+			"display_name": "Community Mod Framework",
+			"resource_type": "mod",
+			"version": "2.*"
+		}
+	],
 	"game_custom_data": {}
 }

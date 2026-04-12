@@ -1,0 +1,27 @@
+﻿l_english:
+ # Mod
+ ht_name: "Host Tool"
+ ht_desc: "Multiplayer host tool with configurable actions and transparency logging."
+
+ # Tab
+ ht__settings_name: "Settings"
+
+ # Group
+ ht__settings__amounts_name: "Amounts"
+
+ # Settings
+ ht__gold_amount_name: "Gold Amount"
+ ht__gold_amount_desc: "Amount of gold to add with the Add Gold action."
+ ht__gold_amount_format: "[CMMV('ht__gold_amount')]"
+ ht__manpower_amount_name: "Manpower Amount"
+ ht__manpower_amount_desc: "Amount of manpower to add with the Add Manpower action."
+ ht__manpower_amount_format: "[CMMV('ht__manpower_amount')]"
+ ht__stability_amount_name: "Stability Amount"
+ ht__stability_amount_desc: "Amount of stability to add with the Add Stability action."
+ ht__stability_amount_format: "[CMMV('ht__stability_amount')]"
+ ht__prestige_amount_name: "Prestige Amount"
+ ht__prestige_amount_desc: "Amount of prestige to add with the Add Prestige action."
+ ht__prestige_amount_format: "[CMMV('ht__prestige_amount')]"
+ ht__truce_years_name: "Truce Duration (Years)"
+ ht__truce_years_desc: "Duration of truces created by the Add Truce action."
+ ht__truce_years_format: "[CMMV('ht__truce_years')]"

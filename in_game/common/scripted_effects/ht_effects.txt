@@ -1,0 +1,222 @@
+﻿# ── Economy Effects (target via second select) ─────────────────────────────────
+
+ht_add_gold_effect = {
+	scope:target = {
+		add_gold = "global_variable_map(cmm|flag:ht__gold_amount)"
+	}
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_added_gold } }
+}
+
+ht_add_manpower_effect = {
+	scope:target = {
+		add_manpower = "global_variable_map(cmm|flag:ht__manpower_amount)"
+	}
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_added_manpower } }
+}
+
+ht_add_stability_effect = {
+	scope:target = {
+		add_stability = "global_variable_map(cmm|flag:ht__stability_amount)"
+	}
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_added_stability } }
+}
+
+ht_add_prestige_effect = {
+	scope:target = {
+		add_prestige = "global_variable_map(cmm|flag:ht__prestige_amount)"
+	}
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_added_prestige } }
+}
+
+# ── Diplomacy Effects (two-target: recipient + target) ──────────────────────────
+
+ht_force_alliance_effect = {
+	create_relation = {
+		first = scope:recipient
+		second = scope:target
+		type = relation_type:alliance
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_forced_alliance } }
+}
+
+ht_break_alliance_effect = {
+	remove_relation = {
+		first = scope:recipient
+		second = scope:target
+		type = relation_type:alliance
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_broke_alliance } }
+}
+
+ht_force_guarantee_effect = {
+	create_relation = {
+		first = scope:recipient
+		second = scope:target
+		type = relation_type:guarantee
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_forced_guarantee } }
+}
+
+ht_break_guarantee_effect = {
+	remove_relation = {
+		first = scope:recipient
+		second = scope:target
+		type = relation_type:guarantee
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_broke_guarantee } }
+}
+
+ht_add_truce_effect = {
+	scope:recipient = {
+		add_truce_with = {
+			target = scope:target
+			years = "global_variable_map(cmm|flag:ht__truce_years)"
+			mutual = yes
+		}
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_added_truce } }
+}
+
+ht_remove_truce_effect = {
+	scope:recipient = {
+		remove_truce_with = scope:target
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_removed_truce } }
+}
+
+ht_add_rival_effect = {
+	scope:recipient = {
+		add_rival = scope:target
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_added_rival } }
+}
+
+ht_remove_rival_effect = {
+	scope:recipient = {
+		remove_rival = scope:target
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_removed_rival } }
+}
+
+# ── War Effects (two-target: recipient + target) ───────────────────────────────
+
+ht_declare_war_effect = {
+	scope:recipient = {
+		declare_war = scope:target
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_declared_war } }
+}
+
+ht_white_peace_effect = {
+	scope:recipient = {
+		white_peace = scope:target
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_white_peace } }
+}
+
+# ── Country Management Effects (mixed single/two-target) ───────────────────────
+
+# Two-target: recipient = annexer, target = annexed
+ht_annex_effect = {
+	scope:recipient = {
+		annex_country = {
+			country = scope:target
+			reason = Diplomatic
+			transfer = yes
+		}
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_annexed } }
+}
+
+# Single-target: recipient = subject to free
+ht_grant_independence_effect = {
+	scope:recipient = {
+		overlord ?= {
+			cancel_subject = prev
+		}
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_granted_independence } }
+}
+
+# Two-target: recipient = overlord, target = vassal
+ht_make_vassal_effect = {
+	scope:target = {
+		make_subject_of = {
+			target = scope:recipient
+			type = subject_type:vassal
+		}
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_vassalized } }
+}
+
+# Target via second select: target = country whose ruler dies
+ht_kill_ruler_effect = {
+	scope:target = {
+		ruler ?= {
+			kill_character = {
+				target = this
+			}
+		}
+	}
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_killed_ruler } }
+}
+
+# Two-target: recipient = source country, target = country to change
+ht_change_religion_effect = {
+	scope:target = {
+		change_religion = scope:recipient.religion
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_changed_religion } }
+}
+
+# Two-target: recipient = source country, target = country to change
+ht_change_culture_effect = {
+	scope:target = {
+		change_culture = scope:recipient.culture
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_changed_culture } }
+}
+
+# Two-target: recipient = source country, target = country to change
+ht_change_government_effect = {
+	scope:target = {
+		change_government_type = scope:recipient.government_type
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_changed_government } }
+}
