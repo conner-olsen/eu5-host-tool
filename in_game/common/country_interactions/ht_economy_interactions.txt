@@ -15,7 +15,7 @@
 		looking_for_a = country
 		target_flag = recipient
 		name = ht_select_any_to_continue
-		source = world
+
 
 		column = { data = name }
 
@@ -32,7 +32,7 @@
 		looking_for_a = country
 		target_flag = target
 		name = ht_select_target
-		source = world
+
 
 		show_if = { exists = scope:recipient }
 
@@ -75,7 +75,7 @@ ht_add_manpower = {
 		looking_for_a = country
 		target_flag = recipient
 		name = ht_select_any_to_continue
-		source = world
+
 
 		column = { data = name }
 
@@ -92,7 +92,7 @@ ht_add_manpower = {
 		looking_for_a = country
 		target_flag = target
 		name = ht_select_target
-		source = world
+
 
 		show_if = { exists = scope:recipient }
 
@@ -135,7 +135,7 @@ ht_add_stability = {
 		looking_for_a = country
 		target_flag = recipient
 		name = ht_select_any_to_continue
-		source = world
+
 
 		column = { data = name }
 
@@ -152,7 +152,7 @@ ht_add_stability = {
 		looking_for_a = country
 		target_flag = target
 		name = ht_select_target
-		source = world
+
 
 		show_if = { exists = scope:recipient }
 
@@ -195,7 +195,7 @@ ht_add_prestige = {
 		looking_for_a = country
 		target_flag = recipient
 		name = ht_select_any_to_continue
-		source = world
+
 
 		column = { data = name }
 
@@ -212,7 +212,7 @@ ht_add_prestige = {
 		looking_for_a = country
 		target_flag = target
 		name = ht_select_target
-		source = world
+
 
 		show_if = { exists = scope:recipient }
 

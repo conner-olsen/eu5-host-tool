@@ -15,7 +15,7 @@
 		looking_for_a = country
 		target_flag = recipient
 		name = ht_select_first_country
-		source = world
+
 
 		column = { data = name }
 
@@ -32,7 +32,7 @@
 		looking_for_a = country
 		target_flag = target
 		name = ht_select_second_country
-		source = world
+
 
 		show_if = { exists = scope:recipient }
 
@@ -77,7 +77,7 @@ ht_white_peace = {
 		looking_for_a = country
 		target_flag = recipient
 		name = ht_select_first_country
-		source = world
+
 
 		column = { data = name }
 
@@ -94,7 +94,7 @@ ht_white_peace = {
 		looking_for_a = country
 		target_flag = target
 		name = ht_select_second_country
-		source = world
+
 
 		show_if = { exists = scope:recipient }
 
