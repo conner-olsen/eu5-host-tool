@@ -5,7 +5,7 @@
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -67,7 +67,7 @@ ht_break_alliance = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -133,7 +133,7 @@ ht_force_guarantee = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -195,7 +195,7 @@ ht_break_guarantee = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -264,7 +264,7 @@ ht_add_truce = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -326,7 +326,7 @@ ht_remove_truce = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -388,7 +388,7 @@ ht_add_rival = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -450,7 +450,7 @@ ht_remove_rival = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }

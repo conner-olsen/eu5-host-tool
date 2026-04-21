@@ -5,7 +5,7 @@
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -65,7 +65,7 @@ ht_add_manpower = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -125,7 +125,7 @@ ht_add_stability = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -185,7 +185,7 @@ ht_add_prestige = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }

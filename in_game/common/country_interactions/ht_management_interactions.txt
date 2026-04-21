@@ -7,7 +7,7 @@ ht_annex = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -71,7 +71,7 @@ ht_grant_independence = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -118,7 +118,7 @@ ht_make_vassal = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -182,7 +182,7 @@ ht_kill_ruler = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -244,7 +244,7 @@ ht_change_religion = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -305,7 +305,7 @@ ht_change_culture = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
@@ -366,7 +366,7 @@ ht_change_government = {
 	use_enroute = no
 
 	potential = {
-		scope:actor = { is_host = yes }
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
 	}
 
 	allow = { }
