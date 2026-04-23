@@ -14,27 +14,12 @@
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_any_to_continue
-
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = target
 		name = ht_select_target
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -49,8 +34,12 @@
 	effect = {
 		hidden_effect = {
 			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = recipient }
+			}
+			if = {
 				limit = {
-					exists = scope:target
+					exists = scope:recipient
 				}
 				ht_add_gold_effect = yes
 			}
@@ -74,27 +63,12 @@ ht_add_manpower = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_any_to_continue
-
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = target
 		name = ht_select_target
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -109,8 +83,12 @@ ht_add_manpower = {
 	effect = {
 		hidden_effect = {
 			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = recipient }
+			}
+			if = {
 				limit = {
-					exists = scope:target
+					exists = scope:recipient
 				}
 				ht_add_manpower_effect = yes
 			}
@@ -134,27 +112,12 @@ ht_add_stability = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_any_to_continue
-
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = target
 		name = ht_select_target
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -169,8 +132,12 @@ ht_add_stability = {
 	effect = {
 		hidden_effect = {
 			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = recipient }
+			}
+			if = {
 				limit = {
-					exists = scope:target
+					exists = scope:recipient
 				}
 				ht_add_stability_effect = yes
 			}
@@ -194,27 +161,12 @@ ht_add_prestige = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_any_to_continue
-
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = target
 		name = ht_select_target
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -229,8 +181,12 @@ ht_add_prestige = {
 	effect = {
 		hidden_effect = {
 			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = recipient }
+			}
+			if = {
 				limit = {
-					exists = scope:target
+					exists = scope:recipient
 				}
 				ht_add_prestige_effect = yes
 			}

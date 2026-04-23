@@ -1,34 +1,34 @@
-﻿# ── Economy Effects (target via second select) ─────────────────────────────────
+﻿# ── Economy Effects (single-target: applies to scope:recipient) ────────────────
 
 ht_add_gold_effect = {
-	scope:target = {
+	scope:recipient = {
 		add_gold = "global_variable_map(cmm|flag:ht__gold_amount)"
 	}
-	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
 	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_added_gold } }
 }
 
 ht_add_manpower_effect = {
-	scope:target = {
+	scope:recipient = {
 		add_manpower = "global_variable_map(cmm|flag:ht__manpower_amount)"
 	}
-	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
 	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_added_manpower } }
 }
 
 ht_add_stability_effect = {
-	scope:target = {
+	scope:recipient = {
 		add_stability = "global_variable_map(cmm|flag:ht__stability_amount)"
 	}
-	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
 	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_added_stability } }
 }
 
 ht_add_prestige_effect = {
-	scope:target = {
+	scope:recipient = {
 		add_prestige = "global_variable_map(cmm|flag:ht__prestige_amount)"
 	}
-	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
 	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_added_prestige } }
 }
 
@@ -178,16 +178,16 @@ ht_make_vassal_effect = {
 	scope:actor = { cmf_log_with_scope_args = { action = ht_log_vassalized } }
 }
 
-# Target via second select: target = country whose ruler dies
+# Single-target: recipient = country whose ruler dies
 ht_kill_ruler_effect = {
-	scope:target = {
+	scope:recipient = {
 		ruler ?= {
 			kill_character = {
 				target = this
 			}
 		}
 	}
-	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
 	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_killed_ruler } }
 }
 

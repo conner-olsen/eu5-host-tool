@@ -36,7 +36,10 @@ ht_annex = {
 		name = ht_select_second_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -51,6 +54,10 @@ ht_annex = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient
@@ -147,7 +154,10 @@ ht_make_vassal = {
 		name = ht_select_second_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -163,6 +173,10 @@ ht_make_vassal = {
 	effect = {
 		hidden_effect = {
 			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
+			if = {
 				limit = {
 					exists = scope:recipient
 					exists = scope:target
@@ -173,7 +187,7 @@ ht_make_vassal = {
 	}
 }
 
-# ── Single-target: recipient = country whose ruler dies ──────────────────────────
+# ── Single-target: target = country whose ruler dies ─────────────────────────────
 
 ht_kill_ruler = {
 	type = diplomacy
@@ -191,27 +205,12 @@ ht_kill_ruler = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_any_to_continue
-
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = target
 		name = ht_select_target
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -226,8 +225,12 @@ ht_kill_ruler = {
 	effect = {
 		hidden_effect = {
 			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = recipient }
+			}
+			if = {
 				limit = {
-					exists = scope:target
+					exists = scope:recipient
 				}
 				ht_kill_ruler_effect = yes
 			}
@@ -273,7 +276,10 @@ ht_change_religion = {
 		name = ht_select_target_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -287,6 +293,10 @@ ht_change_religion = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient
@@ -334,7 +344,10 @@ ht_change_culture = {
 		name = ht_select_target_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -348,6 +361,10 @@ ht_change_culture = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient
@@ -395,7 +412,10 @@ ht_change_government = {
 		name = ht_select_target_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -409,6 +429,10 @@ ht_change_government = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient

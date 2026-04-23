@@ -34,7 +34,10 @@
 		name = ht_select_second_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -49,6 +52,10 @@
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient
@@ -96,7 +103,10 @@ ht_break_alliance = {
 		name = ht_select_second_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -115,6 +125,10 @@ ht_break_alliance = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient
@@ -162,7 +176,10 @@ ht_force_guarantee = {
 		name = ht_select_second_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -177,6 +194,10 @@ ht_force_guarantee = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient
@@ -224,7 +245,10 @@ ht_break_guarantee = {
 		name = ht_select_second_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -246,6 +270,10 @@ ht_break_guarantee = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient
@@ -293,7 +321,10 @@ ht_add_truce = {
 		name = ht_select_second_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -308,6 +339,10 @@ ht_add_truce = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient
@@ -355,7 +390,10 @@ ht_remove_truce = {
 		name = ht_select_second_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -370,6 +408,10 @@ ht_remove_truce = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient
@@ -417,7 +459,10 @@ ht_add_rival = {
 		name = ht_select_second_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -432,6 +477,10 @@ ht_add_rival = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient
@@ -479,7 +528,10 @@ ht_remove_rival = {
 		name = ht_select_second_country
 
 
-		show_if = { exists = scope:recipient }
+		show_if = {
+			exists = scope:recipient
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
 
 		column = { data = name }
 
@@ -494,6 +546,10 @@ ht_remove_rival = {
 
 	effect = {
 		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = target }
+			}
 			if = {
 				limit = {
 					exists = scope:recipient

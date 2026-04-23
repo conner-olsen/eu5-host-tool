@@ -1,6 +1,15 @@
 ﻿l_english:
+ # Note to translators: The `#A #!` prefix is just used to order this interaction at the top of the list.
  # Category
  CATEGORY_HT_ACTIONS: "@diplomacy! Host Tool"
+
+ # ── Target Toggle ────────────────────────────────────────────────────────────
+ ht_toggle_target: "#A #!Target: $ht_current_target_label$"
+ ht_toggle_target_desc: "Toggle whether host tool interactions apply to the selected country or to your own country."
+ ht_toggle_target_act: "Toggle target mode (currently: $ht_current_target_label$)."
+ ht_toggle_target_effect_text: "Toggle target mode."
+ ht_toggle_target_effect_text_past: "Toggled target mode."
+ PROPOSE_ht_toggle_target: "Toggle target mode?"
 
  # ── Select Trigger Names ─────────────────────────────────────────────────────
  ht_select_any_to_continue: "Select Any Country"
@@ -13,28 +22,28 @@
  # ── Economy ──────────────────────────────────────────────────────────────────
  ht_add_gold: "Add Gold"
  ht_add_gold_desc: "Add gold to the target country. Amount configurable in CMM settings."
- ht_add_gold_act: "Add gold to [SCOPE.sCountry('target').GetName]."
- ht_add_gold_effect_text: "Add gold to [SCOPE.sCountry('target').GetName]."
- ht_add_gold_effect_text_past: "Added gold to [SCOPE.sCountry('target').GetName]."
- PROPOSE_ht_add_gold: "Add gold to $TARGET$?"
+ ht_add_gold_act: "Add gold to [SCOPE.sCountry('recipient').GetName]."
+ ht_add_gold_effect_text: "Add gold to [SCOPE.sCountry('recipient').GetName]."
+ ht_add_gold_effect_text_past: "Added gold to [SCOPE.sCountry('recipient').GetName]."
+ PROPOSE_ht_add_gold: "Add gold to $RECIPIENT$?"
  ht_add_manpower: "Add Manpower"
  ht_add_manpower_desc: "Add manpower to the target country. Amount configurable in CMM settings."
- ht_add_manpower_act: "Add manpower to [SCOPE.sCountry('target').GetName]."
- ht_add_manpower_effect_text: "Add manpower to [SCOPE.sCountry('target').GetName]."
- ht_add_manpower_effect_text_past: "Added manpower to [SCOPE.sCountry('target').GetName]."
- PROPOSE_ht_add_manpower: "Add manpower to $TARGET$?"
+ ht_add_manpower_act: "Add manpower to [SCOPE.sCountry('recipient').GetName]."
+ ht_add_manpower_effect_text: "Add manpower to [SCOPE.sCountry('recipient').GetName]."
+ ht_add_manpower_effect_text_past: "Added manpower to [SCOPE.sCountry('recipient').GetName]."
+ PROPOSE_ht_add_manpower: "Add manpower to $RECIPIENT$?"
  ht_add_stability: "Add Stability"
  ht_add_stability_desc: "Add stability to the target country. Amount configurable in CMM settings."
- ht_add_stability_act: "Add stability to [SCOPE.sCountry('target').GetName]."
- ht_add_stability_effect_text: "Add stability to [SCOPE.sCountry('target').GetName]."
- ht_add_stability_effect_text_past: "Added stability to [SCOPE.sCountry('target').GetName]."
- PROPOSE_ht_add_stability: "Add stability to $TARGET$?"
+ ht_add_stability_act: "Add stability to [SCOPE.sCountry('recipient').GetName]."
+ ht_add_stability_effect_text: "Add stability to [SCOPE.sCountry('recipient').GetName]."
+ ht_add_stability_effect_text_past: "Added stability to [SCOPE.sCountry('recipient').GetName]."
+ PROPOSE_ht_add_stability: "Add stability to $RECIPIENT$?"
  ht_add_prestige: "Add Prestige"
  ht_add_prestige_desc: "Add prestige to the target country. Amount configurable in CMM settings."
- ht_add_prestige_act: "Add prestige to [SCOPE.sCountry('target').GetName]."
- ht_add_prestige_effect_text: "Add prestige to [SCOPE.sCountry('target').GetName]."
- ht_add_prestige_effect_text_past: "Added prestige to [SCOPE.sCountry('target').GetName]."
- PROPOSE_ht_add_prestige: "Add prestige to $TARGET$?"
+ ht_add_prestige_act: "Add prestige to [SCOPE.sCountry('recipient').GetName]."
+ ht_add_prestige_effect_text: "Add prestige to [SCOPE.sCountry('recipient').GetName]."
+ ht_add_prestige_effect_text_past: "Added prestige to [SCOPE.sCountry('recipient').GetName]."
+ PROPOSE_ht_add_prestige: "Add prestige to $RECIPIENT$?"
 
  # ── Diplomacy ────────────────────────────────────────────────────────────────
  ht_force_alliance: "Force Alliance"
@@ -121,10 +130,10 @@
  PROPOSE_ht_make_vassal: "$TARGET$ becomes vassal of $RECIPIENT$?"
  ht_kill_ruler: "Kill Ruler"
  ht_kill_ruler_desc: "Kill the ruler of the target country."
- ht_kill_ruler_act: "Kill [SCOPE.sCountry('target').GetName]'s ruler."
- ht_kill_ruler_effect_text: "Kill [SCOPE.sCountry('target').GetName]'s ruler."
- ht_kill_ruler_effect_text_past: "Killed [SCOPE.sCountry('target').GetName]'s ruler."
- PROPOSE_ht_kill_ruler: "Kill $TARGET$'s ruler?"
+ ht_kill_ruler_act: "Kill [SCOPE.sCountry('recipient').GetName]'s ruler."
+ ht_kill_ruler_effect_text: "Kill [SCOPE.sCountry('recipient').GetName]'s ruler."
+ ht_kill_ruler_effect_text_past: "Killed [SCOPE.sCountry('recipient').GetName]'s ruler."
+ PROPOSE_ht_kill_ruler: "Kill $RECIPIENT$'s ruler?"
  ht_change_religion: "Copy Religion"
  ht_change_religion_desc: "Copy one country's religion to another."
  ht_change_religion_act: "Copy [SCOPE.sCountry('recipient').GetName]'s religion to [SCOPE.sCountry('target').GetName]."
@@ -143,3 +152,9 @@
  ht_change_government_effect_text: "Copy [SCOPE.sCountry('recipient').GetName]'s government to [SCOPE.sCountry('target').GetName]."
  ht_change_government_effect_text_past: "Copied [SCOPE.sCountry('recipient').GetName]'s government to [SCOPE.sCountry('target').GetName]."
  PROPOSE_ht_change_government: "Copy $RECIPIENT$'s government to $TARGET$?"
+
+ # Note to translators: leave the below lines as is.
+ # NO-TRANSLATE BELOW
+ ht_current_target_label: "[SelectLocalization(GetPlayer.HasVariable('ht_target_self'), 'ht_target_label_self', 'ht_target_label_selected')]"
+ ht_target_label_self: "Self"
+ ht_target_label_selected: "Selected"

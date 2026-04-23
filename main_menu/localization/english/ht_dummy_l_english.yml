@@ -1,5 +1,6 @@
 ﻿l_english:
  # Vanilla bug workaround — suppress missing dip_*_CATEGORY warnings
+ dip_ht_toggle_target_CATEGORY: "dummy"
  dip_ht_add_gold_CATEGORY: "dummy"
  dip_ht_add_manpower_CATEGORY: "dummy"
  dip_ht_add_stability_CATEGORY: "dummy"
