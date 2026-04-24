@@ -28,14 +28,12 @@
 	}
 
 	effect = {
-		scope:actor = {
-			if = {
-				limit = { has_variable = ht_target_self }
-				remove_variable = ht_target_self
-			}
-			else = {
-				set_variable = ht_target_self
-			}
+		if = {
+			limit = { has_global_variable = ht_target_self }
+			remove_global_variable = ht_target_self
+		}
+		else = {
+			set_global_variable = ht_target_self
 		}
 	}
 }

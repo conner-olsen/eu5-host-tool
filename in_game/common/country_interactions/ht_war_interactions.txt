@@ -36,7 +36,7 @@
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -53,7 +53,7 @@
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -94,6 +94,13 @@ ht_white_peace = {
 				country_type = pop
 			}
 		}
+
+		enabled = {
+			OR = {
+				NOT = { has_global_variable = ht_target_self }
+				is_at_war_with = scope:actor
+			}
+		}
 	}
 
 	select_trigger = {
@@ -105,7 +112,7 @@ ht_white_peace = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -126,7 +133,7 @@ ht_white_peace = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {

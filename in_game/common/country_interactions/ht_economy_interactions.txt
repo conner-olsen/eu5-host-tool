@@ -18,7 +18,7 @@
 
 
 		show_if = {
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -34,7 +34,7 @@
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
@@ -67,7 +67,7 @@ ht_add_manpower = {
 
 
 		show_if = {
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -83,7 +83,7 @@ ht_add_manpower = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
@@ -116,7 +116,7 @@ ht_add_stability = {
 
 
 		show_if = {
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -132,7 +132,7 @@ ht_add_stability = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
@@ -165,7 +165,7 @@ ht_add_prestige = {
 
 
 		show_if = {
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -181,7 +181,7 @@ ht_add_prestige = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {

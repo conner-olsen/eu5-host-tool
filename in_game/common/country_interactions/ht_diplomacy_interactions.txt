@@ -36,7 +36,7 @@
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -53,7 +53,7 @@
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -94,6 +94,13 @@ ht_break_alliance = {
 				country_type = pop
 			}
 		}
+
+		enabled = {
+			OR = {
+				NOT = { has_global_variable = ht_target_self }
+				is_allied_with = { target = scope:actor }
+			}
+		}
 	}
 
 	select_trigger = {
@@ -105,7 +112,7 @@ ht_break_alliance = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -126,7 +133,7 @@ ht_break_alliance = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -178,7 +185,7 @@ ht_force_guarantee = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -195,7 +202,7 @@ ht_force_guarantee = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -236,6 +243,16 @@ ht_break_guarantee = {
 				country_type = pop
 			}
 		}
+
+		enabled = {
+			OR = {
+				NOT = { has_global_variable = ht_target_self }
+				giving_scripted_relation = {
+					type = relation_type:guarantee
+					target = scope:actor
+				}
+			}
+		}
 	}
 
 	select_trigger = {
@@ -247,7 +264,7 @@ ht_break_guarantee = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -271,7 +288,7 @@ ht_break_guarantee = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -323,7 +340,7 @@ ht_add_truce = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -340,7 +357,7 @@ ht_add_truce = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -392,7 +409,7 @@ ht_remove_truce = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -409,7 +426,7 @@ ht_remove_truce = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -461,7 +478,7 @@ ht_add_rival = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -478,7 +495,7 @@ ht_add_rival = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -530,7 +547,7 @@ ht_remove_rival = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -547,7 +564,7 @@ ht_remove_rival = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {

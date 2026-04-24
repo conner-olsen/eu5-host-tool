@@ -38,7 +38,7 @@ ht_annex = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -55,7 +55,7 @@ ht_annex = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -156,7 +156,7 @@ ht_make_vassal = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -173,7 +173,7 @@ ht_make_vassal = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -209,7 +209,7 @@ ht_end_regency = {
 
 
 		show_if = {
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -229,7 +229,7 @@ ht_end_regency = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
@@ -265,7 +265,7 @@ ht_kill_ruler = {
 
 
 		show_if = {
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -281,7 +281,7 @@ ht_kill_ruler = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
@@ -334,7 +334,7 @@ ht_change_religion = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -350,7 +350,7 @@ ht_change_religion = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -402,7 +402,7 @@ ht_change_culture = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -418,7 +418,7 @@ ht_change_culture = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {
@@ -470,7 +470,7 @@ ht_change_government = {
 
 		show_if = {
 			exists = scope:recipient
-			NOT = { scope:actor = { has_variable = ht_target_self } }
+			NOT = { has_global_variable = ht_target_self }
 		}
 
 		column = { data = name }
@@ -486,7 +486,7 @@ ht_change_government = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = { scope:actor = { has_variable = ht_target_self } }
+				limit = { has_global_variable = ht_target_self }
 				scope:actor = { save_scope_as = target }
 			}
 			if = {

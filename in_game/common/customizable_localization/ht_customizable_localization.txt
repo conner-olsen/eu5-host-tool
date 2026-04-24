@@ -1,0 +1,14 @@
+﻿# Returns the local player's country name when the ht_target_self global flag is set; otherwise
+# returns the name of the country Custom was called on. Intended to be called on scope:recipient
+# or scope:target depending on which slot of an interaction the name is filling.
+ht_get_display_country = {
+	type = country
+	text = {
+		trigger = { has_global_variable = ht_target_self }
+		localization_key = ht_self_country_name
+	}
+	text = {
+		localization_key = ht_this_country_name
+		fallback = yes
+	}
+}
