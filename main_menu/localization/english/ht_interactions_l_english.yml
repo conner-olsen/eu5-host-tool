@@ -1,10 +1,9 @@
 ﻿l_english:
- # Note to translators: The `#A #!` prefix is just used to order this interaction at the top of the list.
  # Category
  CATEGORY_HT_ACTIONS: "@diplomacy! Host Tool"
 
  # ── Target Toggle ────────────────────────────────────────────────────────────
- ht_toggle_target: "#A #!Target: $ht_current_target_label$"
+ ht_toggle_target: "#V Target: $ht_current_target_label$#!"
  ht_toggle_target_desc: "Toggle whether host tool interactions apply to the selected country or to your own country."
  ht_toggle_target_act: "Toggle target mode (currently: $ht_current_target_label$)."
  ht_toggle_target_effect_text: "Toggle target mode."
