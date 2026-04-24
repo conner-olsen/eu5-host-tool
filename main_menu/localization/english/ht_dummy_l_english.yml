@@ -19,6 +19,7 @@
  dip_ht_grant_independence_CATEGORY: "dummy"
  dip_ht_make_vassal_CATEGORY: "dummy"
  dip_ht_kill_ruler_CATEGORY: "dummy"
+ dip_ht_end_regency_CATEGORY: "dummy"
  dip_ht_change_religion_CATEGORY: "dummy"
  dip_ht_change_culture_CATEGORY: "dummy"
  dip_ht_change_government_CATEGORY: "dummy"

@@ -191,6 +191,32 @@ ht_kill_ruler_effect = {
 	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_killed_ruler } }
 }
 
+# Single-target: recipient = country whose regency ends (random local adult takes the throne)
+ht_end_regency_effect = {
+	scope:recipient = {
+		if = {
+			limit = {
+				any_character = { can_become_a_ruler = yes }
+			}
+			random_character = {
+				limit = { can_become_a_ruler = yes }
+				save_scope_as = ht_new_ruler
+			}
+		}
+		else = {
+			create_character = {
+				age = 35
+				religion = scope:recipient.religion
+				culture = scope:recipient.culture
+				save_scope_as = ht_new_ruler
+			}
+		}
+		set_new_ruler = scope:ht_new_ruler
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_ended_regency } }
+}
+
 # Two-target: recipient = source country, target = country to change
 ht_change_religion_effect = {
 	scope:target = {

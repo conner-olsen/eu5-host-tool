@@ -24,6 +24,7 @@
  ht_log_granted_independence: "granted independence to"
  ht_log_vassalized: "vassalized"
  ht_log_killed_ruler: "killed ruler of"
+ ht_log_ended_regency: "ended the regency of"
  ht_log_changed_religion: "copied religion to"
  ht_log_changed_culture: "copied culture to"
  ht_log_changed_government: "copied government to"

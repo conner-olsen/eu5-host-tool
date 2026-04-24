@@ -187,6 +187,62 @@ ht_make_vassal = {
 	}
 }
 
+# ── Single-target: recipient = country whose regency ends ───────────────────────
+
+ht_end_regency = {
+	type = diplomacy
+	category = CATEGORY_HT_ACTIONS
+	ai_tick = never
+	use_enroute = no
+
+	potential = {
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
+	}
+
+	allow = { }
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_target
+
+
+		show_if = {
+			NOT = { scope:actor = { has_variable = ht_target_self } }
+		}
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+
+		enabled = {
+			has_regent = yes
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { scope:actor = { has_variable = ht_target_self } }
+				scope:actor = { save_scope_as = recipient }
+			}
+			if = {
+				limit = {
+					exists = scope:recipient
+					scope:recipient = { has_regent = yes }
+				}
+				ht_end_regency_effect = yes
+			}
+		}
+	}
+}
+
 # ── Single-target: target = country whose ruler dies ─────────────────────────────
 
 ht_kill_ruler = {
