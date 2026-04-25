@@ -17,6 +17,10 @@
 		name = ht_select_first_country
 
 
+		show_if = {
+			NOT = { has_global_variable = ht_target_self }
+		}
+
 		column = { data = name }
 
 		visible = {
@@ -35,8 +39,10 @@
 
 
 		show_if = {
-			exists = scope:recipient
-			NOT = { has_global_variable = ht_target_self }
+			OR = {
+				has_global_variable = ht_target_self
+				exists = scope:recipient
+			}
 		}
 
 		column = { data = name }
@@ -54,7 +60,7 @@
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
-				scope:actor = { save_scope_as = target }
+				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
 				limit = {
@@ -86,19 +92,16 @@ ht_white_peace = {
 		name = ht_select_first_country
 
 
+		show_if = {
+			NOT = { has_global_variable = ht_target_self }
+		}
+
 		column = { data = name }
 
 		visible = {
 			NOR = {
 				country_type = building
 				country_type = pop
-			}
-		}
-
-		enabled = {
-			OR = {
-				NOT = { has_global_variable = ht_target_self }
-				is_at_war_with = scope:actor
 			}
 		}
 	}
@@ -111,8 +114,10 @@ ht_white_peace = {
 
 
 		show_if = {
-			exists = scope:recipient
-			NOT = { has_global_variable = ht_target_self }
+			OR = {
+				has_global_variable = ht_target_self
+				exists = scope:recipient
+			}
 		}
 
 		column = { data = name }
@@ -126,7 +131,16 @@ ht_white_peace = {
 		}
 
 		enabled = {
-			scope:recipient = { is_at_war_with = prev }
+			OR = {
+				AND = {
+					has_global_variable = ht_target_self
+					is_at_war_with = scope:actor
+				}
+				AND = {
+					NOT = { has_global_variable = ht_target_self }
+					scope:recipient = { is_at_war_with = prev }
+				}
+			}
 		}
 	}
 
@@ -134,7 +148,7 @@ ht_white_peace = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
-				scope:actor = { save_scope_as = target }
+				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
 				limit = {

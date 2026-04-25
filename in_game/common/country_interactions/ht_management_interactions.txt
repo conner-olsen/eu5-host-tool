@@ -19,6 +19,10 @@ ht_annex = {
 		name = ht_select_first_country
 
 
+		show_if = {
+			NOT = { has_global_variable = ht_target_self }
+		}
+
 		column = { data = name }
 
 		visible = {
@@ -37,8 +41,10 @@ ht_annex = {
 
 
 		show_if = {
-			exists = scope:recipient
-			NOT = { has_global_variable = ht_target_self }
+			OR = {
+				has_global_variable = ht_target_self
+				exists = scope:recipient
+			}
 		}
 
 		column = { data = name }
@@ -56,7 +62,7 @@ ht_annex = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
-				scope:actor = { save_scope_as = target }
+				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
 				limit = {
@@ -137,6 +143,10 @@ ht_make_vassal = {
 		name = ht_select_first_country
 
 
+		show_if = {
+			NOT = { has_global_variable = ht_target_self }
+		}
+
 		column = { data = name }
 
 		visible = {
@@ -155,8 +165,10 @@ ht_make_vassal = {
 
 
 		show_if = {
-			exists = scope:recipient
-			NOT = { has_global_variable = ht_target_self }
+			OR = {
+				has_global_variable = ht_target_self
+				exists = scope:recipient
+			}
 		}
 
 		column = { data = name }
@@ -174,7 +186,7 @@ ht_make_vassal = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
-				scope:actor = { save_scope_as = target }
+				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
 				limit = {
@@ -315,6 +327,10 @@ ht_change_religion = {
 		name = ht_select_source_country
 
 
+		show_if = {
+			NOT = { has_global_variable = ht_target_self }
+		}
+
 		column = { data = name }
 
 		visible = {
@@ -333,8 +349,10 @@ ht_change_religion = {
 
 
 		show_if = {
-			exists = scope:recipient
-			NOT = { has_global_variable = ht_target_self }
+			OR = {
+				has_global_variable = ht_target_self
+				exists = scope:recipient
+			}
 		}
 
 		column = { data = name }
@@ -344,6 +362,10 @@ ht_change_religion = {
 				country_type = building
 				country_type = pop
 			}
+			OR = {
+				NOT = { has_global_variable = ht_target_self }
+				NOT = { this = scope:actor }
+			}
 		}
 	}
 
@@ -351,7 +373,7 @@ ht_change_religion = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
-				scope:actor = { save_scope_as = target }
+				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
 				limit = {
@@ -383,6 +405,10 @@ ht_change_culture = {
 		name = ht_select_source_country
 
 
+		show_if = {
+			NOT = { has_global_variable = ht_target_self }
+		}
+
 		column = { data = name }
 
 		visible = {
@@ -401,8 +427,10 @@ ht_change_culture = {
 
 
 		show_if = {
-			exists = scope:recipient
-			NOT = { has_global_variable = ht_target_self }
+			OR = {
+				has_global_variable = ht_target_self
+				exists = scope:recipient
+			}
 		}
 
 		column = { data = name }
@@ -412,6 +440,10 @@ ht_change_culture = {
 				country_type = building
 				country_type = pop
 			}
+			OR = {
+				NOT = { has_global_variable = ht_target_self }
+				NOT = { this = scope:actor }
+			}
 		}
 	}
 
@@ -419,7 +451,7 @@ ht_change_culture = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
-				scope:actor = { save_scope_as = target }
+				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
 				limit = {
@@ -451,6 +483,10 @@ ht_change_government = {
 		name = ht_select_source_country
 
 
+		show_if = {
+			NOT = { has_global_variable = ht_target_self }
+		}
+
 		column = { data = name }
 
 		visible = {
@@ -469,8 +505,10 @@ ht_change_government = {
 
 
 		show_if = {
-			exists = scope:recipient
-			NOT = { has_global_variable = ht_target_self }
+			OR = {
+				has_global_variable = ht_target_self
+				exists = scope:recipient
+			}
 		}
 
 		column = { data = name }
@@ -480,6 +518,10 @@ ht_change_government = {
 				country_type = building
 				country_type = pop
 			}
+			OR = {
+				NOT = { has_global_variable = ht_target_self }
+				NOT = { this = scope:actor }
+			}
 		}
 	}
 
@@ -487,7 +529,7 @@ ht_change_government = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
-				scope:actor = { save_scope_as = target }
+				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
 				limit = {
