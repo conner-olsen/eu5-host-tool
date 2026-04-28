@@ -1,6 +1,6 @@
-﻿# Returns the local player's country name when the ht_target_self global flag is set; otherwise
-# returns the name of the country Custom was called on. Intended to be called on scope:recipient
-# for the active/initiating slot (recipient = actor when Target: Self).
+﻿# Returns the host player's country name when ht_target_self is set, the recipient country's name
+# when scope:recipient is valid, or a generic placeholder otherwise. Intended to be called on
+# scope:recipient for the active/initiating slot (recipient = actor when Target: Self).
 ht_get_display_country = {
 	type = country
 	text = {
@@ -8,7 +8,11 @@ ht_get_display_country = {
 		localization_key = ht_self_country_name
 	}
 	text = {
+		trigger = { exists = scope:recipient }
 		localization_key = ht_this_country_name
+	}
+	text = {
+		localization_key = ht_another_country_placeholder
 		fallback = yes
 	}
 }
@@ -19,7 +23,7 @@ ht_get_display_country = {
 ht_get_picked_country = {
 	type = country
 	text = {
-		trigger = { exists = this }
+		trigger = { exists = scope:target }
 		localization_key = ht_this_country_name
 	}
 	text = {
