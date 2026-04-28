@@ -131,7 +131,10 @@ ht_declare_war_effect = {
 
 ht_white_peace_effect = {
 	scope:recipient = {
-		white_peace = scope:target
+		every_current_war = {
+			limit = { is_in_war = scope:target }
+			white_peace = this
+		}
 	}
 	scope:recipient = { save_scope_as = cmf_log_arg1 }
 	scope:target = { save_scope_as = cmf_log_arg2 }
