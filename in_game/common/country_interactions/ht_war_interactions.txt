@@ -3,6 +3,7 @@
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -78,6 +79,7 @@ ht_white_peace = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }

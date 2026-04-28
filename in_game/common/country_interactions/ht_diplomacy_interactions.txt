@@ -3,6 +3,7 @@
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -82,6 +83,7 @@ ht_break_alliance = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -174,6 +176,7 @@ ht_force_guarantee = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -253,6 +256,7 @@ ht_break_guarantee = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -351,6 +355,7 @@ ht_add_truce = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -430,6 +435,7 @@ ht_remove_truce = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -509,6 +515,7 @@ ht_add_rival = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -588,6 +595,7 @@ ht_remove_rival = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }

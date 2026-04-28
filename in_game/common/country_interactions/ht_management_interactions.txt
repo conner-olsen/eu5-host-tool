@@ -5,6 +5,7 @@ ht_annex = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -82,6 +83,7 @@ ht_grant_independence = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -129,6 +131,7 @@ ht_make_vassal = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -206,6 +209,7 @@ ht_end_regency = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -262,6 +266,7 @@ ht_kill_ruler = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -313,6 +318,7 @@ ht_change_religion = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -391,6 +397,7 @@ ht_change_culture = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -469,6 +476,7 @@ ht_change_government = {
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
 	use_enroute = no
+	block_when_at_war = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
