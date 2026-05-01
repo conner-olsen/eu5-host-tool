@@ -52,6 +52,16 @@ ht_cmm_register_mod = {
 		max_value = 25
 		step_value = 1
 	}
+	cmm_register_global_numeric_setting = {
+		mod_id = ht
+		setting_id = religion_conversion_percentage
+		tab_id = settings
+		group_id = amounts
+		default_value = 10
+		min_value = 1
+		max_value = 100
+		step_value = 1
+	}
 }
 
 # ── Callback Handler ─────────────────────────────────────────────────────────────

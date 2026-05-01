@@ -28,3 +28,4 @@
  ht_log_changed_religion: "copied religion to"
  ht_log_changed_culture: "copied culture to"
  ht_log_changed_government: "copied government to"
+ ht_log_converted_pops: "converted [CMMV('ht__religion_conversion_percentage')]% of pops in"

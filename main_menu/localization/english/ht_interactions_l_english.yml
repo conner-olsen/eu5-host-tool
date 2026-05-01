@@ -157,6 +157,12 @@
  ht_change_government_effect_text: "Copy $ht_display_recipient$'s government to $ht_display_target$."
  ht_change_government_effect_text_past: "Copied $ht_display_recipient$'s government to $ht_display_target$."
  PROPOSE_ht_change_government: "Copy $ht_display_recipient$'s government to $ht_display_target$?"
+ ht_convert_pops: "Convert Pops"
+ ht_convert_pops_desc: "Convert [CMMV('ht__religion_conversion_percentage')]% of $ht_display_recipient$'s pops to its primary religion. If fewer pops than that remain unconverted, all of them convert. Percentage configurable in CMM settings."
+ ht_convert_pops_act: "Convert [CMMV('ht__religion_conversion_percentage')]% of pops in $ht_display_recipient$ to its primary religion."
+ ht_convert_pops_effect_text: "Convert [CMMV('ht__religion_conversion_percentage')]% of pops in $ht_display_recipient$ to its primary religion."
+ ht_convert_pops_effect_text_past: "Converted [CMMV('ht__religion_conversion_percentage')]% of pops in $ht_display_recipient$ to its primary religion."
+ PROPOSE_ht_convert_pops: "Convert [CMMV('ht__religion_conversion_percentage')]% of pops in $ht_display_recipient$ to its primary religion?"
 
  # Note to translators: leave the below lines as is.
  # NO-TRANSLATE BELOW

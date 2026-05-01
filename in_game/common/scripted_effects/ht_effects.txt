@@ -249,3 +249,31 @@ ht_change_government_effect = {
 	scope:target = { save_scope_as = cmf_log_arg2 }
 	scope:actor = { cmf_log_with_scope_args = { action = ht_log_changed_government } }
 }
+
+# Single-target: recipient = country whose pops convert to its primary religion
+# Per-pop fraction = (CMM% / 100) / non_primary_share, clamped to [0, 1], so the total converted equals CMM% of TOTAL pops.
+ht_convert_pops_effect = {
+	scope:recipient = {
+		every_pop = {
+			limit = {
+				NOT = { religion = scope:recipient.religion }
+			}
+			split_pop = {
+				fraction = {
+					value = "global_variable_map(cmm|flag:ht__religion_conversion_percentage)"
+					divide = 100
+					divide = {
+						value = 1
+						subtract = "scope:recipient.religion_percentage_in_country(scope:recipient.religion)"
+						min = 0.001
+					}
+					min = 0
+					max = 1
+				}
+				religion = scope:recipient.religion
+			}
+		}
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_converted_pops } }
+}

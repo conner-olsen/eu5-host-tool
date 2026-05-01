@@ -25,3 +25,6 @@
  ht__truce_years_name: "Truce Duration (Years)"
  ht__truce_years_desc: "Duration of truces created by the Add Truce action."
  ht__truce_years_format: "[CMMV('ht__truce_years')]"
+ ht__religion_conversion_percentage_name: "Religion Conversion Percentage"
+ ht__religion_conversion_percentage_desc: "Percentage of pops converted to primary religion by the Convert Pops action."
+ ht__religion_conversion_percentage_format: "[CMMV('ht__religion_conversion_percentage')]%"
