@@ -2,13 +2,13 @@
 # when scope:recipient is valid, or a generic placeholder otherwise. Intended to be called on
 # scope:recipient for the active/initiating slot (recipient = actor when Target: Self).
 ht_get_display_country = {
-	type = country
+	type = none
 	text = {
 		trigger = { has_global_variable = ht_target_self }
 		localization_key = ht_self_country_name
 	}
 	text = {
-		trigger = { exists = scope:recipient }
+		trigger = { country_exists = scope:recipient }
 		localization_key = ht_this_country_name
 	}
 	text = {
@@ -21,9 +21,9 @@ ht_get_display_country = {
 # Intended to be called on scope:target for the passive/picked slot, which may be null at
 # preview time before the user picks but is always a real country once selected.
 ht_get_picked_country = {
-	type = country
+	type = none
 	text = {
-		trigger = { exists = scope:target }
+		trigger = { country_exists = scope:target }
 		localization_key = ht_this_country_name
 	}
 	text = {

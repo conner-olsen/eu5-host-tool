@@ -141,6 +141,17 @@ ht_white_peace_effect = {
 	scope:actor = { cmf_log_with_scope_args = { action = ht_log_white_peace } }
 }
 
+ht_remove_war_exhaustion_effect = {
+	scope:recipient = {
+		add_war_exhaustion = {
+			value = "global_variable_map(cmm|flag:ht__war_exhaustion_amount)"
+			multiply = -1
+		}
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_removed_war_exhaustion } }
+}
+
 # ── Country Management Effects (mixed single/two-target) ───────────────────────
 
 # Two-target: recipient = annexer, target = annexed

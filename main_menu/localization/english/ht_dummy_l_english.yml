@@ -15,6 +15,7 @@
  dip_ht_remove_rival_CATEGORY: "dummy"
  dip_ht_declare_war_CATEGORY: "dummy"
  dip_ht_white_peace_CATEGORY: "dummy"
+ dip_ht_remove_war_exhaustion_CATEGORY: "dummy"
  dip_ht_annex_CATEGORY: "dummy"
  dip_ht_grant_independence_CATEGORY: "dummy"
  dip_ht_make_vassal_CATEGORY: "dummy"

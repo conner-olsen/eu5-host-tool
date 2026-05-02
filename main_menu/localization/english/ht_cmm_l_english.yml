@@ -28,3 +28,6 @@
  ht__religion_conversion_percentage_name: "Religion Conversion Percentage"
  ht__religion_conversion_percentage_desc: "Percentage of pops converted to primary religion by the Convert Pops action."
  ht__religion_conversion_percentage_format: "[CMMV('ht__religion_conversion_percentage')]%"
+ ht__war_exhaustion_amount_name: "War Exhaustion Amount"
+ ht__war_exhaustion_amount_desc: "Amount of war exhaustion to remove with the Remove War Exhaustion action."
+ ht__war_exhaustion_amount_format: "[CMMV('ht__war_exhaustion_amount')]"
