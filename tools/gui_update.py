@@ -431,6 +431,11 @@ def _push_refs(refs, force=False):
                 print(f"  {line}")
 
 
+def _versioned_message(message, version):
+    """Prefix the commit subject *message* with *version* when it is set."""
+    return f"{version}: {message}" if version else message
+
+
 def _update_vanilla_branch(tracking_files,
                            message="Update vanilla GUI definitions",
                            version=None,
@@ -441,8 +446,7 @@ def _update_vanilla_branch(tracking_files,
     *version* prefixes the commit subject when provided.
     Returns the new commit SHA.
     """
-    if version:
-        message = f"{version}: {message}"
+    message = _versioned_message(message, version)
     tmp_index = os.path.join(ROOT_DIR, ".git", "tmp_gui_index")
     plumbing = {"GIT_INDEX_FILE": tmp_index}
 
@@ -1076,7 +1080,9 @@ def cmd_init(args):
     # 4. Commit
     run_git(["add", TRACKING_DIR_NAME + "/"])
     run_git(["commit", "-m",
-             f"Initialize GUI tracking with {total} definition(s)"])
+             _versioned_message(
+                 f"Initialize GUI tracking with {total} definition(s)",
+                 version)])
 
     print(f"\nDone! Tracking {total} GUI override(s).")
     print("Run 'gui_update.py check' after a game update to detect changes.")
@@ -1288,6 +1294,7 @@ def cmd_merge(args):
         print(f"{VANILLA_BRANCH} has unmerged commits from a previous "
               "run; resuming merge.")
         new_vanilla_sha = vanilla_sha
+        version = _last_vanilla_commit_version()
 
     # Per-file three-way merge using gui/vanilla-merged as base and
     # gui/vanilla as theirs.
@@ -1354,7 +1361,8 @@ def cmd_merge(args):
             _stage_merge_entries(tp, base, ours, theirs)
         # Set MERGE_HEAD/MERGE_MSG so the next git commit produces a 2-parent merge.
         affected = len(conflicts) + len(clean_paths)
-        msg = f"Merge vanilla GUI updates ({affected} definition(s))"
+        msg = _versioned_message(
+            f"Merge vanilla GUI updates ({affected} definition(s))", version)
         _setup_merge_state(new_vanilla_sha, msg)
 
         print(f"\nConflicts in {len(conflicts)} file(s):")
@@ -1372,7 +1380,10 @@ def cmd_merge(args):
     )
     if diff_check.returncode != 0:
         run_git(["commit", "-m",
-                 f"Merge vanilla GUI updates ({len(clean_paths)} definition(s))"])
+                 _versioned_message(
+                     f"Merge vanilla GUI updates "
+                     f"({len(clean_paths)} definition(s))",
+                     version)])
 
     # Advance the bookmark to match gui/vanilla.
     run_git(["update-ref",
