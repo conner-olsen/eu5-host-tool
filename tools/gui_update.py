@@ -904,13 +904,24 @@ def _prompt_version_value(default):
         return _normalize_version(resp)
 
 
+def _confirm_or_correct_version(detected):
+    """Confirm *detected* or type a correction; return the chosen version."""
+    resp = _ask("Press [Enter]/[y] to confirm, or type the correct "
+                "version: ").strip()
+    if not resp or resp.lower() in ("y", "yes"):
+        return detected
+    if _version_key(resp) is None:
+        return _prompt_version_value(detected)
+    return _normalize_version(resp)
+
+
 def _resolve_game_version(args, is_init):
     """Resolve the version to prefix onto the gui/vanilla commit subject.
 
-    A ``--game-version`` flag wins. Otherwise ``init`` confirms the
-    continue_game.json reading interactively; ``merge`` and ``refresh`` reuse
-    it only when it is newer than the last tracked commit, and prompt when it
-    is not.
+    A ``--game-version`` flag wins and skips prompting. Otherwise the detected
+    version is always shown for interactive confirmation (press [Enter]/[y] to
+    accept or type a correction), including when it is newer than the last
+    tracked commit, so an auto-detection can always be fixed.
     """
     flag = getattr(args, "game_version", None)
     if flag:
@@ -924,21 +935,15 @@ def _resolve_game_version(args, is_init):
     if is_init:
         if detected:
             print(f"\nGame version read from continue_game.json: {detected}")
-            resp = _ask("Press [Enter]/[y] to confirm, or type the correct "
-                        "version: ").strip()
-            if not resp or resp.lower() in ("y", "yes"):
-                return detected
-            if _version_key(resp) is None:
-                return _prompt_version_value(detected)
-            return _normalize_version(resp)
+            return _confirm_or_correct_version(detected)
         print("\nGame version not found in continue_game.json.")
         return _prompt_version_value(None)
 
     last = _last_vanilla_commit_version()
     if detected and last and _version_key(detected) > _version_key(last):
-        print(f"Using game version {detected} "
+        print(f"\nGame version read from continue_game.json: {detected} "
               f"(newer than last tracked {last}).")
-        return detected
+        return _confirm_or_correct_version(detected)
 
     print("\nNo newer game version detected automatically:")
     print(f"  continue_game.json: {detected or '(unavailable)'}")
