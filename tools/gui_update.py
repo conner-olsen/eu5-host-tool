@@ -20,6 +20,10 @@ Commands:
     apply     Write resolved tracking files back to mod GUI files
     refresh   Re-extract mod definitions into tracking files
     status    Show tracking status
+
+Pass ``--beta`` (``-b``) to any vanilla-reading command (init, check, merge,
+refresh) to target the EU5 closed-beta install (Project Caesar Review) instead
+of the live game. Beta-sourced gui/vanilla commits are tagged ``(beta)`` in
 """
 
 import argparse
@@ -1648,6 +1652,8 @@ def cmd_refresh(args):
     version = _resolve_game_version(args, is_init=False)
     new_vanilla_sha = _update_vanilla_branch(
         vanilla_files, "Refresh vanilla GUI definitions", version=version)
+        vanilla_files, "Refresh vanilla GUI definitions", version=version,
+        beta=getattr(args, "beta", False))
 
     # Refresh re-baselines tracking, so the bookmark moves to the new tip.
     run_git(["update-ref",
@@ -1747,6 +1753,14 @@ def main():
                  "(e.g. 1.2.5). Overrides auto-detection and prompting.",
         )
 
+    def add_beta_arg(p):
+        p.add_argument(
+            "--beta", "--early-access", "-b", "--b", dest="beta",
+            action="store_true",
+            help="Target the EU5 closed-beta install (Project Caesar "
+                 "Review) instead of the live game.",
+        )
+
     init_parser = sub.add_parser(
         "init", help="Initialize GUI tracking for this mod")
     init_parser.add_argument(
@@ -1756,17 +1770,21 @@ def main():
              f"{MERGED_BRANCH}) before re-initializing.",
     )
     add_version_arg(init_parser)
-    sub.add_parser("check",
-                   help="Check for vanilla GUI changes")
+    add_beta_arg(init_parser)
+    check_parser = sub.add_parser("check",
+                                  help="Check for vanilla GUI changes")
+    add_beta_arg(check_parser)
     merge_parser = sub.add_parser(
         "merge", help="Update vanilla branch and merge changes")
     add_version_arg(merge_parser)
+    add_beta_arg(merge_parser)
     sub.add_parser("apply",
                    help="Apply resolved changes back to mod GUI files")
     refresh_parser = sub.add_parser(
         "refresh",
         help="Re-extract mod definitions into tracking files")
     add_version_arg(refresh_parser)
+    add_beta_arg(refresh_parser)
     sub.add_parser("status",
                    help="Show tracking status")
 
