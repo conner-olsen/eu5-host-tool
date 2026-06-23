@@ -80,7 +80,7 @@ ht_cmm_register_mod = {
 ht_handle_callback = {
 	# Sync the unrestricted-tools diplomatic range modifier with the toggle.
 	if = {
-		limit = { var:cmf_callback = flag:cmm_core__enable_unrestricted_tools }
+		limit = { var:cmf_callback = flag:cmf_core__enable_unrestricted_tools }
 		if = {
 			limit = {
 				cmf_can_use_unrestricted_tools = yes
