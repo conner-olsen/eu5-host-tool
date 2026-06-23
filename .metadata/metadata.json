@@ -4,6 +4,7 @@
 	"version": "0.1",
 	"game_id": "eu5",
 	"supported_game_version": "1.3.*",
+	"ht_last_updated_game_version": "1.3.6",
 	"short_description": "Multiplayer host tool for managing the game with full transparency logging.",
 	"tags": [
 		"Utilities",
