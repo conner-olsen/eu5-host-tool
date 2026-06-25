@@ -18,7 +18,7 @@
  # ── War Log Actions (two-target) ─────────────────────────────────────────────
  ht_log_declared_war: "declared war on"
  ht_log_white_peace: "white-peaced"
- ht_log_removed_war_exhaustion: "removed [CMMV('ht__war_exhaustion_amount')] war exhaustion from"
+ ht_log_changed_war_exhaustion: "changed war exhaustion by [CMMV('ht__war_exhaustion_amount')] for"
 
  # ── Country Management Log Actions (mixed) ───────────────────────────────────
  ht_log_annexed: "annexed"

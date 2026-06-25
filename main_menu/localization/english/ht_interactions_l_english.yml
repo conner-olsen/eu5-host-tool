@@ -107,12 +107,12 @@
  ht_white_peace_effect_text: "White peace between $ht_display_recipient$ and $ht_display_target$."
  ht_white_peace_effect_text_past: "White peace between $ht_display_recipient$ and $ht_display_target$."
  PROPOSE_ht_white_peace: "White peace between $ht_display_recipient$ and $ht_display_target$?"
- ht_remove_war_exhaustion: "Remove War Exhaustion"
- ht_remove_war_exhaustion_desc: "Remove [CMMV('ht__war_exhaustion_amount')] war exhaustion from the target country. Amount configurable in CMM settings."
- ht_remove_war_exhaustion_act: "Remove [CMMV('ht__war_exhaustion_amount')] war exhaustion from $ht_display_recipient$."
- ht_remove_war_exhaustion_effect_text: "Remove [CMMV('ht__war_exhaustion_amount')] war exhaustion from $ht_display_recipient$."
- ht_remove_war_exhaustion_effect_text_past: "Removed [CMMV('ht__war_exhaustion_amount')] war exhaustion from $ht_display_recipient$."
- PROPOSE_ht_remove_war_exhaustion: "Remove [CMMV('ht__war_exhaustion_amount')] war exhaustion from $ht_display_recipient$?"
+ ht_change_war_exhaustion: "Change War Exhaustion"
+ ht_change_war_exhaustion_desc: "Change the war exhaustion of the target country. A negative amount removes war exhaustion, a positive amount adds it. Amount configurable in CMM settings."
+ ht_change_war_exhaustion_act: "Change war exhaustion of $ht_display_recipient$."
+ ht_change_war_exhaustion_effect_text: "Change war exhaustion of $ht_display_recipient$."
+ ht_change_war_exhaustion_effect_text_past: "Changed war exhaustion of $ht_display_recipient$."
+ PROPOSE_ht_change_war_exhaustion: "Change war exhaustion of $ht_display_recipient$?"
 
  # ── Country Management ───────────────────────────────────────────────────────
  ht_annex: "Annex Country"

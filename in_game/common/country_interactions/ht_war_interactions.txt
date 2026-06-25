@@ -163,7 +163,7 @@ ht_white_peace = {
 	}
 }
 
-ht_remove_war_exhaustion = {
+ht_change_war_exhaustion = {
 	type = diplomacy
 	category = CATEGORY_HT_ACTIONS
 	ai_tick = never
@@ -207,7 +207,7 @@ ht_remove_war_exhaustion = {
 				limit = {
 					exists = scope:recipient
 				}
-				ht_remove_war_exhaustion_effect = yes
+				ht_change_war_exhaustion_effect = yes
 			}
 		}
 	}
