@@ -150,13 +150,18 @@
  PROPOSE_ht_grant_independence: "Grant independence to $RECIPIENT$?"
 
  ht_convert_pops: "@g5a!Convert #V [CMMV('ht__religion_conversion_percentage')]%#! of Pops"
- ht_convert_pops_desc: "Convert [CMMV('ht__religion_conversion_percentage')]% of $ht_display_recipient$'s pops to $ht_display_recipient_religion$. If fewer pops than that remain unconverted, all of them convert. #V \n$ht__religion_conversion_percentage_name$ configurable in CMM settings.#!"
+ ht_convert_pops_desc: "Convert [CMMV('ht__religion_conversion_percentage')]% of $ht_display_recipient$'s pops to $ht_display_recipient_religion$. #V \n$ht__religion_conversion_percentage_name$ configurable in CMM settings.#!"
  ht_convert_pops_act: "Convert [CMMV('ht__religion_conversion_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_religion$."
  ht_convert_pops_effect_text: "Convert [CMMV('ht__religion_conversion_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_religion$."
  ht_convert_pops_effect_text_past: "Converted [CMMV('ht__religion_conversion_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_religion$."
  PROPOSE_ht_convert_pops: "Convert [CMMV('ht__religion_conversion_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_religion$?"
 
- #todo: convert_culture
+ ht_assimilate_pops: "@g5a!Assimilate #V [CMMV('ht__culture_assimilation_percentage')]%#! of Pops"
+ ht_assimilate_pops_desc: "Assimilate [CMMV('ht__culture_assimilation_percentage')]% of $ht_display_recipient$'s pops to $ht_display_recipient_culture$. #V \n$ht__culture_assimilation_percentage_name$ configurable in CMM settings.#!"
+ ht_assimilate_pops_act: "Assimilate [CMMV('ht__culture_assimilation_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_culture$."
+ ht_assimilate_pops_effect_text: "Assimilate [CMMV('ht__culture_assimilation_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_culture$."
+ ht_assimilate_pops_effect_text_past: "Assimilated [CMMV('ht__culture_assimilation_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_culture$."
+ PROPOSE_ht_assimilate_pops: "Assimilate [CMMV('ht__culture_assimilation_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_culture$?"
 
  ht_change_religion: "@g5c!Copy Religion"
  ht_change_religion_desc: "Copy one country's religion to another."
@@ -209,6 +214,7 @@
  ht_target_label_selected_act: "[ROOT.GetCountry.GetNameWithFlag]"
  ht_display_recipient: "[SCOPE.sCountry('recipient').Custom('ht_get_recipient_country')]"
  ht_display_recipient_religion: "[SCOPE.sCountry('recipient').Custom('ht_get_recipient_country_religion')]"
+ ht_display_recipient_culture: "[SCOPE.sCountry('recipient').Custom('ht_get_recipient_country_culture')]"
  ht_display_target: "[Custom('ht_get_target_country')]"
  ht_self_country_name: "[GetPlayer.GetNameWithFlag]"
  ht_recipient_country_name: "[ROOT.GetCountry.GetNameWithFlag]"
@@ -218,6 +224,10 @@
  ht_recipient_country_religion: "[ROOT.GetCountry.GetReligion.GetName]"
  ht_picked_country_religion: "[SCOPE.sCountry('target').GetReligion.GetName]"
  ht_another_religion_placeholder: "its primary religion"
+ ht_self_country_culture: "[GetPlayer.GetCulture.GetName]"
+ ht_recipient_country_culture: "[ROOT.GetCountry.GetCulture.GetName]"
+ ht_picked_country_culture: "[SCOPE.sCountry('target').GetCulture.GetName]"
+ ht_another_culture_placeholder: "its primary culture"
 
  ht_gold_give_remove: "[Select_CString(GreaterThan_CFixedPoint(CMMV('ht__gold_amount'), '(CFixedPoint)0'),'Give','Remove')]"
  ht_gold_gave_removed: "[Select_CString(GreaterThan_CFixedPoint(CMMV('ht__gold_amount'), '(CFixedPoint)0'),'Gave','Removed')]"
