@@ -4,6 +4,7 @@
  ht_log_added_manpower: "gave [CMMV('ht__manpower_amount')] manpower to"
  ht_log_added_stability: "gave [CMMV('ht__stability_amount')] stability to"
  ht_log_added_prestige: "gave [CMMV('ht__prestige_amount')] prestige to"
+ ht_log_added_diplomats: "gave [CMMV('ht__diplomats_amount')] diplomats to"
 
  # ── Diplomacy Log Actions (two-target: [actor] [A] [action] [B]) ─────────────
  ht_log_forced_alliance: "forced alliance with"

@@ -54,6 +54,14 @@
  ht_add_war_exhaustion_effect_text_past: "$ht_war_exhaustion_gave_removed$ [CMMV('ht__war_exhaustion_amount')|-0V]@war_exhaustion! $ht_war_exhaustion_to_from$ $ht_display_recipient$."
  PROPOSE_ht_add_war_exhaustion: "[CMMV('ht__war_exhaustion_amount')|-0V]@war_exhaustion! $ht_war_exhaustion_to_from$ $ht_display_recipient$?"
 
+ ht_add_diplomats: "@g1e!$ht_diplomats_give_remove$ [CMMV('ht__diplomats_amount')|+0V]@diplomacy!"
+ ht_add_diplomats_desc: "$ht_diplomats_gives_removes$ @diplomacy![diplomats|e] $ht_diplomats_to_from$ the targeted country. #V \n$ht__diplomats_amount_name$ configurable in CMM settings.#!"
+ ht_add_diplomats_act: "[CMMV('ht__diplomats_amount')|+0V]@diplomacy! $ht_diplomats_to_from$ $ht_display_recipient$."
+ ht_add_diplomats_effect_text: "$ht_diplomats_give_remove$ [CMMV('ht__diplomats_amount')|+0V]@diplomacy! $ht_diplomats_to_from$ $ht_display_recipient$."
+ ht_add_diplomats_effect_text_past: "$ht_diplomats_gave_removed$ [CMMV('ht__diplomats_amount')|+0V]@diplomacy! $ht_diplomats_to_from$ $ht_display_recipient$."
+ PROPOSE_ht_add_diplomats: "[CMMV('ht__diplomats_amount')|+0V]@diplomacy! $ht_diplomats_to_from$ $ht_display_recipient$?"
+
+
  # ── Diplomacy ────────────────────────────────────────────────────────────────
  ht_force_alliance: "@g2a!Force Alliance"
  ht_force_alliance_desc: "Forces an [alliance|e] between two countries."
@@ -235,3 +243,8 @@
  ht_war_exhaustion_gave_removed: "[Select_CString(GreaterThan_CFixedPoint(CMMV('ht__war_exhaustion_amount'), '(CFixedPoint)0'),'Gave','Removed')]"
  ht_war_exhaustion_gives_removes: "[Select_CString(GreaterThan_CFixedPoint(CMMV('ht__war_exhaustion_amount'), '(CFixedPoint)0'),'Gives','Removes')]"
  ht_war_exhaustion_to_from: "[Select_CString(GreaterThan_CFixedPoint(CMMV('ht__war_exhaustion_amount'), '(CFixedPoint)0'),'to','from')]"
+
+ ht_diplomats_give_remove: "[Select_CString(GreaterThan_CFixedPoint(CMMV('ht__diplomats_amount'), '(CFixedPoint)0'),'Give','Remove')]"
+ ht_diplomats_gave_removed: "[Select_CString(GreaterThan_CFixedPoint(CMMV('ht__diplomats_amount'), '(CFixedPoint)0'),'Gave','Removed')]"
+ ht_diplomats_gives_removes: "[Select_CString(GreaterThan_CFixedPoint(CMMV('ht__diplomats_amount'), '(CFixedPoint)0'),'Gives','Removes')]"
+ ht_diplomats_to_from: "[Select_CString(GreaterThan_CFixedPoint(CMMV('ht__diplomats_amount'), '(CFixedPoint)0'),'to','from')]"

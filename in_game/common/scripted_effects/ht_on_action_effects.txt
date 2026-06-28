@@ -44,6 +44,16 @@ ht_cmm_register_mod = {
 	}
 	cmm_register_global_numeric_setting = {
 		mod_id = ht
+		setting_id = diplomats_amount
+		tab_id = settings
+		group_id = amounts
+		default_value = 1
+		min_value = -5
+		max_value = 5
+		step_value = 0.1
+	}
+	cmm_register_global_numeric_setting = {
+		mod_id = ht
 		setting_id = truce_years
 		tab_id = settings
 		group_id = amounts
