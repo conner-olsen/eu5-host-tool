@@ -1,0 +1,55 @@
+===WORKSHOP_TITLE===
+Ana Bilgisayar Aracı / Host Tool
+===WORKSHOP_DESCRIPTION===
+[i]You are on the DeepL-Generated Turkish Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
+
+[h1]Genel Bakış:[/h1]
+Çok oyunculu oyunları yönetmeye yarayan Çok Oyunculu Sunucu Araçları, [b]Mod Eylem Günlüğü[/b] aracılığıyla tam şeffaflık sunar. Tek oyunculu modda da hile menüsü olarak kullanılabilir.
+
+[h1]Özellikler:[/h1]
+[olist]
+ [*][b]Para Birimleri[/b]
+  [list]
+   [*][b]Altın[/b] Altın Ver/Al
+   [*][b]İstikrar[/b] İstikrar Ver/Al
+   [*][b]İşgücü[/b] İşgücü Ver/Al
+   [*][b]Prestij[/b] Prestij Ver/Al
+   [*][b]Diplomatlar[/b] Diplomat Ver/Al
+   [*][b]Savaş Yorgunluğu[/b] Savaş Yorgunluğu Ver/Al
+  [/list]
+ [*][b]Diplomasi[/b]
+  [list]
+   [*][b]İttifaklar[/b] Zorla İttifak Oluşturma ve Feshetme
+   [*][b]Garantiler[/b] Zorla Garanti Oluşturma ve Feshetme
+   [*][b]Ateşkesler[/b] Ateşkesler Oluştur
+   [*][b]Rekabetler[/b] Rekabetler Ekle ve Kaldır
+   [*][b]Vassallar[/b] Vassallık Ver ve Feshet
+   [*][b]Savaşlar[/b] Savaşlar Başlat ve Sonlandır
+   [*][b]Zorla İlhak[/b] Başka bir Ülkeyi Anında İlhak Et
+  [/list]
+ [*][b]Ülke[/b]
+  [list]
+   [*][b]Din[/b] Başka bir Ülkenin Dinini Kopyala
+   [*][b]Kültür[/b] Başka bir ülkenin kültürünü kopyalama
+   [*][b]Hükümet Türü[/b] Başka bir ülkenin hükümet türünü kopyalama
+   [*][b]Hükümdar[/b] Hükümdarları öldürme ve naip dönemlerini sona erdirme
+  [/list]
+ [*][b]Halk[/b]
+  [list]
+   [*][b]Asimile Et[/b] Halkı Birincil Kültüre Asimile Et
+   [*][b]Dönüştür[/b] Halkı Birincil Dine Dönüştür
+  [/list]
+[/olist]
+
+[h1]Uyumluluk:[/h1]
+[list]
+ [*]Ironman/Başarı modlarıyla uyumlu değildir.
+ [*]Oyun kaydetmeyle tamamen uyumludur.
+ [*]Herhangi bir modla çalışmalıdır.
+ [*]Talep üzerine uyumluluk yamaları ekleyebilirim.
+[/list]
+
+Lütfen yorumlarda sorularınızı sorun, hataları bildirin veya önerilerde bulunun.
+
+Modun kaynak kodu ve geliştirici sürümleri [url=https://github.com/conner-olsen/eu5-host-tool]GitHub'da[/url] mevcuttur. Her türlü katkıya açığız.
+

@@ -1,0 +1,55 @@
+===WORKSHOP_TITLE===
+Ferramenta do anfitrião / Host Tool
+===WORKSHOP_DESCRIPTION===
+[i]You are on the DeepL-Generated Portuguese (Brazil) Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
+
+[h1]Visão geral:[/h1]
+Ferramentas de host para multijogador destinadas ao gerenciamento de partidas multijogador, oferecendo total transparência por meio do [b]Registro de Ações do Mod[/b]. Também pode ser usado no modo singleplayer como um menu de trapaças.
+
+[h1]Recursos:[/h1]
+[olist]
+ [*][b]Moedas[/b]
+  [list]
+   [*][b]Ouro[/b] Conceder/Retirar ouro
+   [*][b]Estabilidade[/b] Conceder/Retirar estabilidade
+   [*][b]Mão de obra[/b] Conceder/Retirar mão de obra
+   [*][b]Prestígio[/b] Conceder/Retirar prestígio
+   [*][b]Diplomatas[/b] Conceder/Retirar diplomatas
+   [*][b]Esgotamento de guerra[/b] Conceder/Retirar esgotamento de guerra
+  [/list]
+ [*][b]Diplomacia[/b]
+  [list]
+   [*][b]Alianças[/b] Criar e romper alianças à força
+   [*][b]Garantias[/b] Criar e romper garantias à força
+   [*][b]Tréguas[/b] Criar tréguas
+   [*][b]Rivalidades[/b] Adicionar e remover rivalidades
+   [*][b]Vassalos[/b] Conceder e romper vassalagem
+   [*][b]Guerras[/b] Criar e encerrar guerras
+   [*][b]Anexar à força[/b] Anexar instantaneamente outro país
+  [/list]
+ [*][b]País[/b]
+  [list]
+   [*][b]Religião[/b] Copiar a religião de outro país
+   [*][b]Cultura[/b] Copiar a cultura de outro país
+   [*][b]Tipo de governo[/b] Copiar o tipo de governo de outro país
+   [*][b]Governante[/b] Matar governantes e encerrar regências
+  [/list]
+ [*][b]População[/b]
+  [list]
+   [*][b]Assimilar[/b] Assimilar a população à cultura principal
+   [*][b]Converter[/b] Converter a população à religião principal
+  [/list]
+[/olist]
+
+[h1]Compatibilidade:[/h1]
+[list]
+ [*]Não é compatível com Ironman/Conquistas.
+ [*]Totalmente compatível com jogos salvos.
+ [*]Deve funcionar com qualquer mod.
+ [*]Posso adicionar patches de compatibilidade mediante solicitação.
+[/list]
+
+Por favor, tire suas dúvidas, relate bugs ou dê sugestões nos comentários.
+
+As versões-fonte e de desenvolvimento do mod estão disponíveis no [url=https://github.com/conner-olsen/eu5-host-tool]GitHub.[/url] Todas as contribuições são bem-vindas.
+

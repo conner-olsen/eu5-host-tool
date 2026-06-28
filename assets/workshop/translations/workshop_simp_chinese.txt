@@ -1,0 +1,55 @@
+===WORKSHOP_TITLE===
+主机工具 / Host Tool
+===WORKSHOP_DESCRIPTION===
+[i]You are on the DeepL-Generated Simplified Chinese Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
+
+[h1]概述：[/h1]
+用于管理多人游戏的多人游戏主机工具，通过 [b]模组操作日志[/b] 提供完全透明的操作记录。在单人游戏中也可作为作弊菜单使用。
+
+[h1]功能：[/h1]
+[olist]
+ [*][b]货币[/b]
+  [list]
+   [*][b]黄金[/b] 给予/移除黄金
+   [*][b]稳定性[/b] 给予/移除稳定性
+   [*][b]人力[/b] 给予/移除人力
+   [*][b]声望[/b] 增加/减少声望
+   [*][b]外交官[/b] 增加/减少外交官
+   [*][b]战争疲劳[/b] 增加/减少战争疲劳
+  [/list]
+ [*][b]外交[/b]
+  [list]
+   [*][b]同盟[/b] 强制建立和解除同盟
+   [*][b]担保[/b] 强制建立和解除担保
+   [*][b]停战[/b] 建立停战
+   [*][b]敌对关系[/b] 添加和解除敌对关系
+   [*][b]附庸[/b] 授予和解除附庸关系
+   [*][b]战争[/b] 发动和结束战争
+   [*][b]强制吞并[/b] 立即吞并另一个国家
+  [/list]
+ [*][b]国家[/b]
+  [list]
+   [*][b]宗教[/b] 复制另一个国家的宗教
+   [*][b]文化[/b] 复制其他国家的文化
+   [*][b]政体[/b] 复制其他国家的政体
+   [*][b]统治者[/b] 刺杀统治者并结束摄政
+  [/list]
+ [*][b]居民[/b]
+  [list]
+   [*][b]同化[/b] 将居民同化为主导文化
+   [*][b]皈依[/b] 将居民皈依为主导宗教
+  [/list]
+[/olist]
+
+[h1]兼容性：[/h1]
+[list]
+ [*]不兼容“铁人模式”和成就系统。
+ [*]完全兼容存档。
+ [*]应可与任何模组兼容。
+ [*]如有需求，我可能会添加兼容性补丁。
+[/list]
+
+如有任何疑问、错误报告或建议，请在评论区留言。
+
+该模组的源代码和开发版本可在 [url=https://github.com/conner-olsen/eu5-host-tool]GitHub[/url] 上获取。欢迎大家贡献力量。
+

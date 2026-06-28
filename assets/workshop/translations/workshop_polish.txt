@@ -1,0 +1,55 @@
+===WORKSHOP_TITLE===
+Narzędzie hosta / Host Tool
+===WORKSHOP_DESCRIPTION===
+[i]You are on the DeepL-Generated Polish Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
+
+[h1]Opis ogólny:[/h1]
+Narzędzia dla gospodarza trybu wieloosobowego służące do zarządzania rozgrywkami wieloosobowymi, zapewniające pełną przejrzystość dzięki [b]dziennikowi działań modów[/b]. Mogą być również wykorzystywane w trybie dla jednego gracza jako menu kodów.
+
+[h1]Funkcje:[/h1]
+[olist]
+ [*][b]Waluty[/b]
+  [list]
+   [*][b]Złoto[/b] Przyznaj/odbierz złoto
+   [*][b]Stabilność[/b] Przyznaj/odbierz stabilność
+   [*][b]Siła robocza[/b] Przyznaj/odbierz siłę roboczą
+   [*][b]Prestiż[/b] Przyznaj/odbierz prestiż
+   [*][b]Dyplomaci[/b] Przyznaj/odbierz dyplomatów
+   [*][b]Wyczerpanie wojenne[/b] Przyznaj/odbierz wyczerpanie wojenne
+  [/list]
+ [*][b]Dyplomacja[/b]
+  [list]
+   [*][b]Sojusze[/b] Przymusowe zawieranie i zrywanie sojuszy
+   [*][b]Gwarancje[/b] Przymusowe udzielanie i wycofywanie gwarancji
+   [*][b]Rozejmy[/b] Zawieranie rozejmów
+   [*][b]Rywalizacje[/b] Dodawanie i usuwanie rywalizacji
+   [*][b]Wasale[/b] Przyznawanie i zrywanie wasalstwa
+   [*][b]Wojny[/b] Rozpoczynanie i kończenie wojen
+   [*][b]Siłowa aneksja[/b] Natychmiastowa aneksja innego kraju
+  [/list]
+ [*][b]Kraj[/b]
+  [list]
+   [*][b]Religia[/b] Kopiowanie religii innego kraju
+   [*][b]Kultura[/b] Skopiuj kulturę innego kraju
+   [*][b]Typ rządów[/b] Skopiuj typ rządów innego kraju
+   [*][b]Władca[/b] Zabijaj władców i kończ regencje
+  [/list]
+ [*][b]Mieszkańcy[/b]
+  [list]
+   [*][b]Asymilacja[/b] Asymiluj mieszkańców do kultury głównej
+   [*][b]Nawrócenie[/b] Nawróć mieszkańców na religię główną
+  [/list]
+[/olist]
+
+[h1]Zgodność:[/h1]
+[list]
+ [*]Niezgodny z trybem Ironman i osiągnięciami.
+ [*]W pełni zgodny z zapisami gry.
+ [*]Powinien działać z każdym modem.
+ [*]Na prośbę mogę dodać łatki zapewniające zgodność.
+[/list]
+
+Wszelkie pytania, zgłoszenia błędów lub sugestie proszę zamieszczać w komentarzach.
+
+Kod źródłowy i wersje deweloperskie modu są dostępne na [url=https://github.com/conner-olsen/eu5-host-tool]GitHubie.[/url] Mile widziany jest każdy wkład.
+

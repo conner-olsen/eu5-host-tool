@@ -1,0 +1,55 @@
+===WORKSHOP_TITLE===
+Outil d'hébergement / Host Tool
+===WORKSHOP_DESCRIPTION===
+[i]You are on the DeepL-Generated French Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
+
+[h1]Présentation :[/h1]
+Outils d'hôte multijoueur permettant de gérer les parties multijoueurs, offrant une transparence totale grâce au [b]journal des actions du modérateur[/b]. Peut également être utilisé en mode solo comme menu de triche.
+
+[h1]Fonctionnalités :[/h1]
+[olist]
+ [*][b]Devises[/b]
+  [list]
+   [*][b]Or[/b] Donner/Retirer de l'or
+   [*][b]Stabilité[/b] Donner/Retirer de la stabilité
+   [*][b]Main-d'œuvre[/b] Donner/Retirer de la main-d'œuvre
+   [*][b]Prestige[/b] Ajouter/Retirer du prestige
+   [*][b]Diplomates[/b] Ajouter/Retirer des diplomates
+   [*][b]Épuisement de guerre[/b] Ajouter/Retirer de l’épuisement de guerre
+  [/list]
+ [*][b]Diplomatie[/b]
+  [list]
+   [*][b]Alliances[/b] Créer et rompre de force des alliances
+   [*][b]Garanties[/b] Créer et rompre de force des garanties
+   [*][b]Trêves[/b] Créer des trêves
+   [*][b]Rivalités[/b] Ajouter et supprimer des rivalités
+   [*][b]Vassaux[/b] Accorder et rompre le vassalisme
+   [*][b]Guerres[/b] Déclencher et mettre fin à des guerres
+   [*][b]Annexion forcée[/b] Annexer instantanément un autre pays
+  [/list]
+ [*][b]Pays[/b]
+  [list]
+   [*][b]Religion[/b] Copier la religion d’un autre pays
+   [*][b]Culture[/b] Copier la culture d’un autre pays
+   [*][b]Type de gouvernement[/b] Copier le type de gouvernement d’un autre pays
+   [*][b]Dirigeant[/b] Assassiner des dirigeants et mettre fin aux régences
+  [/list]
+ [*][b]Populations[/b]
+  [list]
+   [*][b]Assimiler[/b] Assimiler les populations à la culture principale
+   [*][b]Convertir[/b] Convertir les populations à la religion principale
+  [/list]
+[/olist]
+
+[h1]Compatibilité :[/h1]
+[list]
+ [*]Non compatible avec le mode Ironman ni les succès.
+ [*]Entièrement compatible avec les sauvegardes.
+ [*]Devrait fonctionner avec n'importe quel mod.
+ [*]Je pourrais ajouter des correctifs de compatibilité sur demande.
+[/list]
+
+N'hésitez pas à poser vos questions, signaler des bugs ou faire des suggestions dans les commentaires.
+
+Le code source et les versions de développement du mod sont disponibles sur [url=https://github.com/conner-olsen/eu5-host-tool]GitHub.[/url] Toutes les contributions sont les bienvenues.
+

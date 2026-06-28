@@ -1,0 +1,55 @@
+===WORKSHOP_TITLE===
+Host-Tool / Host Tool
+===WORKSHOP_DESCRIPTION===
+[i]You are on the DeepL-Generated German Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
+
+[h1]Übersicht:[/h1]
+Multiplayer-Host-Tools zur Verwaltung von Multiplayer-Spielen, bieten vollständige Transparenz über das [b]Mod-Aktionsprotokoll[/b]. Kann auch im Einzelspielermodus als Cheat-Menü verwendet werden.
+
+[h1]Funktionen:[/h1]
+[olist]
+ [*][b]Währungen[/b]
+  [list]
+   [*][b]Gold[/b] Gold vergeben/entziehen
+   [*][b]Stabilität[/b] Stabilität vergeben/entziehen
+   [*][b]Arbeitskräfte[/b] Arbeitskräfte vergeben/entziehen
+   [*][b]Ansehen[/b] Ansehen hinzufügen/entfernen
+   [*][b]Diplomaten[/b] Diplomaten hinzufügen/entfernen
+   [*][b]Kriegsmüdigkeit[/b] Kriegsmüdigkeit hinzufügen/entfernen
+  [/list]
+ [*][b]Diplomatie[/b]
+  [list]
+   [*][b]Bündnisse[/b] Bündnisse zwangsweise schließen und auflösen
+   [*][b]Garantien[/b] Garantien zwangsweise gewähren und aufheben
+   [*][b]Waffenstillstände[/b] Waffenstillstände schließen
+   [*][b]Rivalitäten[/b] Rivalitäten hinzufügen und entfernen
+   [*][b]Vasallen[/b] Vasallentum gewähren und aufheben
+   [*][b]Kriege[/b] Kriege beginnen und beenden
+   [*][b]Gewaltsame Annexion[/b] Ein anderes Land sofort annektieren
+  [/list]
+ [*][b]Land[/b]
+  [list]
+   [*][b]Religion[/b] Die Religion eines anderen Landes kopieren
+   [*][b]Kultur[/b] Die Kultur eines anderen Landes kopieren
+   [*][b]Regierungsform[/b] Die Regierungsform eines anderen Landes kopieren
+   [*][b]Herrscher[/b] Herrscher töten und Regentschaften beenden
+  [/list]
+ [*][b]Einwohner[/b]
+  [list]
+   [*][b]Assimilieren[/b] Einwohner in die Hauptkultur assimilieren
+   [*][b]Konvertieren[/b] Einwohner zur Hauptreligion konvertieren
+  [/list]
+[/olist]
+
+[h1]Kompatibilität:[/h1]
+[list]
+ [*]Nicht kompatibel mit Ironman/Erfolgen.
+ [*]Vollständig kompatibel mit Spielständen.
+ [*]Sollte mit jedem Mod funktionieren.
+ [*]Auf Anfrage füge ich möglicherweise Kompatibilitäts-Patches hinzu.
+[/list]
+
+Bitte stellt Fragen, meldet Fehler oder macht Vorschläge in den Kommentaren.
+
+Die Quell- und Entwicklerversionen des Mods sind auf [url=https://github.com/conner-olsen/eu5-host-tool]GitHub[/url] verfügbar. Alle Beiträge sind willkommen.
+
