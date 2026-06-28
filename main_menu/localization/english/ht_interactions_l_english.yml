@@ -135,12 +135,12 @@
  PROPOSE_ht_white_peace: "White peace between $ht_display_recipient$ and $ht_display_target$?"
 
  # ── Country Management ───────────────────────────────────────────────────────
- ht_make_vassal: "@g4a!Make Vassal"
- ht_make_vassal_desc: "Make one country a vassal of another."
- ht_make_vassal_act: "$ht_display_target$ becomes vassal of $ht_display_recipient$."
- ht_make_vassal_effect_text: "$ht_display_target$ will become vassal of $ht_display_recipient$."
- ht_make_vassal_effect_text_past: "$ht_display_target$ became vassal of $ht_display_recipient$."
- PROPOSE_ht_make_vassal: "$ht_display_target$ becomes vassal of $ht_display_recipient$?"
+ ht_make_vassal: "@g4a!Grant Vassal"
+ ht_make_vassal_desc: "Make one country a [subject|e] of another."
+ ht_make_vassal_act: "Selected Country becomes a vassal of $ht_display_recipient$."
+ ht_make_vassal_effect_text: "$ht_display_target$ will become a vassal of $ht_display_recipient$."
+ ht_make_vassal_effect_text_past: "$ht_display_target$ became a vassal of $ht_display_recipient$."
+ PROPOSE_ht_make_vassal: "$ht_display_target$ becomes a vassal of $ht_display_recipient$?"
 
  ht_grant_independence: "@g4b!Grant Independence"
  ht_grant_independence_desc: "Grant independence to a subject country."
