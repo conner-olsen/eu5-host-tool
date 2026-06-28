@@ -1,6 +1,6 @@
 ﻿l_english:
  # Category
- CATEGORY_HT_ACTIONS: "@diplomacy! Host Tool"
+ CATEGORY_HT_ACTIONS: "@CATEGORY_HT_ACTIONS! Host Tools"
 
  # ── Target Toggle ────────────────────────────────────────────────────────────
  ht_toggle_target: "#V Target: $ht_current_target_label$#!"
