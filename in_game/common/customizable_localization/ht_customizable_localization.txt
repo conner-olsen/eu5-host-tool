@@ -33,6 +33,22 @@ ht_get_recipient_country = {
 	}
 }
 
+ht_get_recipient_country_religion = {
+	type = country
+	text = {
+		trigger = { has_global_variable = ht_target_self }
+		localization_key = ht_self_country_religion
+	}
+	text = {
+		trigger = { country_exists = ROOT }
+		localization_key = ht_recipient_country_religion
+	}
+	text = {
+		localization_key = ht_another_religion_placeholder
+		fallback = yes
+	}
+}
+
 # Picked-target display name. type = none keeps it null-safe when scope:target is null at preview
 # time before the user picks.
 ht_get_target_country = {

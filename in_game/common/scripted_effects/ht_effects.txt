@@ -141,7 +141,7 @@ ht_white_peace_effect = {
 	scope:actor = { cmf_log_with_scope_args = { action = ht_log_white_peace } }
 }
 
-ht_change_war_exhaustion_effect = {
+ht_add_war_exhaustion_effect = {
 	scope:recipient = {
 		add_war_exhaustion = {
 			value = "global_variable_map(cmm|flag:ht__war_exhaustion_amount)"
