@@ -91,11 +91,11 @@
  ht_break_guarantee_effect_text_past: "$ht_display_recipient$ revoked guarantee on $ht_display_target$."
  PROPOSE_ht_break_guarantee: "Remove $ht_display_recipient$'s guarantee on $ht_display_target$?"
 
- ht_add_truce: "@g2e!Add #V [CMMV('ht__truce_years')"] Year#! Truce"
+ ht_add_truce: "@g2e!Add #V [CMMV('ht__truce_years')] Year#! Truce"
  ht_add_truce_desc: "Add a mutual [truce|e] between two countries. #V \n$ht__truce_years_name$ configurable in CMM settings.#!"
- ht_add_truce_act: "#V [CMMV('ht__truce_years')"] Year#! Truce between $ht_display_recipient$ and $ht_display_target$."
- ht_add_truce_effect_text: "Add #V [CMMV('ht__truce_years')"] Year#! truce between $ht_display_recipient$ and $ht_display_target$."
- ht_add_truce_effect_text_past: "Added #V [CMMV('ht__truce_years')"] Year#! truce between $ht_display_recipient$ and $ht_display_target$."
+ ht_add_truce_act: "#V [CMMV('ht__truce_years')] Year#! Truce between $ht_display_recipient$ and $ht_display_target$."
+ ht_add_truce_effect_text: "Add #V [CMMV('ht__truce_years')] Year#! truce between $ht_display_recipient$ and $ht_display_target$."
+ ht_add_truce_effect_text_past: "Added #V [CMMV('ht__truce_years')] Year#! truce between $ht_display_recipient$ and $ht_display_target$."
  PROPOSE_ht_add_truce: "Add truce between $ht_display_recipient$ and $ht_display_target$?"
 
  ht_remove_truce: "@g2f!Remove Truce"
