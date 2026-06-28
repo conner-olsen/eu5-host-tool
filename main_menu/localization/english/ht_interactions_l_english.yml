@@ -5,7 +5,7 @@
  # ── Target Toggle ────────────────────────────────────────────────────────────
  ht_toggle_target: "#V Target: $ht_current_target_label$#!"
  ht_toggle_target_desc: "Toggle whether host tool interactions apply to the selected country or to your own country."
- ht_toggle_target_act: "Toggle target mode (currently: $ht_current_target_label$)."
+ ht_toggle_target_act: "Toggle target mode (Currently: $ht_current_target_label_act$)."
  ht_toggle_target_effect_text: "Toggle target mode."
  ht_toggle_target_effect_text_past: "Toggled target mode."
  PROPOSE_ht_toggle_target: "Toggle target mode?"
@@ -173,11 +173,13 @@
  # Note to translators: leave the below lines as is.
  # NO-TRANSLATE BELOW
  ht_current_target_label: "[SelectLocalization(GetGlobalVariable('ht_target_self').IsSet, 'ht_target_label_self', 'ht_target_label_selected')]"
- ht_target_label_self: "Self"
+ ht_current_target_label_act: "[SCOPE.sCountry('recipient').Custom('ht_get_current_target')]"
+ ht_target_label_self: "[GetPlayer.GetNameWithFlag] (Self)"
  ht_target_label_selected: "Selected"
- ht_display_recipient: "[Custom('ht_get_display_country')]"
- ht_display_target: "[Custom('ht_get_picked_country')]"
- ht_self_country_name: "[GetPlayer.GetName]"
- ht_recipient_country_name: "[SCOPE.sCountry('recipient').GetName]"
- ht_picked_country_name: "[SCOPE.sCountry('target').GetName]"
+ ht_target_label_selected_act: "[ROOT.GetCountry.GetNameWithFlag]"
+ ht_display_recipient: "[SCOPE.sCountry('recipient').Custom('ht_get_recipient_country')]"
+ ht_display_target: "[Custom('ht_get_target_country')]"
+ ht_self_country_name: "[GetPlayer.GetNameWithFlag]"
+ ht_recipient_country_name: "[ROOT.GetCountry.GetNameWithFlag]"
+ ht_picked_country_name: "[SCOPE.sCountry('target').GetNameWithFlag]"
  ht_another_country_placeholder: "another country"
