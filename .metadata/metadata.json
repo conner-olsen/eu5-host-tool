@@ -1,24 +1,24 @@
-﻿{
-	"name": "Host Tool Dev",
-	"id": "host.tool.dev",
-	"version": "0.1",
-	"game_id": "eu5",
-	"supported_game_version": "1.3.*",
+{
+    "name": "Host Tool Dev",
+    "id": "host.tool.dev",
+    "version": "0.1",
+    "game_id": "eu5",
+    "supported_game_version": "1.3.*",
 	"ht_last_updated_game_version": "1.3.6",
-	"short_description": "Multiplayer host tool for managing the game with full transparency logging.",
-	"tags": [
-		"Utilities",
-		"Diplomacy",
-		"Gameplay"
-	],
-	"relationships": [
-		{
-			"rel_type": "dependency",
-			"id": "community_mod_framework",
-			"display_name": "Community Mod Framework",
-			"resource_type": "mod",
-			"version": "2.*"
-		}
-	],
-	"game_custom_data": {}
+    "short_description": "Multiplayer host tool for managing the game with full transparency logging.",
+    "tags": [
+        "Utilities",
+        "Diplomacy",
+        "Gameplay"
+    ],
+    "relationships": [
+        {
+            "rel_type": "dependency",
+            "id": "community_mod_framework",
+            "display_name": "Community Mod Framework",
+            "resource_type": "mod",
+            "version": "2.*"
+        }
+    ],
+    "game_custom_data": {}
 }
