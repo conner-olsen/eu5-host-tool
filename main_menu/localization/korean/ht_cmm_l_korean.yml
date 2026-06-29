@@ -13,7 +13,7 @@
  ht__manpower_amount_name: "인력 수"
  ht__manpower_amount_desc: "'인력 추가' 작업을 통해 추가할 인력 수입니다. 음수 값을 입력하면 인력이 감소합니다."
  ht__manpower_amount_format: "[CMMV('ht__manpower_amount')]"
- ht__stability_amount_name: "안정성 금액"
+ ht__stability_amount_name: "안정도 수치"
  ht__stability_amount_desc: "'안정성 추가' 동작을 통해 추가할 안정성의 양입니다. 음수 값을 지정하면 안정성이 제거됩니다."
  ht__stability_amount_format: "[CMMV('ht__stability_amount')]"
  ht__prestige_amount_name: "프리미엄 금액"

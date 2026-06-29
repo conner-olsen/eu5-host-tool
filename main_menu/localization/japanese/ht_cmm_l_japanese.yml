@@ -13,7 +13,7 @@
  ht__manpower_amount_name: "要員数"
  ht__manpower_amount_desc: "「人員を追加」アクションで追加する人員数。負の値を設定すると、人員が削減されます。"
  ht__manpower_amount_format: "[CMMV('ht__manpower_amount')]"
- ht__stability_amount_name: "安定性額"
+ ht__stability_amount_name: "安定度の量"
  ht__stability_amount_desc: "「安定性を追加」アクションで追加する安定性の量。負の値を設定すると、安定性が削除されます。"
  ht__stability_amount_format: "[CMMV('ht__stability_amount')]"
  ht__prestige_amount_name: "プレステージ額"

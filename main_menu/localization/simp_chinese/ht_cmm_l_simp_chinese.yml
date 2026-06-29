@@ -13,7 +13,7 @@
  ht__manpower_amount_name: "人力数量"
  ht__manpower_amount_desc: "使用“增加人力”操作时要增加的人力数量。负值则表示减少人力。"
  ht__manpower_amount_format: "[CMMV('ht__manpower_amount')]"
- ht__stability_amount_name: "稳定金额"
+ ht__stability_amount_name: "稳定度数值"
  ht__stability_amount_desc: "使用“增加稳定性”操作时要增加的稳定性数值。负值则会减少稳定性。"
  ht__stability_amount_format: "[CMMV('ht__stability_amount')]"
  ht__prestige_amount_name: "声望值"

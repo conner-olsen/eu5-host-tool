@@ -13,7 +13,7 @@
  ht__manpower_amount_name: "Número de trabajadores"
  ht__manpower_amount_desc: "Cantidad de personal que se añadirá con la acción «Añadir personal». Los valores negativos, en cambio, eliminan personal."
  ht__manpower_amount_format: "[CMMV('ht__manpower_amount')]"
- ht__stability_amount_name: "Stability Amount"
+ ht__stability_amount_name: "Cantidad de estabilidad"
  ht__stability_amount_desc: "Cantidad de estabilidad que se añade con la acción «Añadir estabilidad». Los valores negativos, por el contrario, restan estabilidad."
  ht__stability_amount_format: "[CMMV('ht__stability_amount')]"
  ht__prestige_amount_name: "Importe de prestigio"

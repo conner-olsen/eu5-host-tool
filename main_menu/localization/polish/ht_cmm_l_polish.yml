@@ -13,7 +13,7 @@
  ht__manpower_amount_name: "Liczba pracowników"
  ht__manpower_amount_desc: "Liczba pracowników, których należy dodać za pomocą akcji „Dodaj pracowników”. Wartości ujemne powodują natomiast usunięcie pracowników."
  ht__manpower_amount_format: "[CMMV('ht__manpower_amount')]"
- ht__stability_amount_name: "Kwota stabilności"
+ ht__stability_amount_name: "Wartość stabilności"
  ht__stability_amount_desc: "Wartość stabilności, jaką należy dodać za pomocą akcji „Dodaj stabilność”. Wartości ujemne powodują natomiast usunięcie stabilności."
  ht__stability_amount_format: "[CMMV('ht__stability_amount')]"
  ht__prestige_amount_name: "Kwota prestiżowa"

@@ -1,45 +1,30 @@
 ===WORKSHOP_TITLE===
-Host-Tool / Host Tool
+Multiplayer-Host-Werkzeuge / Multiplayer Host Tools
 ===WORKSHOP_DESCRIPTION===
 [i]You are on the DeepL-Generated German Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
 [h1]Übersicht:[/h1]
-Multiplayer-Host-Tools zur Verwaltung von Multiplayer-Spielen, bieten vollständige Transparenz über das [b]Mod-Aktionsprotokoll[/b]. Kann auch im Einzelspielermodus als Cheat-Menü verwendet werden.
+Multiplayer-Host-Tools zur Verwaltung von Multiplayer-Spielen; im Multiplayer-Modus können diese nur vom Host aktiviert und genutzt werden. Enthält außerdem Protokolle aller durchgeführten Aktionen, die über das [b]Mod-Aktionsprotokoll[/b] für die gesamte Lobby sichtbar sind und im Multiplayer-Modus nicht gelöscht werden können. Kann auch im Einzelspielermodus als Cheat-Menü verwendet werden.
 
-[h1]Funktionen:[/h1]
+Dadurch wird außerdem vorübergehend „Hellenism“ deaktiviert, das bekanntermaßen zu Desync-Problemen im Mehrspielermodus führt. Den Status des Fehlers kannst du [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]hier[/url] einsehen.
+
+[img]https://i.ibb.co/XZcTYqWz/image.png[/img]
+
+[h1]So wird es verwendet:[/h1]
 [olist]
- [*][b]Währungen[/b]
-  [list]
-   [*][b]Gold[/b] Gold vergeben/entziehen
-   [*][b]Stabilität[/b] Stabilität vergeben/entziehen
-   [*][b]Arbeitskräfte[/b] Arbeitskräfte vergeben/entziehen
-   [*][b]Ansehen[/b] Ansehen hinzufügen/entfernen
-   [*][b]Diplomaten[/b] Diplomaten hinzufügen/entfernen
-   [*][b]Kriegsmüdigkeit[/b] Kriegsmüdigkeit hinzufügen/entfernen
-  [/list]
- [*][b]Diplomatie[/b]
-  [list]
-   [*][b]Bündnisse[/b] Bündnisse zwangsweise schließen und auflösen
-   [*][b]Garantien[/b] Garantien zwangsweise gewähren und aufheben
-   [*][b]Waffenstillstände[/b] Waffenstillstände schließen
-   [*][b]Rivalitäten[/b] Rivalitäten hinzufügen und entfernen
-   [*][b]Vasallen[/b] Vasallentum gewähren und aufheben
-   [*][b]Kriege[/b] Kriege beginnen und beenden
-   [*][b]Gewaltsame Annexion[/b] Ein anderes Land sofort annektieren
-  [/list]
- [*][b]Land[/b]
-  [list]
-   [*][b]Religion[/b] Die Religion eines anderen Landes kopieren
-   [*][b]Kultur[/b] Die Kultur eines anderen Landes kopieren
-   [*][b]Regierungsform[/b] Die Regierungsform eines anderen Landes kopieren
-   [*][b]Herrscher[/b] Herrscher töten und Regentschaften beenden
-  [/list]
- [*][b]Einwohner[/b]
-  [list]
-   [*][b]Assimilieren[/b] Einwohner in die Hauptkultur assimilieren
-   [*][b]Konvertieren[/b] Einwohner zur Hauptreligion konvertieren
-  [/list]
+ [*] Öffne das Mod-Menü, entweder durch Drücken der Taste „m“ oder im Spiel durch Drücken der Escape-Taste -> Mod-Menü
+ [*] Aktiviere unter dem Reiter „Community Mod Framework“ die Option „Enable Host-Only Tools“ (im Einzelspielermodus heißt diese Option „“); beachte, dass diese Option im Mehrspielermodus nur für den Host verfügbar ist.
+ [*] Die Tools stehen dem Host dann als diplomatische Aktionen zur Verfügung. Öffne einfach die Diplomatie, dort findest du sie in der Kategorie „Host-Tools“.
+ [*] Du kannst das Host-Tool auf der Registerkarte „Host-Tool“ im Mod-Menü konfigurieren.
 [/olist]
+
+[h1]So rufst du das Protokoll auf:[/h1]
+[olist]
+ [*] Öffne das Mod-Menü, entweder durch Drücken der Taste „m“ oder im Spiel durch Drücken der Escape-Taste -> Mod-Menü.
+ [*] Wechsle zur Registerkarte „Community Mod Framework“.
+ [*] Klicke auf die Schaltfläche „Öffnen“ neben dem „Mod-Aktionsprotokoll“.
+[/olist]
+– Beachte, dass das Protokoll im Mehrspielermodus nicht gelöscht werden kann, auch nicht vom Host.
 
 [h1]Kompatibilität:[/h1]
 [list]
@@ -52,4 +37,6 @@ Multiplayer-Host-Tools zur Verwaltung von Multiplayer-Spielen, bieten vollständ
 Bitte stellt Fragen, meldet Fehler oder macht Vorschläge in den Kommentaren.
 
 Die Quell- und Entwicklerversionen des Mods sind auf [url=https://github.com/conner-olsen/eu5-host-tool]GitHub[/url] verfügbar. Alle Beiträge sind willkommen.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776][img]https://raw.githubusercontent.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework/main/assets/images/cmf/CMF_Member_Banner.png[/img][/url]
 

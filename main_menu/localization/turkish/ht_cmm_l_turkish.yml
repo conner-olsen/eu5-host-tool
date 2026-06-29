@@ -13,7 +13,7 @@
  ht__manpower_amount_name: "İşgücü Miktarı"
  ht__manpower_amount_desc: "“İşgücü Ekle” eylemiyle eklenecek işgücü miktarı. Negatif değerler ise işgücünü azaltır."
  ht__manpower_amount_format: "[CMMV('ht__manpower_amount')]"
- ht__stability_amount_name: "İstikrar Tutarı"
+ ht__stability_amount_name: "İstikrar Miktarı"
  ht__stability_amount_desc: "“Kararlılık Ekle” eylemiyle eklenecek kararlılık miktarı. Negatif değerler ise kararlılığı azaltır."
  ht__stability_amount_format: "[CMMV('ht__stability_amount')]"
  ht__prestige_amount_name: "Prestij Tutarı"

@@ -1,45 +1,30 @@
 ===WORKSHOP_TITLE===
-Herramienta de alojamiento / Host Tool
+Herramientas de Anfitrión Multijugador / Multiplayer Host Tools
 ===WORKSHOP_DESCRIPTION===
 [i]You are on the DeepL-Generated Spanish Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
 [h1]Descripción general:[/h1]
-Herramientas para el anfitrión del modo multijugador que permiten gestionar partidas multijugador y ofrecen total transparencia a través del [b]Registro de acciones del moderador[/b]. También se pueden utilizar en el modo para un solo jugador como menú de trucos.
+Herramientas de anfitrión multijugador para gestionar partidas multijugador; en el modo multijugador, solo el anfitrión puede activarlas y utilizarlas. Incluye registros de todas las acciones realizadas, visibles para todo el lobby a través del [b]Registro de acciones del moderador[/b], que no se puede borrar en el modo multijugador. También se puede utilizar en el modo para un jugador como menú de trucos.
 
-[h1]Características:[/h1]
+Además, desactiva temporalmente Hellenism, que se sabe que provoca problemas de desincronización en el modo multijugador. Puedes consultar el estado del error [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]aquí[/url].
+
+[img]https://i.ibb.co/XZcTYqWz/image.png[/img]
+
+[h1]Cómo utilizarlo:[/h1]
 [olist]
- [*][b]Monedas[/b]
-  [list]
-   [*][b]Oro[/b] Dar/Quitar oro
-   [*][b]Estabilidad[/b] Dar/Quitar estabilidad
-   [*][b]Mano de obra[/b] Dar/Quitar mano de obra
-   [*][b]Prestigio[/b] Añadir/Quitar prestigio
-   [*][b]Diplomáticos[/b] Añadir/Quitar diplomáticos
-   [*][b]Agotamiento bélico[/b] Añadir/Quitar agotamiento bélico
-  [/list]
- [*][b]Diplomacia[/b]
-  [list]
-   [*][b]Alianzas[/b] Crear y romper alianzas por la fuerza
-   [*][b]Garantías[/b] Crear y romper garantías por la fuerza
-   [*][b]Treguas[/b] Establecer treguas
-   [*][b]Rivalidades[/b] Añadir y eliminar rivalidades
-   [*][b]Vasallos[/b] Conceder y romper el vasallaje
-   [*][b]Guerras[/b] Iniciar y poner fin a guerras
-   [*][b]Anexión forzosa[/b] Anexar al instante otro país
-  [/list]
- [*][b]País[/b]
-  [list]
-   [*][b]Religión[/b] Copiar la religión de otro país
-   [*][b]Cultura[/b] Copiar la cultura de otro país
-   [*][b]Tipo de gobierno[/b] Copiar el tipo de gobierno de otro país
-   [*][b]Gobernante[/b] Asesinar a gobernantes y poner fin a las regencias
-  [/list]
- [*][b]Población[/b]
-  [list]
-   [*][b]Asimilar[/b] Asimilar a la población a la cultura principal
-   [*][b]Convertir[/b] Convertir a la población a la religión principal
-  [/list]
+ [*] Abre el menú de mods, ya sea pulsando «m» o, mientras estás en el juego, pulsando «Esc» -> menú de mods
+ [*] En la pestaña «Community Mod Framework», activa «Enable Host-Only Tools» (en el modo para un jugador se llamará «»); ten en cuenta que esto solo estará disponible para el anfitrión en el modo multijugador.
+ [*] Las herramientas estarán entonces disponibles como acciones diplomáticas para el anfitrión; solo tienes que abrir el menú de diplomacia y las encontrarás en la categoría «Herramientas del anfitrión».
+ [*] Puedes configurar la herramienta del anfitrión desde la pestaña «Herramienta del anfitrión» del menú de mods.
 [/olist]
+
+[h1]Cómo ver el registro:[/h1]
+[olist]
+ [*] Abre el menú de mods, ya sea pulsando «m» o, mientras estás en el juego, pulsando Esc -> menú de mods.
+ [*] Ve a la pestaña «Community Mod Framework».
+ [*] Haz clic en el botón «Abrir» situado junto a «Registro de acciones del mod».
+[/olist]
+- Ten en cuenta que, en el modo multijugador, el registro no se puede borrar, ni siquiera por parte del anfitrión.
 
 [h1]Compatibilidad:[/h1]
 [list]
@@ -49,7 +34,9 @@ Herramientas para el anfitrión del modo multijugador que permiten gestionar par
  [*]Puedo añadir parches de compatibilidad si se solicitan.
 [/list]
 
-Por favor, plantead cualquier pregunta, informad de errores o haced sugerencias en los comentarios.
+Por favor, plantea cualquier pregunta, informa de errores o haz sugerencias en los comentarios.
 
 El código fuente y las versiones de desarrollo del mod están disponibles en [url=https://github.com/conner-olsen/eu5-host-tool]GitHub.[/url] Todas las contribuciones son bienvenidas.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776][img]https://raw.githubusercontent.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework/main/assets/images/cmf/CMF_Member_Banner.png[/img][/url]
 

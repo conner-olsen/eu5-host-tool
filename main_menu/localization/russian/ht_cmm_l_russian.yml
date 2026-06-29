@@ -13,7 +13,7 @@
  ht__manpower_amount_name: "Численность персонала"
  ht__manpower_amount_desc: "Количество персонала, которое будет добавлено с помощью действия «Добавить персонал». Отрицательные значения означают удаление персонала."
  ht__manpower_amount_format: "[CMMV('ht__manpower_amount')]"
- ht__stability_amount_name: "Сумма стабилизации"
+ ht__stability_amount_name: "Количество стабильности"
  ht__stability_amount_desc: "Значение стабильности, которое будет добавлено с помощью действия «Добавить стабильность». Отрицательные значения, напротив, уменьшают стабильность."
  ht__stability_amount_format: "[CMMV('ht__stability_amount')]"
  ht__prestige_amount_name: "Престижная сумма"

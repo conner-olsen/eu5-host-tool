@@ -13,7 +13,7 @@
  ht__manpower_amount_name: "Quantidade de mão de obra"
  ht__manpower_amount_desc: "Quantidade de pessoal a ser adicionada com a ação “Adicionar pessoal”. Valores negativos, por sua vez, removem pessoal."
  ht__manpower_amount_format: "[CMMV('ht__manpower_amount')]"
- ht__stability_amount_name: "Valor de estabilidade"
+ ht__stability_amount_name: "Quantidade de Estabilidade"
  ht__stability_amount_desc: "Quantidade de estabilidade a ser adicionada com a ação “Adicionar estabilidade”. Valores negativos, por outro lado, removem estabilidade."
  ht__stability_amount_format: "[CMMV('ht__stability_amount')]"
  ht__prestige_amount_name: "Valor do Prêmio"

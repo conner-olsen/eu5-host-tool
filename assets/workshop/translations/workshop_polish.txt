@@ -1,55 +1,42 @@
 ===WORKSHOP_TITLE===
-Narzędzie hosta / Host Tool
+Narzędzia Hosta Multiplayer / Multiplayer Host Tools
 ===WORKSHOP_DESCRIPTION===
 [i]You are on the DeepL-Generated Polish Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
-[h1]Opis ogólny:[/h1]
-Narzędzia dla gospodarza trybu wieloosobowego służące do zarządzania rozgrywkami wieloosobowymi, zapewniające pełną przejrzystość dzięki [b]dziennikowi działań modów[/b]. Mogą być również wykorzystywane w trybie dla jednego gracza jako menu kodów.
+[h1]Przegląd:[/h1]
+Narzędzia gospodarza trybu wieloosobowego służące do zarządzania rozgrywkami wieloosobowymi; w trybie wieloosobowym mogą być włączane i używane wyłącznie przez gospodarza. Zawierają one również dzienniki wszystkich wykonanych czynności, widoczne dla wszystkich graczy w lobby za pośrednictwem [b]Dziennika działań moderatora[/b], którego nie można wyczyścić w trybie wieloosobowym. Można je również wykorzystać w trybie dla jednego gracza jako menu kodów.
 
-[h1]Funkcje:[/h1]
+Funkcja ta tymczasowo wyłącza również mod Hellenism, który, jak wiadomo, powoduje problemy z desynchronizacją w trybie wieloosobowym. Stan błędu można sprawdzić [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]tutaj[/url].
+
+[img]https://i.ibb.co/XZcTYqWz/image.png[/img]
+
+[h1]Jak korzystać:[/h1]
 [olist]
- [*][b]Waluty[/b]
-  [list]
-   [*][b]Złoto[/b] Przyznaj/odbierz złoto
-   [*][b]Stabilność[/b] Przyznaj/odbierz stabilność
-   [*][b]Siła robocza[/b] Przyznaj/odbierz siłę roboczą
-   [*][b]Prestiż[/b] Przyznaj/odbierz prestiż
-   [*][b]Dyplomaci[/b] Przyznaj/odbierz dyplomatów
-   [*][b]Wyczerpanie wojenne[/b] Przyznaj/odbierz wyczerpanie wojenne
-  [/list]
- [*][b]Dyplomacja[/b]
-  [list]
-   [*][b]Sojusze[/b] Przymusowe zawieranie i zrywanie sojuszy
-   [*][b]Gwarancje[/b] Przymusowe udzielanie i wycofywanie gwarancji
-   [*][b]Rozejmy[/b] Zawieranie rozejmów
-   [*][b]Rywalizacje[/b] Dodawanie i usuwanie rywalizacji
-   [*][b]Wasale[/b] Przyznawanie i zrywanie wasalstwa
-   [*][b]Wojny[/b] Rozpoczynanie i kończenie wojen
-   [*][b]Siłowa aneksja[/b] Natychmiastowa aneksja innego kraju
-  [/list]
- [*][b]Kraj[/b]
-  [list]
-   [*][b]Religia[/b] Kopiowanie religii innego kraju
-   [*][b]Kultura[/b] Skopiuj kulturę innego kraju
-   [*][b]Typ rządów[/b] Skopiuj typ rządów innego kraju
-   [*][b]Władca[/b] Zabijaj władców i kończ regencje
-  [/list]
- [*][b]Mieszkańcy[/b]
-  [list]
-   [*][b]Asymilacja[/b] Asymiluj mieszkańców do kultury głównej
-   [*][b]Nawrócenie[/b] Nawróć mieszkańców na religię główną
-  [/list]
+ [*] Otwórz menu modów, naciskając klawisz „m” lub w trakcie gry, naciskając klawisz Escape -> menu modów
+ [*] W zakładce „Community Mod Framework” włącz opcję „Enable Host-Only Tools” (w trybie dla jednego gracza opcja ta będzie nosiła nazwę „”), pamiętaj, że w trybie wieloosobowym będzie ona dostępna wyłącznie dla gospodarza.
+ [*] Narzędzia będą wtedy dostępne dla gospodarza jako akcje dyplomatyczne – wystarczy otworzyć menu dyplomacji, a znajdziesz je w kategorii „Narzędzia gospodarza”.
+ [*] Narzędzia gospodarza można skonfigurować w zakładce „Narzędzia gospodarza” w menu modów.
 [/olist]
+
+[h1]Jak wyświetlić dziennik:[/h1]
+[olist]
+ [*] Otwórz menu modów, naciskając klawisz „m” lub, będąc w grze, naciskając klawisz Escape → menu modów
+ [*] Przejdź do zakładki „Community Mod Framework”.
+ [*] Kliknij przycisk „Otwórz” obok pozycji „Dziennik działań modów”
+[/olist]
+- Należy pamiętać, że w trybie wieloosobowym dziennika nie można wyczyścić, nawet przez gospodarza.
 
 [h1]Zgodność:[/h1]
 [list]
  [*]Niezgodny z trybem Ironman i osiągnięciami.
- [*]W pełni zgodny z zapisami gry.
+ [*]W pełni kompatybilny z zapisami gry.
  [*]Powinien działać z każdym modem.
- [*]Na prośbę mogę dodać łatki zapewniające zgodność.
+ [*]Na prośbę mogę dodać łatki zapewniające kompatybilność.
 [/list]
 
 Wszelkie pytania, zgłoszenia błędów lub sugestie proszę zamieszczać w komentarzach.
 
-Kod źródłowy i wersje deweloperskie modu są dostępne na [url=https://github.com/conner-olsen/eu5-host-tool]GitHubie.[/url] Mile widziany jest każdy wkład.
+Kod źródłowy oraz wersje deweloperskie modyfikacji są dostępne na [url=https://github.com/conner-olsen/eu5-host-tool]GitHubie.[/url] Mile widziany jest każdy wkład.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776][img]https://raw.githubusercontent.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework/main/assets/images/cmf/CMF_Member_Banner.png[/img][/url]
 

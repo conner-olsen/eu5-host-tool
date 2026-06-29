@@ -1,55 +1,42 @@
 ===WORKSHOP_TITLE===
-主机工具 / Host Tool
+联机房主工具 / Multiplayer Host Tools
 ===WORKSHOP_DESCRIPTION===
 [i]You are on the DeepL-Generated Simplified Chinese Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
 [h1]概述：[/h1]
-用于管理多人游戏的多人游戏主机工具，通过 [b]模组操作日志[/b] 提供完全透明的操作记录。在单人游戏中也可作为作弊菜单使用。
+用于管理多人游戏的“多人游戏主持人工具”，在多人游戏中仅主持人可以启用并使用该工具。该工具包含所有操作的日志，这些日志可通过 [b]管理员操作日志[/b] 供整个大厅的玩家查看，且在多人游戏中无法清除。 在单人模式下也可作为作弊菜单使用。
 
-[h1]功能：[/h1]
+此外，该工具还会暂时禁用“Hellenism”功能，因为已知该功能会导致多人游戏同步异常问题。 您可以在[url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]此处[/url]查看该漏洞的状态。
+
+[img]https://i.ibb.co/XZcTYqWz/image.png[/img]
+
+[h1]使用方法：[/h1]
 [olist]
- [*][b]货币[/b]
-  [list]
-   [*][b]黄金[/b] 给予/移除黄金
-   [*][b]稳定性[/b] 给予/移除稳定性
-   [*][b]人力[/b] 给予/移除人力
-   [*][b]声望[/b] 增加/减少声望
-   [*][b]外交官[/b] 增加/减少外交官
-   [*][b]战争疲劳[/b] 增加/减少战争疲劳
-  [/list]
- [*][b]外交[/b]
-  [list]
-   [*][b]同盟[/b] 强制建立和解除同盟
-   [*][b]担保[/b] 强制建立和解除担保
-   [*][b]停战[/b] 建立停战
-   [*][b]敌对关系[/b] 添加和解除敌对关系
-   [*][b]附庸[/b] 授予和解除附庸关系
-   [*][b]战争[/b] 发动和结束战争
-   [*][b]强制吞并[/b] 立即吞并另一个国家
-  [/list]
- [*][b]国家[/b]
-  [list]
-   [*][b]宗教[/b] 复制另一个国家的宗教
-   [*][b]文化[/b] 复制其他国家的文化
-   [*][b]政体[/b] 复制其他国家的政体
-   [*][b]统治者[/b] 刺杀统治者并结束摄政
-  [/list]
- [*][b]居民[/b]
-  [list]
-   [*][b]同化[/b] 将居民同化为主导文化
-   [*][b]皈依[/b] 将居民皈依为主导宗教
-  [/list]
+ [*] 打开模组菜单，可通过按 M 键，或在游戏中按 Esc 键→模组菜单
+ [*] 在“社区模组框架”选项卡下，启用“启用仅限主机工具”（在单人模式中此选项名为“”），请注意，此功能仅在多人模式中对主机玩家可用。
+ [*] 随后，这些工具将作为外交行动供房主使用，只需打开外交界面，即可在“房主工具”类别下找到它们。
+ [*] 您可以在模组菜单的“房主工具”选项卡中配置房主工具。
 [/olist]
+
+[h1]如何查看日志：[/h1]
+[olist]
+ [*] 打开模组菜单，可通过按 M 键，或在游戏中按 Esc 键→模组菜单
+ [*] 转到“社区模组框架”选项卡。
+ [*] 点击“模组操作日志”旁边的“打开”按钮
+[/olist]
+- 请注意，在多人游戏中，即使是由房主操作，日志也无法清除。
 
 [h1]兼容性：[/h1]
 [list]
- [*]不兼容“铁人模式”和成就系统。
- [*]完全兼容存档。
+ [*]不兼容铁人模式/成就系统。
+ [*]完全兼容存档功能。
  [*]应可与任何模组兼容。
  [*]如有需求，我可能会添加兼容性补丁。
 [/list]
 
 如有任何疑问、错误报告或建议，请在评论区留言。
 
-该模组的源代码和开发版本可在 [url=https://github.com/conner-olsen/eu5-host-tool]GitHub[/url] 上获取。欢迎大家贡献力量。
+该模组的源代码和开发版本可在 [url=https://github.com/conner-olsen/eu5-host-tool]GitHub[/url] 上获取。欢迎大家贡献代码。
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776][img]https://raw.githubusercontent.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework/main/assets/images/cmf/CMF_Member_Banner.png[/img][/url]
 
