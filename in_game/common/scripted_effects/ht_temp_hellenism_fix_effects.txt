@@ -26,3 +26,18 @@ ht_temp_convert_hellenism_to_orthodox = {
 		}
 	}
 }
+
+# Never-run stub that keeps the momentum-waning modifiers and the movements.20 event referenced,
+# silencing the unused/orphaned log warnings our disabled movement would otherwise cause.
+ht_temp_suppress_orphan_warnings = {
+	if = {
+		limit = { always = no }
+		trigger_event_non_silently = movements.20
+		every_movement = {
+			add_movement_modifier = { modifier = hellenism_religion_movement_momentum_waning size = 0 mode = add_and_extend }
+			every_location_with_movement = {
+				add_location_modifier = { modifier = hellenism_religion_movement_momentum_waning_locally size = 0 mode = add_and_extend }
+			}
+		}
+	}
+}

@@ -105,7 +105,7 @@ ht_register_cmf_mod = {
 # Callback handler for cmf_on_callback.
 # var:cmf_callback is the flag of the setting, alert, or action bar element that was interacted with.
 # Scope: country
-ht_handle_callback = {
+ht_handle_cmf_callback = {
 	# Sync the unrestricted-tools diplomatic range modifier with the toggle.
 	if = {
 		limit = { var:cmf_callback = flag:cmf_core__enable_unrestricted_tools }

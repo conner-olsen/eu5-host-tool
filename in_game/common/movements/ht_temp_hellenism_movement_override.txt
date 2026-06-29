@@ -2,4 +2,6 @@
 REPLACE:hellenism_religion_movement = {
 	religion = hellenism_religion
 	potential = { always = no }
+	# Engine requires a map_color on every movement, even a disabled one.
+	map_color = { value = define:NMapColors|MAP_COLOR_NULL }
 }
