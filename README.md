@@ -1,15 +1,15 @@
-# \[Insert Mod Repo Name\]
+# EU5 Host Tool
 
-\[Insert Mod Repo Description\]
+Multiplayer Host Tool for managing multiplayer games, in multiplayer can only be enabled and used by the host. And includes logs of all actions taken visible to the whole lobby via the Mod Action Log, which can't be cleared in multiplayer.
 
 For a full current and upcoming feature list, see the steam page below.
-[![Steam Workshop](https://img.shields.io/badge/Steam%20Workshop-Subscribe-blue)](\[Insert Mod Workshop Link\])
+[![Steam Workshop](https://img.shields.io/badge/Steam%20Workshop-Subscribe-blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3753299425)
 
 ## Installation
 
 ### Steam Workshop (Recommended)
 
-Subscribe on the [Steam Workshop](\[Insert Mod Workshop Link\]).
+Subscribe on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3753299425).
 
 ### Manual Installation
 

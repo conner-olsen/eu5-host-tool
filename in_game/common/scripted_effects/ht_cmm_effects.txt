@@ -1,7 +1,7 @@
-﻿# ── CMM Registration ─────────────────────────────────────────────────────────────
-# Scope: country (called from cmf_on_mod_registration hook)
-
-ht_cmm_register_mod = {
+﻿# Root scope: country.
+ht_register_cmf_mod = {
+	# Settings (settings) Tab
+	## Amounts (amounts) Group
 	cmm_register_global_numeric_setting = {
 		mod_id = ht
 		setting_id = gold_amount
@@ -12,6 +12,7 @@ ht_cmm_register_mod = {
 		max_value = 100000
 		step_value = 100
 	}
+
 	cmm_register_global_numeric_setting = {
 		mod_id = ht
 		setting_id = manpower_amount
@@ -22,16 +23,18 @@ ht_cmm_register_mod = {
 		max_value = 500000
 		step_value = 5000
 	}
+
 	cmm_register_global_numeric_setting = {
 		mod_id = ht
 		setting_id = stability_amount
 		tab_id = settings
 		group_id = amounts
-		default_value = 1
+		default_value = 10
 		min_value = -100
 		max_value = 100
 		step_value = 1
 	}
+
 	cmm_register_global_numeric_setting = {
 		mod_id = ht
 		setting_id = prestige_amount
@@ -42,6 +45,18 @@ ht_cmm_register_mod = {
 		max_value = 100
 		step_value = 5
 	}
+
+	cmm_register_global_numeric_setting = {
+		mod_id = ht
+		setting_id = diplomats_amount
+		tab_id = settings
+		group_id = amounts
+		default_value = 1
+		min_value = -5
+		max_value = 5
+		step_value = 0.1
+	}
+
 	cmm_register_global_numeric_setting = {
 		mod_id = ht
 		setting_id = truce_years
@@ -52,6 +67,7 @@ ht_cmm_register_mod = {
 		max_value = 25
 		step_value = 1
 	}
+
 	cmm_register_global_numeric_setting = {
 		mod_id = ht
 		setting_id = religion_conversion_percentage
@@ -62,6 +78,18 @@ ht_cmm_register_mod = {
 		max_value = 100
 		step_value = 1
 	}
+
+	cmm_register_global_numeric_setting = {
+		mod_id = ht
+		setting_id = culture_assimilation_percentage
+		tab_id = settings
+		group_id = amounts
+		default_value = 10
+		min_value = 1
+		max_value = 100
+		step_value = 1
+	}
+
 	cmm_register_global_numeric_setting = {
 		mod_id = ht
 		setting_id = war_exhaustion_amount
@@ -74,10 +102,10 @@ ht_cmm_register_mod = {
 	}
 }
 
-# ── Callback Handler ─────────────────────────────────────────────────────────────
-# Scope: country (called from cmf_on_callback hook)
-
-ht_handle_callback = {
+# Callback handler for cmf_on_callback.
+# var:cmf_callback is the flag of the setting, alert, or action bar element that was interacted with.
+# Scope: country
+ht_handle_cmf_callback = {
 	# Sync the unrestricted-tools diplomatic range modifier with the toggle.
 	if = {
 		limit = { var:cmf_callback = flag:cmf_core__enable_unrestricted_tools }

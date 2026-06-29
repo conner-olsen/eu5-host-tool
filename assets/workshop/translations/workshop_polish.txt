@@ -1,0 +1,43 @@
+===WORKSHOP_TITLE===
+Narzędzia dla gospodarza trybu wieloosobowego / Multiplayer Host Tools
+===WORKSHOP_DESCRIPTION===
+[i]You are on the DeepL-Generated Polish Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
+
+[h1]Opis ogólny:[/h1]
+Narzędzia gospodarza trybu wieloosobowego służące do zarządzania rozgrywką wieloosobową; w trybie wieloosobowym mogą być włączane i używane wyłącznie przez gospodarza. Zawierają dzienniki wszystkich wykonanych czynności, widoczne dla wszystkich graczy w lobby za pośrednictwem [b]Dziennika działań modów[/b]. Mogą być również używane w trybie dla jednego gracza jako menu kodów.
+
+Ten mod tymczasowo wyłącza również mod Hellenism, który, jak wiadomo, powoduje problemy z desynchronizacją w trybie wieloosobowym. Stan błędu można sprawdzić [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]tutaj.[/url]
+
+[img]https://i.ibb.co/XZcTYqWz/image.png[/img]
+
+[h1]Jak korzystać:[/h1]
+[olist]
+ [*] Otwórz menu modów, naciskając klawisz „m” lub w trakcie gry, naciskając klawisz Escape -> menu modów
+ [*] W zakładce „Community Mod Framework” włącz opcję „Enable Host-Only Tools” (w trybie dla jednego gracza opcja ta będzie nosiła nazwę „”), pamiętaj, że w trybie wieloosobowym będzie ona dostępna wyłącznie dla gospodarza.
+ [*] Narzędzia będą wtedy dostępne dla gospodarza jako działania dyplomatyczne – wystarczy otworzyć menu dyplomacji, a znajdziesz je w kategorii „Narzędzia gospodarza”.
+ [*] Narzędzia gospodarza można skonfigurować w zakładce „Narzędzia gospodarza” w menu modów.
+[/olist]
+- Gdy opcja jest aktywna, gospodarz ma nieograniczony zasięg dyplomatyczny, dzięki czemu może korzystać z narzędzia w dowolnym miejscu; dlatego zaleca się wyłączenie tej opcji po zakończeniu korzystania z narzędzia.
+
+[h1]Jak wyświetlić dziennik:[/h1]
+[olist]
+ [*] Otwórz menu modów, naciskając klawisz „m” lub, będąc w grze, naciskając klawisz Escape -> menu modów
+ [*] Przejdź do zakładki „Community Mod Framework”.
+ [*] Kliknij przycisk „Otwórz” obok pozycji „Dziennik działań modów”
+[/olist]
+- Należy pamiętać, że w trybie wieloosobowym dziennika nie można wyczyścić, nawet przez gospodarza.
+
+[h1]Kompatybilność:[/h1]
+[list]
+ [*]Niekompatybilny z trybem Ironman i osiągnięciami.
+ [*]W pełni kompatybilny z zapisami gry.
+ [*]Powinien działać z każdym modem.
+ [*]Na prośbę możemy dodać łatki zapewniające kompatybilność.
+[/list]
+
+Wszelkie pytania, zgłoszenia błędów lub sugestie prosimy kierować w komentarzach.
+
+Kod źródłowy i wersje deweloperskie modu są dostępne na [url=https://github.com/conner-olsen/eu5-host-tool]GitHubie.[/url] Mile widziany jest każdy wkład.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776][img]https://raw.githubusercontent.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework/main/assets/images/cmf/CMF_Member_Banner.png[/img][/url]
+

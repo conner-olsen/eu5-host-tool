@@ -1,4 +1,5 @@
 ﻿l_english:
+ # NO-TRANSLATE BELOW
  # Vanilla bug workaround — suppress missing dip_*_CATEGORY warnings
  dip_ht_toggle_target_CATEGORY: "dummy"
  dip_ht_add_gold_CATEGORY: "dummy"
@@ -25,3 +26,6 @@
  dip_ht_change_culture_CATEGORY: "dummy"
  dip_ht_change_government_CATEGORY: "dummy"
  dip_ht_convert_pops_CATEGORY: "dummy"
+ dip_ht_add_diplomats_CATEGORY: "dummy"
+ dip_ht_assimilate_pops_CATEGORY: "dummy"
+ dip_ht_add_war_exhaustion_CATEGORY: "dummy"

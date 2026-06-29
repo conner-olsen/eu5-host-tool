@@ -32,6 +32,14 @@ ht_add_prestige_effect = {
 	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_added_prestige } }
 }
 
+ht_add_diplomats_effect = {
+	scope:recipient = {
+		add_diplomats = "global_variable_map(cmm|flag:ht__diplomats_amount)"
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_added_diplomats } }
+}
+
 # ── Diplomacy Effects (two-target: recipient + target) ──────────────────────────
 
 ht_force_alliance_effect = {
@@ -141,7 +149,7 @@ ht_white_peace_effect = {
 	scope:actor = { cmf_log_with_scope_args = { action = ht_log_white_peace } }
 }
 
-ht_change_war_exhaustion_effect = {
+ht_add_war_exhaustion_effect = {
 	scope:recipient = {
 		add_war_exhaustion = {
 			value = "global_variable_map(cmm|flag:ht__war_exhaustion_amount)"
@@ -281,6 +289,32 @@ ht_convert_pops_effect = {
 					max = 1
 				}
 				religion = scope:recipient.religion
+			}
+		}
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_converted_pops } }
+}
+
+ht_assimilate_pops_effect = {
+	scope:recipient = {
+		every_pop = {
+			limit = {
+				NOT = { culture = scope:recipient.culture }
+			}
+			split_pop = {
+				fraction = {
+					value = "global_variable_map(cmm|flag:ht__culture_assimilation_percentage)"
+					divide = 100
+					divide = {
+						value = 1
+						subtract = "scope:recipient.culture_percentage_in_country(scope:recipient.culture)"
+						min = 0.001
+					}
+					min = 0
+					max = 1
+				}
+				culture = scope:recipient.culture
 			}
 		}
 	}
