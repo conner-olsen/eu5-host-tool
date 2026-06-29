@@ -4,18 +4,18 @@ Ferramentas para anfitriões de jogos multijogador / Multiplayer Host Tools
 [i]You are on the DeepL-Generated Portuguese (Brazil) Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
 [h1]Visão geral:[/h1]
-Ferramentas do anfitrião para gerenciamento de jogos multijogador; no modo multijogador, elas só podem ser ativadas e utilizadas pelo anfitrião. Inclui registros de todas as ações realizadas, visíveis para todo o lobby por meio do [b]Registro de Ações do Moderador[/b], que não pode ser apagado no modo multijogador. Também pode ser usado no modo singleplayer como um menu de cheats.
+Ferramentas do anfitrião para gerenciar partidas multijogador; no modo multijogador, elas só podem ser ativadas e utilizadas pelo anfitrião. Inclui registros de todas as ações realizadas, visíveis para todo o lobby por meio do [b]Registro de Ações do Mod[/b]. Também pode ser usado no modo singleplayer como um menu de cheats.
 
-Isso também desativa temporariamente o Hellenism, que é conhecido por causar problemas de dessincronização no modo multijogador. Você pode ver o status do bug [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]aqui[/url].
+Este mod também desativa temporariamente o Hellenism, que é conhecido por causar problemas de dessincronização no modo multijogador. Você pode ver o status do bug [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]aqui.[/url]
 
 [img]https://i.ibb.co/XZcTYqWz/image.png[/img]
 
 [h1]Como usar:[/h1]
 [olist]
- [*] Abra o menu de mods, seja pressionando a tecla m, seja dentro do jogo pressionando Escape -> menu de mods
- [*] Na aba “Community Mod Framework”, ative a opção “Enable Host-Only Tools” (no modo singleplayer, essa opção se chamará “”), observe que ela estará disponível apenas para o anfitrião no modo multijogador.
+ [*] Abra o menu de mods, seja pressionando a tecla m, ou, enquanto estiver no jogo, pressionando Escape -> menu de mods
+ [*] Na aba “Community Mod Framework”, ative “Enable Host-Only Tools” (no modo singleplayer, essa opção se chamará “”), observe que isso só estará disponível para o anfitrião no modo multijogador.
  [*] As ferramentas ficarão então disponíveis como ações diplomáticas para o anfitrião; basta abrir a diplomacia e elas estarão na categoria “Ferramentas do Anfitrião”.
- [*] Você pode configurar a ferramenta do anfitrião na aba “Ferramenta do Anfitrião” no menu do mod.
+ [*] Você pode configurar a ferramenta do anfitrião na aba “Ferramenta do Anfitrião” no menu de mods.
 [/olist]
 - Enquanto estiver ativa, o anfitrião terá alcance diplomático infinito, podendo usar a ferramenta em qualquer lugar; por isso, recomenda-se desativá-la após o uso.
 

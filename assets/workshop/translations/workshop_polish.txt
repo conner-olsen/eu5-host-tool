@@ -3,10 +3,10 @@ Narzędzia dla gospodarza trybu wieloosobowego / Multiplayer Host Tools
 ===WORKSHOP_DESCRIPTION===
 [i]You are on the DeepL-Generated Polish Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
-[h1]Przegląd:[/h1]
-Narzędzia gospodarza trybu wieloosobowego służące do zarządzania rozgrywkami wieloosobowymi; w trybie wieloosobowym mogą być włączane i używane wyłącznie przez gospodarza. Zawierają one również dzienniki wszystkich wykonanych czynności, widoczne dla wszystkich graczy w lobby za pośrednictwem [b]Dziennika działań moderatora[/b], którego nie można wyczyścić w trybie wieloosobowym. Można je również wykorzystać w trybie dla jednego gracza jako menu kodów.
+[h1]Opis ogólny:[/h1]
+Narzędzia gospodarza trybu wieloosobowego służące do zarządzania rozgrywką wieloosobową; w trybie wieloosobowym mogą być włączane i używane wyłącznie przez gospodarza. Zawierają dzienniki wszystkich wykonanych czynności, widoczne dla wszystkich graczy w lobby za pośrednictwem [b]Dziennika działań modów[/b]. Mogą być również używane w trybie dla jednego gracza jako menu kodów.
 
-Funkcja ta tymczasowo wyłącza również mod Hellenism, który, jak wiadomo, powoduje problemy z desynchronizacją w trybie wieloosobowym. Stan błędu można sprawdzić [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]tutaj[/url].
+Ten mod tymczasowo wyłącza również mod Hellenism, który, jak wiadomo, powoduje problemy z desynchronizacją w trybie wieloosobowym. Stan błędu można sprawdzić [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]tutaj.[/url]
 
 [img]https://i.ibb.co/XZcTYqWz/image.png[/img]
 
@@ -17,7 +17,7 @@ Funkcja ta tymczasowo wyłącza również mod Hellenism, który, jak wiadomo, po
  [*] Narzędzia będą wtedy dostępne dla gospodarza jako działania dyplomatyczne – wystarczy otworzyć menu dyplomacji, a znajdziesz je w kategorii „Narzędzia gospodarza”.
  [*] Narzędzia gospodarza można skonfigurować w zakładce „Narzędzia gospodarza” w menu modów.
 [/olist]
-- Gdy opcja jest aktywna, gospodarz ma nieograniczony zasięg dyplomatyczny, dzięki czemu może korzystać z narzędzia wszędzie; dlatego zaleca się wyłączenie tej opcji po zakończeniu korzystania z narzędzia.
+- Gdy opcja jest aktywna, gospodarz ma nieograniczony zasięg dyplomatyczny, dzięki czemu może korzystać z narzędzia w dowolnym miejscu; dlatego zaleca się wyłączenie tej opcji po zakończeniu korzystania z narzędzia.
 
 [h1]Jak wyświetlić dziennik:[/h1]
 [olist]

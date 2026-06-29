@@ -4,9 +4,9 @@ Herramientas para anfitriones multijugador / Multiplayer Host Tools
 [i]You are on the DeepL-Generated Spanish Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
 [h1]Descripción general:[/h1]
-Herramientas de anfitrión multijugador para gestionar partidas multijugador; en el modo multijugador, solo el anfitrión puede activarlas y utilizarlas. Incluye registros de todas las acciones realizadas, visibles para todo el lobby a través del [b]Registro de acciones del moderador[/b], que no se puede borrar en el modo multijugador. También se puede utilizar en el modo para un jugador como menú de trucos.
+Herramientas de anfitrión multijugador para gestionar partidas multijugador; en el modo multijugador, solo el anfitrión puede activarlas y utilizarlas. Incluye registros de todas las acciones realizadas, visibles para todo el lobby a través del [b]Registro de acciones del mod[/b]. También se puede utilizar en el modo para un solo jugador como menú de trucos.
 
-Además, desactiva temporalmente Hellenism, que se sabe que provoca problemas de desincronización en el modo multijugador. Puedes consultar el estado del error [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]aquí[/url].
+Este mod también desactiva temporalmente Hellenism, que se sabe que provoca problemas de desincronización en el modo multijugador. Puedes consultar el estado del error [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]aquí.[/url]
 
 [img]https://i.ibb.co/XZcTYqWz/image.png[/img]
 
@@ -21,7 +21,7 @@ Además, desactiva temporalmente Hellenism, que se sabe que provoca problemas de
 
 [h1]Cómo ver el registro:[/h1]
 [olist]
- [*] Abre el menú de mods, ya sea pulsando «m» o, mientras estás en el juego, pulsando «Esc» -> menú de mods
+ [*] Abre el menú de mods, ya sea pulsando «m» o, mientras estás en el juego, pulsando Esc -> menú de mods
  [*] Ve a la pestaña «Community Mod Framework».
  [*] Haz clic en el botón «Abrir» situado junto a «Registro de acciones del mod»
 [/olist]

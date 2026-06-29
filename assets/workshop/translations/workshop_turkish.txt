@@ -4,9 +4,9 @@
 [i]You are on the DeepL-Generated Turkish Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
 [h1]Genel Bakış:[/h1]
-Çok oyunculu oyunları yönetmeye yarayan Çok Oyunculu Sunucu Araçları; çok oyunculu modda yalnızca sunucu tarafından etkinleştirilebilir ve kullanılabilir. Ayrıca, [b]Mod Eylem Günlüğü[/b] aracılığıyla tüm lobide görülebilen ve çok oyunculu modda silinemeyen tüm eylemlerin günlüklerini içerir. Tek oyunculu modda da hile menüsü olarak kullanılabilir.
+Çok oyunculu oyunları yönetmeye yarayan Çok Oyunculu Sunucu Araçları; çok oyunculu modda yalnızca sunucu tarafından etkinleştirilebilir ve kullanılabilir. Ayrıca, [b]Mod Eylem Günlüğü[/b] aracılığıyla tüm lobide görülebilen, gerçekleştirilen tüm eylemlerin günlüklerini içerir. Tek oyunculu modda da hile menüsü olarak kullanılabilir.
 
-Bu araç, çok oyunculu modda senkronizasyon sorunlarına neden olduğu bilinen Hellenism özelliğini geçici olarak devre dışı bırakır. Hatanın durumunu [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]buradan[/url] görebilirsiniz.
+Bu mod, çok oyunculu modda senkronizasyon sorunlarına neden olduğu bilinen Hellenism'i de geçici olarak devre dışı bırakır. Hatanın durumunu [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]buradan[/url] görebilirsiniz.
 
 [img]https://i.ibb.co/XZcTYqWz/image.png[/img]
 
@@ -23,7 +23,7 @@ Bu araç, çok oyunculu modda senkronizasyon sorunlarına neden olduğu bilinen 
 [olist]
  [*] Mod menüsünü, m tuşuna basarak veya oyun içindeyken Escape tuşuna basıp mod menüsünü seçerek açın
  [*] "Community Mod Framework" sekmesine gidin.
- [*] "Mod Eylem Günlüğü"nün yanındaki "Aç" düğmesine tıklayın.
+ [*] "Mod Eylem Günlüğü"nün yanındaki "Aç" düğmesine tıklayın
 [/olist]
 - Çok oyunculu modda günlüğün, ev sahibi tarafından bile silinemeyeceğini unutmayın.
 

@@ -4,9 +4,9 @@
 [i]You are on the DeepL-Generated Simplified Chinese Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
 [h1]概述：[/h1]
-用于管理多人游戏的“多人游戏主持人工具”，在多人游戏中仅主持人可以启用并使用该工具。该工具包含所有操作的日志，这些日志可通过[b]管理员操作日志[/b]供整个大厅的玩家查看，且在多人游戏中无法清除。 在单人模式下也可作为作弊菜单使用。
+用于管理多人游戏的“多人游戏主机工具”，在多人游戏中仅限主机启用和使用。该工具包含所有操作的日志，整个大厅的玩家均可通过 [b]模组操作日志[/b] 查看这些日志。在单人游戏中也可作为作弊菜单使用。
 
-此外，该工具还会暂时禁用“Hellenism”功能，因为已知该功能会导致多人游戏同步异常问题。 您可以在[url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]此处[/url]查看该漏洞的状态。
+该模组还会暂时禁用“Hellenism”，因为已知该功能会导致多人游戏同步异常问题。 您可以在[url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]此处[/url]查看该漏洞的最新状态。
 
 [img]https://i.ibb.co/XZcTYqWz/image.png[/img]
 
@@ -25,7 +25,7 @@
  [*] 进入“社区模组框架”选项卡。
  [*] 点击“模组操作日志”旁边的“打开”按钮
 [/olist]
-- 请注意，在多人游戏中无法清除日志，即使是由主持人操作也无法清除。
+- 请注意，在多人游戏中无法清除日志，即使是由主持人操作也不行。
 
 [h1]兼容性：[/h1]
 [list]
