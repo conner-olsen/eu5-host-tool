@@ -25,3 +25,6 @@
  dip_ht_change_culture_CATEGORY: "atrapka"
  dip_ht_change_government_CATEGORY: "atrapka"
  dip_ht_convert_pops_CATEGORY: "atrapka"
+ dip_ht_add_diplomats_CATEGORY: "dummy"
+ dip_ht_assimilate_pops_CATEGORY: "dummy"
+ dip_ht_add_war_exhaustion_CATEGORY: "dummy"

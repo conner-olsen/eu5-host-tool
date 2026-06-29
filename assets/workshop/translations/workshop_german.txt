@@ -1,5 +1,5 @@
 ===WORKSHOP_TITLE===
-Multiplayer-Host-Werkzeuge / Multiplayer Host Tools
+Tools für Multiplayer-Hosts / Multiplayer Host Tools
 ===WORKSHOP_DESCRIPTION===
 [i]You are on the DeepL-Generated German Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
@@ -14,24 +14,25 @@ Dadurch wird außerdem vorübergehend „Hellenism“ deaktiviert, das bekannter
 [olist]
  [*] Öffne das Mod-Menü, entweder durch Drücken der Taste „m“ oder im Spiel durch Drücken der Escape-Taste -> Mod-Menü
  [*] Aktiviere unter dem Reiter „Community Mod Framework“ die Option „Enable Host-Only Tools“ (im Einzelspielermodus heißt diese Option „“); beachte, dass diese Option im Mehrspielermodus nur für den Host verfügbar ist.
- [*] Die Tools stehen dem Host dann als diplomatische Aktionen zur Verfügung. Öffne einfach die Diplomatie, dort findest du sie in der Kategorie „Host-Tools“.
+ [*] Die Tools stehen dem Host dann als diplomatische Aktionen zur Verfügung. Öffne einfach das Diplomatie-Menü – du findest sie unter der Kategorie „Host-Tools“.
  [*] Du kannst das Host-Tool auf der Registerkarte „Host-Tool“ im Mod-Menü konfigurieren.
 [/olist]
+- Solange das Tool aktiv ist, verfügt der Host über eine unbegrenzte diplomatische Reichweite, sodass er das Tool überall nutzen kann. Es wird daher empfohlen, es nach der Nutzung wieder zu deaktivieren.
 
 [h1]So rufst du das Protokoll auf:[/h1]
 [olist]
- [*] Öffne das Mod-Menü, entweder durch Drücken der Taste „m“ oder im Spiel durch Drücken der Escape-Taste -> Mod-Menü.
- [*] Wechsle zur Registerkarte „Community Mod Framework“.
- [*] Klicke auf die Schaltfläche „Öffnen“ neben dem „Mod-Aktionsprotokoll“.
+ [*] Öffne das Mod-Menü, entweder durch Drücken der Taste „m“ oder im Spiel durch Drücken der Escape-Taste -> Mod-Menü
+ [*] Gehe zum Reiter „Community Mod Framework“.
+ [*] Klicke auf die Schaltfläche „Öffnen“ neben „Mod-Aktionsprotokoll“
 [/olist]
-– Beachte, dass das Protokoll im Mehrspielermodus nicht gelöscht werden kann, auch nicht vom Host.
+- Beachte, dass das Protokoll im Mehrspielermodus nicht gelöscht werden kann, auch nicht vom Host.
 
 [h1]Kompatibilität:[/h1]
 [list]
  [*]Nicht kompatibel mit Ironman/Erfolgen.
  [*]Vollständig kompatibel mit Spielständen.
  [*]Sollte mit jedem Mod funktionieren.
- [*]Auf Anfrage füge ich möglicherweise Kompatibilitäts-Patches hinzu.
+ [*]Auf Anfrage fügen wir möglicherweise Kompatibilitäts-Patches hinzu.
 [/list]
 
 Bitte stellt Fragen, meldet Fehler oder macht Vorschläge in den Kommentaren.

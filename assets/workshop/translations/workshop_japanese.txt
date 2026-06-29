@@ -1,5 +1,5 @@
 ===WORKSHOP_TITLE===
-マルチプレイヤー・ホストツール / Multiplayer Host Tools
+マルチプレイヤーホスト用ツール / Multiplayer Host Tools
 ===WORKSHOP_DESCRIPTION===
 [i]You are on the DeepL-Generated Japanese Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
@@ -13,12 +13,13 @@
 [h1]使用方法：[/h1]
 [olist]
  [*] Mキーを押すか、ゲーム中にEscキーを押して「modメニュー」を開きます。
- [*] 「Community Mod Framework」タブで、「Enable Host-Only Tools」（シングルプレイでは「」と表示されます）を有効にします。なお、これはマルチプレイにおいてホストのみが利用可能です。
- [*] これにより、ホストが利用できる外交アクションとしてツールが表示されます。外交画面を開くと、「ホストツール」カテゴリの下に表示されます。
- [*] ホストツールの設定は、MODメニューの「ホストツール」タブから行えます。
+ [*] 「Community Mod Framework」タブで、「Enable Host-Only Tools」（シングルプレイでは「」と表示されます）を有効にしてください。なお、これはマルチプレイにおいてホストのみが利用可能です。
+ [*] これにより、ホストは外交アクションとしてこれらのツールを利用できるようになります。外交画面を開くと、「Host Tools」カテゴリに表示されます。
+ [*] ホストツールの設定は、MODメニューの「Host Tool」タブから行えます。
 [/olist]
+- 有効になっている間、ホストの外交範囲は無制限となるため、どこでもツールを使用できます。そのため、使用後は無効にすることをお勧めします。
 
-[h1]ログの表示方法：[/h1]
+[h1]ログの確認方法：[/h1]
 [olist]
  [*] Modメニューを開きます。キー「m」を押すか、ゲーム中にEscキーを押してModメニューを開きます。
  [*] 「Community Mod Framework」タブに移動します。
@@ -31,12 +32,12 @@
  [*]アイアンマンモードや実績とは互換性がありません。
  [*]セーブデータとの完全な互換性があります。
  [*]どのMODとも動作するはずです。
- [*]ご要望があれば、互換性パッチを追加する場合があります。
+ [*]ご要望に応じて互換性パッチを追加する場合があります。
 [/list]
 
 ご質問、バグ報告、ご提案はコメント欄へお寄せください。
 
-このMODのソースコードおよび開発版は、[url=https://github.com/conner-olsen/eu5-host-tool]GitHub[/url]で公開されています。皆様からのご協力をお待ちしております。
+このMODのソースコードおよび開発版は、[url=https://github.com/conner-olsen/eu5-host-tool]GitHub[/url]で公開されています。皆様からの貢献を歓迎します。
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776][img]https://raw.githubusercontent.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework/main/assets/images/cmf/CMF_Member_Banner.png[/img][/url]
 

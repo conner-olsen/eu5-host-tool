@@ -1,5 +1,5 @@
 ===WORKSHOP_TITLE===
-Ferramentas de Host Multiplayer / Multiplayer Host Tools
+Ferramentas para anfitriões de jogos multijogador / Multiplayer Host Tools
 ===WORKSHOP_DESCRIPTION===
 [i]You are on the DeepL-Generated Portuguese (Brazil) Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
@@ -12,29 +12,30 @@ Isso também desativa temporariamente o Hellenism, que é conhecido por causar p
 
 [h1]Como usar:[/h1]
 [olist]
- [*] Abra o menu de mods, seja pressionando a tecla m, seja durante o jogo pressionando Escape -> menu de mods
+ [*] Abra o menu de mods, seja pressionando a tecla m, seja dentro do jogo pressionando Escape -> menu de mods
  [*] Na aba “Community Mod Framework”, ative a opção “Enable Host-Only Tools” (no modo singleplayer, essa opção se chamará “”), observe que ela estará disponível apenas para o anfitrião no modo multijogador.
  [*] As ferramentas ficarão então disponíveis como ações diplomáticas para o anfitrião; basta abrir a diplomacia e elas estarão na categoria “Ferramentas do Anfitrião”.
- [*] Você pode configurar a ferramenta do anfitrião na aba “Ferramenta do Anfitrião” no menu de mods.
+ [*] Você pode configurar a ferramenta do anfitrião na aba “Ferramenta do Anfitrião” no menu do mod.
 [/olist]
+- Enquanto estiver ativa, o anfitrião terá alcance diplomático infinito, podendo usar a ferramenta em qualquer lugar; por isso, recomenda-se desativá-la após o uso.
 
 [h1]Como visualizar o log:[/h1]
 [olist]
- [*] Abra o menu de mods, pressionando a tecla “m” ou, durante o jogo, pressionando “Esc” -> menu de mods
+ [*] Abra o menu de mods, seja pressionando a tecla “m”, seja durante o jogo pressionando “Esc” -> menu de mods
  [*] Vá para a aba “Community Mod Framework”.
- [*] Clique no botão “Abrir” ao lado de “Log de Ações do Mod”
+ [*] Clique no botão “Abrir” ao lado de “Registro de Ações do Mod”
 [/olist]
-- Observe que, no modo multijogador, o log não pode ser apagado, nem mesmo pelo anfitrião.
+- Observe que, no modo multijogador, o registro não pode ser apagado, nem mesmo pelo anfitrião.
 
 [h1]Compatibilidade:[/h1]
 [list]
  [*]Não é compatível com Ironman/Conquistas.
  [*]Totalmente compatível com jogos salvos.
  [*]Deve funcionar com qualquer mod.
- [*]Posso adicionar patches de compatibilidade mediante solicitação.
+ [*]Podemos adicionar patches de compatibilidade mediante solicitação.
 [/list]
 
-Por favor, faça perguntas, relate bugs ou dê sugestões nos comentários.
+Por favor, tire suas dúvidas, relate bugs ou dê sugestões nos comentários.
 
 As versões-fonte e de desenvolvimento do mod estão disponíveis no [url=https://github.com/conner-olsen/eu5-host-tool]GitHub.[/url] Todas as contribuições são bem-vindas.
 

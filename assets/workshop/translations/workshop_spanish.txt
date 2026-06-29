@@ -1,5 +1,5 @@
 ===WORKSHOP_TITLE===
-Herramientas de Anfitrión Multijugador / Multiplayer Host Tools
+Herramientas para anfitriones multijugador / Multiplayer Host Tools
 ===WORKSHOP_DESCRIPTION===
 [i]You are on the DeepL-Generated Spanish Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
@@ -15,14 +15,15 @@ Además, desactiva temporalmente Hellenism, que se sabe que provoca problemas de
  [*] Abre el menú de mods, ya sea pulsando «m» o, mientras estás en el juego, pulsando «Esc» -> menú de mods
  [*] En la pestaña «Community Mod Framework», activa «Enable Host-Only Tools» (en el modo para un jugador se llamará «»); ten en cuenta que esto solo estará disponible para el anfitrión en el modo multijugador.
  [*] Las herramientas estarán entonces disponibles como acciones diplomáticas para el anfitrión; solo tienes que abrir el menú de diplomacia y las encontrarás en la categoría «Herramientas del anfitrión».
- [*] Puedes configurar la herramienta del anfitrión desde la pestaña «Herramienta del anfitrión» del menú de mods.
+ [*] Puedes configurar la herramienta del anfitrión desde la pestaña «Herramienta del anfitrión» del menú del mod.
 [/olist]
+- Mientras esté activa, el anfitrión tendrá un alcance diplomático infinito, por lo que podrá utilizar la herramienta en cualquier lugar; por ello, se recomienda desactivarla tras su uso.
 
 [h1]Cómo ver el registro:[/h1]
 [olist]
- [*] Abre el menú de mods, ya sea pulsando «m» o, mientras estás en el juego, pulsando Esc -> menú de mods.
+ [*] Abre el menú de mods, ya sea pulsando «m» o, mientras estás en el juego, pulsando «Esc» -> menú de mods
  [*] Ve a la pestaña «Community Mod Framework».
- [*] Haz clic en el botón «Abrir» situado junto a «Registro de acciones del mod».
+ [*] Haz clic en el botón «Abrir» situado junto a «Registro de acciones del mod»
 [/olist]
 - Ten en cuenta que, en el modo multijugador, el registro no se puede borrar, ni siquiera por parte del anfitrión.
 
@@ -31,7 +32,7 @@ Además, desactiva temporalmente Hellenism, que se sabe que provoca problemas de
  [*]No es compatible con el modo Ironman ni con los logros.
  [*]Totalmente compatible con partidas guardadas.
  [*]Debería funcionar con cualquier mod.
- [*]Puedo añadir parches de compatibilidad si se solicitan.
+ [*]Podemos añadir parches de compatibilidad si se solicitan.
 [/list]
 
 Por favor, plantea cualquier pregunta, informa de errores o haz sugerencias en los comentarios.

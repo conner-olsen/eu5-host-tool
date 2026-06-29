@@ -1,28 +1,29 @@
 ===WORKSHOP_TITLE===
-멀티플레이어 호스트 툴 / Multiplayer Host Tools
+멀티플레이어 호스트 도구 / Multiplayer Host Tools
 ===WORKSHOP_DESCRIPTION===
 [i]You are on the DeepL-Generated Korean Page. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=$item-id$&l=english]Click here for the Native English Page.[/url][/i]
 
 [h1]개요:[/h1]
 멀티플레이어 게임을 관리하기 위한 호스트 도구로, 멀티플레이어 모드에서는 호스트만 이 기능을 활성화하고 사용할 수 있습니다. 또한 [b]모드 액션 로그[/b]를 통해 로비 전체에 표시되는 모든 작업 내역이 포함되어 있으며, 이 로그는 멀티플레이어 모드에서는 삭제할 수 없습니다. 싱글플레이어 모드에서는 치트 메뉴로도 사용할 수 있습니다.
 
-또한 멀티플레이어 동기화 불일치 문제를 일으키는 것으로 알려진 ‘헬레니즘(Hellenism)’ 기능을 일시적으로 비활성화합니다. 버그 현황은 [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]여기[/url]에서 확인할 수 있습니다.
+또한 멀티플레이어 동기화 불일치 문제를 일으키는 것으로 알려진 ‘헬레니즘’ 기능을 일시적으로 비활성화합니다. 버그 현황은 [url=https://forum.paradoxplaza.com/forum/threads/constant-multiplayer-desync-from-platonic-revival-movement-plus-workaround.1923989/]여기[/url]에서 확인할 수 있습니다.
 
 [img]https://i.ibb.co/XZcTYqWz/image.png[/img]
 
 [h1]사용 방법:[/h1]
 [olist]
- [*] M 키를 누르거나, 게임 플레이 중 Esc 키를 누른 뒤 모드 메뉴를 선택하여 모드 메뉴를 엽니다.
- [*] “Community Mod Framework” 탭에서 “Enable Host-Only Tools”를 활성화하세요(싱글플레이어 모드에서는 “”라고 표시됨). 이 기능은 멀티플레이어 모드에서 호스트만 사용할 수 있다는 점에 유의하세요.
+ [*] M 키를 누르거나, 게임 플레이 중 Esc 키를 누른 뒤 ‘모드 메뉴’를 선택하여 모드 메뉴를 엽니다.
+ [*] “Community Mod Framework” 탭에서 “호스트 전용 도구 활성화”를 켭니다(싱글플레이어 모드에서는 “”라고 표시됨). 이 기능은 멀티플레이어 모드에서 호스트만 사용할 수 있습니다.
  [*] 그러면 호스트가 외교 행동으로 해당 도구를 사용할 수 있게 됩니다. 외교 메뉴를 열면 “호스트 도구” 카테고리에서 확인할 수 있습니다.
  [*] 모드 메뉴의 “호스트 도구” 탭에서 호스트 도구를 설정할 수 있습니다.
 [/olist]
+- 이 기능이 활성화된 동안 호스트는 무제한 외교 범위를 갖게 되어 어디서나 도구를 사용할 수 있으므로, 사용 후에는 기능을 비활성화하는 것이 좋습니다.
 
 [h1]로그 확인 방법:[/h1]
 [olist]
- [*] M 키를 누르거나, 게임 중일 때 Esc 키를 누른 후 모드 메뉴를 선택하여 모드 메뉴를 엽니다.
- [*] “커뮤니티 모드 프레임워크” 탭으로 이동합니다.
- [*] “모드 액션 로그” 옆에 있는 “열기” 버튼을 클릭하세요.
+ [*] m 키를 누르거나, 게임 중일 때 Esc 키를 누른 후 모드 메뉴를 열어주세요.
+ [*] “Community Mod Framework” 탭으로 이동합니다.
+ [*] “Mod Action Log” 옆의 “열기” 버튼을 클릭합니다.
 [/olist]
 - 멀티플레이어 모드에서는 호스트라도 로그를 지울 수 없습니다.
 
@@ -34,7 +35,7 @@
  [*]요청 시 호환성 패치를 추가할 수 있습니다.
 [/list]
 
-질문, 버그 제보 또는 제안 사항이 있으시면 댓글로 남겨주세요.
+질문, 버그 신고 또는 제안 사항이 있으시면 댓글로 남겨주세요.
 
 이 모드의 소스 코드 및 개발자 버전은 [url=https://github.com/conner-olsen/eu5-host-tool]GitHub[/url]에서 확인할 수 있습니다. 모든 기여를 환영합니다.
 

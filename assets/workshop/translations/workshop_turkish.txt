@@ -17,10 +17,11 @@ Bu araç, çok oyunculu modda senkronizasyon sorunlarına neden olduğu bilinen 
  [*] Araçlar, ev sahibi için diplomatik eylemler olarak kullanılabilir hale gelecektir; diplomasi menüsünü açtığınızda "Ev Sahibi Araçları" kategorisi altında bulabilirsiniz.
  [*] Mod menüsündeki "Ev Sahibi Aracı" sekmesinden ev sahibi aracını yapılandırabilirsiniz.
 [/olist]
+- Etkin olduğu sürece sunucunun diplomatik menzili sınırsız olacaktır, böylece aracı her yerde kullanabilir; bu nedenle, kullanımdan sonra kapatılması önerilir.
 
 [h1]Günlüğü görüntüleme:[/h1]
 [olist]
- [*] m tuşuna basarak veya oyun içindeyken Escape tuşuna basıp mod menüsünü açarak mod menüsünü açın.
+ [*] Mod menüsünü, m tuşuna basarak veya oyun içindeyken Escape tuşuna basıp mod menüsünü seçerek açın
  [*] "Community Mod Framework" sekmesine gidin.
  [*] "Mod Eylem Günlüğü"nün yanındaki "Aç" düğmesine tıklayın.
 [/olist]
@@ -29,9 +30,9 @@ Bu araç, çok oyunculu modda senkronizasyon sorunlarına neden olduğu bilinen 
 [h1]Uyumluluk:[/h1]
 [list]
  [*]Ironman/Başarı modlarıyla uyumlu değildir.
- [*]Oyun kaydetme ile tam uyumlu.
+ [*]Oyun kaydetme özelliği ile tam uyumludur.
  [*]Herhangi bir modla çalışmalıdır.
- [*]Talep üzerine uyumluluk yamaları ekleyebilirim.
+ [*]Talep üzerine uyumluluk yamaları ekleyebiliriz.
 [/list]
 
 Lütfen yorumlarda sorularınızı sorun, hataları bildirin veya önerilerde bulunun.
