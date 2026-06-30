@@ -12,8 +12,8 @@ Ce mod désactive également temporairement Hellenism, connu pour causer des pro
 
 [h1]Mode d'emploi :[/h1]
 [olist]
- [*] Ouvrez le menu des mods, soit en appuyant sur la touche « m », soit en jeu en appuyant sur Échap -> menu des mods
- [*] Dans l’onglet « Community Mod Framework », activez « Enable Host-Only Tools » (en mode solo, cette option s’appellera « »), notez que cette fonctionnalité ne sera disponible que pour l’hôte en mode multijoueur.
+ [*] Ouvrez le menu du mod, soit en appuyant sur la touche « m », soit en jeu en appuyant sur Échap -> menu du mod
+ [*] Dans l’onglet « Community Mod Framework », activez « Enable Host-Only Tools » (en mode solo, cette option s’intitule « Enable Unrestricted Tools »). Notez que cette fonctionnalité n’est disponible que pour l’hôte en mode multijoueur.
  [*] Les outils seront alors disponibles sous forme d’actions diplomatiques pour l’hôte ; il suffit d’ouvrir le menu « Diplomatie » pour les trouver dans la catégorie « Outils de l’hôte ».
  [*] Vous pouvez configurer l’outil de l’hôte depuis l’onglet « Outil de l’hôte » du menu du mod.
 [/olist]
@@ -29,7 +29,7 @@ Ce mod désactive également temporairement Hellenism, connu pour causer des pro
 
 [h1]Compatibilité :[/h1]
 [list]
- [*]Non compatible avec le mode Ironman ni avec les succès.
+ [*]Non compatible avec le mode Ironman ni les succès.
  [*]Entièrement compatible avec les sauvegardes.
  [*]Devrait fonctionner avec n'importe quel mod.
  [*]Nous pouvons ajouter des correctifs de compatibilité sur demande.

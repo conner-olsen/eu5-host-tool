@@ -12,16 +12,16 @@ Ten mod tymczasowo wyłącza również mod Hellenism, który, jak wiadomo, powod
 
 [h1]Jak korzystać:[/h1]
 [olist]
- [*] Otwórz menu modów, naciskając klawisz „m” lub w trakcie gry, naciskając klawisz Escape -> menu modów
- [*] W zakładce „Community Mod Framework” włącz opcję „Enable Host-Only Tools” (w trybie dla jednego gracza opcja ta będzie nosiła nazwę „”), pamiętaj, że w trybie wieloosobowym będzie ona dostępna wyłącznie dla gospodarza.
+ [*] Otwórz menu modów, naciskając klawisz „m” lub, będąc w grze, naciskając klawisz Escape -> menu modów
+ [*] W zakładce „Community Mod Framework” włącz opcję „Enable Host-Only Tools” (w trybie dla jednego gracza opcja ta będzie nosiła nazwę „Enable Unrestricted Tools”); pamiętaj, że w trybie wieloosobowym będzie ona dostępna wyłącznie dla gospodarza.
  [*] Narzędzia będą wtedy dostępne dla gospodarza jako działania dyplomatyczne – wystarczy otworzyć menu dyplomacji, a znajdziesz je w kategorii „Narzędzia gospodarza”.
  [*] Narzędzia gospodarza można skonfigurować w zakładce „Narzędzia gospodarza” w menu modów.
 [/olist]
-- Gdy opcja jest aktywna, gospodarz ma nieograniczony zasięg dyplomatyczny, dzięki czemu może korzystać z narzędzia w dowolnym miejscu; dlatego zaleca się wyłączenie tej opcji po zakończeniu korzystania z narzędzia.
+- Gdy opcja jest aktywna, gospodarz ma nieograniczony zasięg dyplomatyczny, dzięki czemu może korzystać z narzędzia wszędzie; dlatego zaleca się wyłączenie tej opcji po zakończeniu korzystania z narzędzia.
 
 [h1]Jak wyświetlić dziennik:[/h1]
 [olist]
- [*] Otwórz menu modów, naciskając klawisz „m” lub, będąc w grze, naciskając klawisz Escape -> menu modów
+ [*] Otwórz menu modów, naciskając klawisz „m” lub, będąc w grze, naciskając klawisz Escape → menu modów
  [*] Przejdź do zakładki „Community Mod Framework”.
  [*] Kliknij przycisk „Otwórz” obok pozycji „Dziennik działań modów”
 [/olist]
@@ -37,7 +37,7 @@ Ten mod tymczasowo wyłącza również mod Hellenism, który, jak wiadomo, powod
 
 Wszelkie pytania, zgłoszenia błędów lub sugestie prosimy kierować w komentarzach.
 
-Kod źródłowy i wersje deweloperskie modu są dostępne na [url=https://github.com/conner-olsen/eu5-host-tool]GitHubie.[/url] Mile widziany jest każdy wkład.
+Kod źródłowy i wersje deweloperskie modyfikacji są dostępne na [url=https://github.com/conner-olsen/eu5-host-tool]GitHubie.[/url] Mile widziany jest każdy wkład.
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776][img]https://raw.githubusercontent.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework/main/assets/images/cmf/CMF_Member_Banner.png[/img][/url]
 

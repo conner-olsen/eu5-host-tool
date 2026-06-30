@@ -13,11 +13,11 @@ Dieser Mod deaktiviert außerdem vorübergehend „Hellenism“, das bekannterma
 [h1]Anleitung:[/h1]
 [olist]
  [*] Öffne das Mod-Menü, entweder durch Drücken der Taste „m“ oder im Spiel durch Drücken der Escape-Taste -> Mod-Menü
- [*] Aktiviere auf der Registerkarte „Community Mod Framework“ die Option „Enable Host-Only Tools“ (im Einzelspielermodus heißt diese Option „“); beachte, dass diese Option im Mehrspielermodus nur für den Host verfügbar ist.
- [*] Die Tools stehen dem Host dann als diplomatische Aktionen zur Verfügung. Öffne einfach das Diplomatie-Menü – sie befinden sich in der Kategorie „Host-Tools“.
- [*] Du kannst das Host-Tool auf der Registerkarte „Host-Tool“ im Mod-Menü konfigurieren.
+ [*] Aktiviere auf der Registerkarte „Community Mod Framework“ die Option „Enable Host-Only Tools“ (im Einzelspielermodus heißt diese Option „Enable Unrestricted Tools“); beachte, dass diese Funktion im Mehrspielermodus nur für den Host verfügbar ist.
+ [*] Die Tools stehen dem Host dann als diplomatische Aktionen zur Verfügung. Öffne einfach die Diplomatie, dort findest du sie unter der Kategorie „Host-Tools“.
+ [*] Du kannst das Host-Tool über den Reiter „Host-Tool“ im Mod-Menü konfigurieren.
 [/olist]
-- Solange das Tool aktiv ist, verfügt der Host über eine unbegrenzte diplomatische Reichweite, sodass er das Tool überall nutzen kann. Es wird daher empfohlen, es nach der Nutzung wieder zu deaktivieren.
+- Solange das Tool aktiv ist, verfügt der Host über eine unbegrenzte diplomatische Reichweite, sodass er das Tool überall nutzen kann; daher wird empfohlen, es nach der Nutzung wieder zu deaktivieren.
 
 [h1]So rufst du das Protokoll auf:[/h1]
 [olist]

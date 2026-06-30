@@ -12,16 +12,16 @@ Bu mod, çok oyunculu modda senkronizasyon sorunlarına neden olduğu bilinen He
 
 [h1]Kullanım şekli:[/h1]
 [olist]
- [*] Mod menüsünü, m tuşuna basarak veya oyun içindeyken escape tuşuna basıp mod menüsünü seçerek açın.
- [*] "Community Mod Framework" sekmesi altında, "Enable Host-Only Tools" seçeneğini etkinleştirin (tek oyunculu modda bu seçeneğin adı ""); bunun çok oyunculu modda yalnızca sunucu için geçerli olacağını unutmayın.
+ [*] Mod menüsünü, m tuşuna basarak ya da oyun içindeyken Escape tuşuna basıp mod menüsünü seçerek açın
+ [*] "Community Mod Framework" sekmesi altında, "Enable Host-Only Tools" seçeneğini etkinleştirin (tek oyunculu modda bu seçeneğin adı "Enable Unrestricted Tools" olacaktır); bunun çok oyunculu modda yalnızca sunucu için geçerli olacağını unutmayın.
  [*] Araçlar, ev sahibi için diplomatik eylemler olarak kullanılabilir hale gelecektir; diplomasi menüsünü açtığınızda "Ev Sahibi Araçları" kategorisi altında bulabilirsiniz.
  [*] Mod menüsündeki "Ev Sahibi Aracı" sekmesinden ev sahibi aracını yapılandırabilirsiniz.
 [/olist]
-- Etkin olduğu sürece sunucunun diplomatik menzili sınırsız olacaktır, böylece aracı her yerde kullanabilir; bu nedenle, kullanımdan sonra kapatılması önerilir.
+- Etkin olduğu sürece ev sahibinin diplomatik menzili sınırsız olacaktır, böylece aracı her yerde kullanabilir; bu nedenle, kullanımdan sonra kapatılması önerilir.
 
 [h1]Günlüğü görüntüleme:[/h1]
 [olist]
- [*] Mod menüsünü, m tuşuna basarak veya oyun içindeyken Escape tuşuna basıp mod menüsünü seçerek açın
+ [*] Mod menüsünü açın; bunun için m tuşuna basabilir veya oyun içindeyken Escape tuşuna basıp mod menüsüne gidebilirsiniz
  [*] "Community Mod Framework" sekmesine gidin.
  [*] "Mod Eylem Günlüğü"nün yanındaki "Aç" düğmesine tıklayın
 [/olist]

@@ -12,10 +12,10 @@ Este mod também desativa temporariamente o Hellenism, que é conhecido por caus
 
 [h1]Como usar:[/h1]
 [olist]
- [*] Abra o menu de mods, seja pressionando a tecla m, ou, enquanto estiver no jogo, pressionando Escape -> menu de mods
- [*] Na aba “Community Mod Framework”, ative “Enable Host-Only Tools” (no modo singleplayer, essa opção se chamará “”), observe que isso só estará disponível para o anfitrião no modo multijogador.
+ [*] Abra o menu do mod, seja pressionando a tecla m, seja durante o jogo pressionando Escape -> menu do mod
+ [*] Na aba “Community Mod Framework”, ative “Enable Host-Only Tools” (no modo singleplayer, isso se chamará “Enable Unrestricted Tools”); observe que isso estará disponível apenas para o anfitrião no modo multijogador.
  [*] As ferramentas ficarão então disponíveis como ações diplomáticas para o anfitrião; basta abrir a diplomacia e elas estarão na categoria “Ferramentas do Anfitrião”.
- [*] Você pode configurar a ferramenta do anfitrião na aba “Ferramenta do Anfitrião” no menu de mods.
+ [*] Você pode configurar a ferramenta do anfitrião na aba “Ferramenta do Anfitrião” no menu do mod.
 [/olist]
 - Enquanto estiver ativa, o anfitrião terá alcance diplomático infinito, podendo usar a ferramenta em qualquer lugar; por isso, recomenda-se desativá-la após o uso.
 
