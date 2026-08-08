@@ -12,7 +12,7 @@ Bu mod, çok oyunculu modda senkronizasyon sorunlarına neden olduğu bilinen He
 
 [h1]Kullanım şekli:[/h1]
 [olist]
- [*] Mod menüsünü, m tuşuna basarak ya da oyun içindeyken Escape tuşuna basıp mod menüsünü seçerek açın
+ [*] Mod menüsünü, m tuşuna basarak ya da oyun içindeyken escape tuşuna basıp mod menüsünü seçerek açın
  [*] "Community Mod Framework" sekmesi altında, "Enable Host-Only Tools" seçeneğini etkinleştirin (tek oyunculu modda bu seçeneğin adı "Enable Unrestricted Tools" olacaktır); bunun çok oyunculu modda yalnızca sunucu için geçerli olacağını unutmayın.
  [*] Araçlar, ev sahibi için diplomatik eylemler olarak kullanılabilir hale gelecektir; diplomasi menüsünü açtığınızda "Ev Sahibi Araçları" kategorisi altında bulabilirsiniz.
  [*] Mod menüsündeki "Ev Sahibi Aracı" sekmesinden ev sahibi aracını yapılandırabilirsiniz.
@@ -21,7 +21,7 @@ Bu mod, çok oyunculu modda senkronizasyon sorunlarına neden olduğu bilinen He
 
 [h1]Günlüğü görüntüleme:[/h1]
 [olist]
- [*] Mod menüsünü açın; bunun için m tuşuna basabilir veya oyun içindeyken Escape tuşuna basıp mod menüsüne gidebilirsiniz
+ [*] Mod menüsünü, m tuşuna basarak veya oyun içindeyken Escape tuşuna basıp mod menüsünü seçerek açın
  [*] "Community Mod Framework" sekmesine gidin.
  [*] "Mod Eylem Günlüğü"nün yanındaki "Aç" düğmesine tıklayın
 [/olist]
@@ -29,8 +29,8 @@ Bu mod, çok oyunculu modda senkronizasyon sorunlarına neden olduğu bilinen He
 
 [h1]Uyumluluk:[/h1]
 [list]
- [*]Ironman/Başarı modlarıyla uyumlu değildir.
- [*]Oyun kaydetme özelliği ile tam uyumludur.
+ [*]Ironman ve Başarılarla uyumludur.
+ [*]Oyun kaydetmeyle tam uyumludur.
  [*]Herhangi bir modla çalışmalıdır.
  [*]Talep üzerine uyumluluk yamaları ekleyebiliriz.
 [/list]

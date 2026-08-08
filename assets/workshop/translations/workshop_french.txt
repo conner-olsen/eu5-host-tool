@@ -21,15 +21,15 @@ Ce mod désactive également temporairement Hellenism, connu pour causer des pro
 
 [h1]Comment consulter le journal :[/h1]
 [olist]
- [*] Ouvrez le menu des mods, soit en appuyant sur la touche « m », soit en jeu en appuyant sur Échap -> menu des mods
- [*] Rendez-vous dans l'onglet « Community Mod Framework ».
- [*] Cliquez sur le bouton « Ouvrir » situé à côté de « Journal des actions du mod »
+ [*] Ouvrez le menu des mods, soit en appuyant sur la touche « m », soit en jeu en appuyant sur Échap puis en sélectionnant « Menu des mods »
+ [*] Accédez à l’onglet « Community Mod Framework ».
+ [*] Cliquez sur le bouton « Ouvrir » à côté de « Journal des actions du mod »
 [/olist]
-- Notez qu'en mode multijoueur, le journal ne peut pas être effacé, même par l'hôte.
+- Notez qu’en mode multijoueur, le journal ne peut pas être effacé, même par l’hôte.
 
 [h1]Compatibilité :[/h1]
 [list]
- [*]Non compatible avec le mode Ironman ni les succès.
+ [*]Compatible avec les modes Ironman et les succès.
  [*]Entièrement compatible avec les sauvegardes.
  [*]Devrait fonctionner avec n'importe quel mod.
  [*]Nous pouvons ajouter des correctifs de compatibilité sur demande.

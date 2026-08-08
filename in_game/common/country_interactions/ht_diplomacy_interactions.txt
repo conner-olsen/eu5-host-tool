@@ -4,6 +4,8 @@
 	ai_tick = never
 	use_enroute = no
 	block_when_at_war = no
+	show_message = no
+	show_message_to_target = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -84,6 +86,8 @@ ht_break_alliance = {
 	ai_tick = never
 	use_enroute = no
 	block_when_at_war = no
+	show_message = no
+	show_message_to_target = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -177,6 +181,8 @@ ht_force_guarantee = {
 	ai_tick = never
 	use_enroute = no
 	block_when_at_war = no
+	show_message = no
+	show_message_to_target = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -257,6 +263,8 @@ ht_break_guarantee = {
 	ai_tick = never
 	use_enroute = no
 	block_when_at_war = no
+	show_message = no
+	show_message_to_target = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -356,6 +364,8 @@ ht_add_truce = {
 	ai_tick = never
 	use_enroute = no
 	block_when_at_war = no
+	show_message = no
+	show_message_to_target = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -436,6 +446,8 @@ ht_remove_truce = {
 	ai_tick = never
 	use_enroute = no
 	block_when_at_war = no
+	show_message = no
+	show_message_to_target = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -516,6 +528,8 @@ ht_add_rival = {
 	ai_tick = never
 	use_enroute = no
 	block_when_at_war = no
+	show_message = no
+	show_message_to_target = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }
@@ -596,6 +610,8 @@ ht_remove_rival = {
 	ai_tick = never
 	use_enroute = no
 	block_when_at_war = no
+	show_message = no
+	show_message_to_target = no
 
 	potential = {
 		scope:actor = { cmf_can_use_unrestricted_tools = yes }

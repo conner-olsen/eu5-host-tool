@@ -21,7 +21,7 @@ Este mod también desactiva temporalmente Hellenism, que se sabe que provoca pro
 
 [h1]Cómo ver el registro:[/h1]
 [olist]
- [*] Abre el menú de mods, ya sea pulsando «m» o, mientras estás en el juego, pulsando «Esc» -> menú de mods
+ [*] Abre el menú de mods, ya sea pulsando «m» o, mientras estás en el juego, pulsando Esc -> menú de mods
  [*] Ve a la pestaña «Community Mod Framework».
  [*] Haz clic en el botón «Abrir» situado junto a «Registro de acciones del mod»
 [/olist]
@@ -29,7 +29,7 @@ Este mod también desactiva temporalmente Hellenism, que se sabe que provoca pro
 
 [h1]Compatibilidad:[/h1]
 [list]
- [*]No es compatible con el modo Ironman ni con los logros.
+ [*]Compatible con Ironman y los logros.
  [*]Totalmente compatible con partidas guardadas.
  [*]Debería funcionar con cualquier mod.
  [*]Podemos añadir parches de compatibilidad si se solicitan.
