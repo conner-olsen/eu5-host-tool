@@ -1,0 +1,22 @@
+﻿l_english:
+ ht_cb_discount: "Host Casus Belli"
+ ht_cb_discount_label: "Discount"
+ ht_cb_discount_desc: "Granted by the host. Peace deal demands cost less war score and generate less antagonism, by the amount shown."
+
+ # Note to translators: leave the below lines as is.
+ # NO-TRANSLATE BELOW
+ ht_cb_discount_0: "$ht_cb_discount$ (0% $ht_cb_discount_label$)"
+ ht_cb_discount_0_PROV: "$ht_cb_discount_0$"
+ ht_cb_discount_0_desc: "$ht_cb_discount_desc$"
+ ht_cb_discount_25: "$ht_cb_discount$ (25% $ht_cb_discount_label$)"
+ ht_cb_discount_25_PROV: "$ht_cb_discount_25$"
+ ht_cb_discount_25_desc: "$ht_cb_discount_desc$"
+ ht_cb_discount_50: "$ht_cb_discount$ (50% $ht_cb_discount_label$)"
+ ht_cb_discount_50_PROV: "$ht_cb_discount_50$"
+ ht_cb_discount_50_desc: "$ht_cb_discount_desc$"
+ ht_cb_discount_75: "$ht_cb_discount$ (75% $ht_cb_discount_label$)"
+ ht_cb_discount_75_PROV: "$ht_cb_discount_75$"
+ ht_cb_discount_75_desc: "$ht_cb_discount_desc$"
+ ht_cb_discount_100: "$ht_cb_discount$ (100% $ht_cb_discount_label$)"
+ ht_cb_discount_100_PROV: "$ht_cb_discount_100$"
+ ht_cb_discount_100_desc: "$ht_cb_discount_desc$"

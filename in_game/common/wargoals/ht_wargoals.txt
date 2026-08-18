@@ -1,0 +1,72 @@
+﻿# Discount tiers for the Add Casus Belli action. Cost factor is 1 - discount/100.
+# ticking_war_score mirrors the vanilla superiority wargoal: in_game/common/wargoals/00_default.txt:390
+
+ht_wargoal_discount_0 = {
+	type = superiority
+
+	attacker = {
+		conquer_cost = 1.0
+		subjugate_cost = 1.0
+		release_cost = 1.0
+		antagonism = 1.0
+	}
+	defender = {
+	}
+	ticking_war_score = 0.5
+}
+
+ht_wargoal_discount_25 = {
+	type = superiority
+
+	attacker = {
+		conquer_cost = 0.75
+		subjugate_cost = 0.75
+		release_cost = 0.75
+		antagonism = 0.75
+	}
+	defender = {
+	}
+	ticking_war_score = 0.5
+}
+
+ht_wargoal_discount_50 = {
+	type = superiority
+
+	attacker = {
+		conquer_cost = 0.5
+		subjugate_cost = 0.5
+		release_cost = 0.5
+		antagonism = 0.5
+	}
+	defender = {
+	}
+	ticking_war_score = 0.5
+}
+
+ht_wargoal_discount_75 = {
+	type = superiority
+
+	attacker = {
+		conquer_cost = 0.25
+		subjugate_cost = 0.25
+		release_cost = 0.25
+		antagonism = 0.25
+	}
+	defender = {
+	}
+	ticking_war_score = 0.5
+}
+
+ht_wargoal_discount_100 = {
+	type = superiority
+
+	attacker = {
+		conquer_cost = 0
+		subjugate_cost = 0
+		release_cost = 0
+		antagonism = 0
+	}
+	defender = {
+	}
+	ticking_war_score = 0.5
+}

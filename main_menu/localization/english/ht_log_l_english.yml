@@ -20,6 +20,7 @@
  ht_log_declared_war: "declared war on"
  ht_log_white_peace: "white-peaced"
  ht_log_changed_war_exhaustion: "changed war exhaustion by [CMMV('ht__war_exhaustion_amount')] for"
+ ht_log_added_casus_belli: "gained a [CMMV('ht__casus_belli_discount')]% casus belli against"
 
  # ── Country Management Log Actions (mixed) ───────────────────────────────────
  ht_log_annexed: "annexed"

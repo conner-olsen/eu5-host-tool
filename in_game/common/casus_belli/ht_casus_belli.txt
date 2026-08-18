@@ -1,0 +1,36 @@
+﻿# Granted only by the Add Casus Belli action, so fabrication is closed off on every tier.
+
+ht_cb_discount_0 = {
+	create_visible = { always = no }
+	create_enabled = { always = no }
+
+	war_goal_type = ht_wargoal_discount_0
+}
+
+ht_cb_discount_25 = {
+	create_visible = { always = no }
+	create_enabled = { always = no }
+
+	war_goal_type = ht_wargoal_discount_25
+}
+
+ht_cb_discount_50 = {
+	create_visible = { always = no }
+	create_enabled = { always = no }
+
+	war_goal_type = ht_wargoal_discount_50
+}
+
+ht_cb_discount_75 = {
+	create_visible = { always = no }
+	create_enabled = { always = no }
+
+	war_goal_type = ht_wargoal_discount_75
+}
+
+ht_cb_discount_100 = {
+	create_visible = { always = no }
+	create_enabled = { always = no }
+
+	war_goal_type = ht_wargoal_discount_100
+}

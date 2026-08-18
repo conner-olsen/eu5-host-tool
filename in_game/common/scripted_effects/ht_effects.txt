@@ -159,6 +159,38 @@ ht_add_war_exhaustion_effect = {
 	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_changed_war_exhaustion } }
 }
 
+# Two-target: recipient = casus belli holder, target = who it is against
+ht_add_casus_belli_effect = {
+	set_local_variable = {
+		name = ht_cb_discount
+		value = "global_variable_map(cmm|flag:ht__casus_belli_discount)"
+	}
+	scope:recipient = {
+		if = {
+			limit = { local_var:ht_cb_discount >= 100 }
+			add_casus_belli = { target = scope:target type = casus_belli:ht_cb_discount_100 }
+		}
+		else_if = {
+			limit = { local_var:ht_cb_discount >= 75 }
+			add_casus_belli = { target = scope:target type = casus_belli:ht_cb_discount_75 }
+		}
+		else_if = {
+			limit = { local_var:ht_cb_discount >= 50 }
+			add_casus_belli = { target = scope:target type = casus_belli:ht_cb_discount_50 }
+		}
+		else_if = {
+			limit = { local_var:ht_cb_discount >= 25 }
+			add_casus_belli = { target = scope:target type = casus_belli:ht_cb_discount_25 }
+		}
+		else = {
+			add_casus_belli = { target = scope:target type = casus_belli:ht_cb_discount_0 }
+		}
+	}
+	scope:recipient = { save_scope_as = cmf_log_arg1 }
+	scope:target = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_args = { action = ht_log_added_casus_belli } }
+}
+
 # ── Country Management Effects (mixed single/two-target) ───────────────────────
 
 # Two-target: recipient = annexer, target = annexed
@@ -319,5 +351,5 @@ ht_assimilate_pops_effect = {
 		}
 	}
 	scope:recipient = { save_scope_as = cmf_log_arg2 }
-	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_converted_pops } }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_assimilated_pops } }
 }

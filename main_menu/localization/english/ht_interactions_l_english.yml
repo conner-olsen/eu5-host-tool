@@ -54,7 +54,7 @@
  ht_add_war_exhaustion_effect_text_past: "$ht_war_exhaustion_gave_removed$ [CMMV('ht__war_exhaustion_amount')|-0V]@war_exhaustion! $ht_war_exhaustion_to_from$ $ht_display_recipient$."
  PROPOSE_ht_add_war_exhaustion: "[CMMV('ht__war_exhaustion_amount')|-0V]@war_exhaustion! $ht_war_exhaustion_to_from$ $ht_display_recipient$?"
 
- ht_add_diplomats: "@g1e!$ht_diplomats_give_remove$ [CMMV('ht__diplomats_amount')|+0V]@diplomacy!"
+ ht_add_diplomats: "@g1f!$ht_diplomats_give_remove$ [CMMV('ht__diplomats_amount')|+0V]@diplomacy!"
  ht_add_diplomats_desc: "$ht_diplomats_gives_removes$ @diplomacy![diplomats|e] $ht_diplomats_to_from$ the targeted country. #V \n$ht__diplomats_amount_name$ configurable in CMM settings.#!"
  ht_add_diplomats_act: "[CMMV('ht__diplomats_amount')|+0V]@diplomacy! $ht_diplomats_to_from$ $ht_display_recipient$."
  ht_add_diplomats_effect_text: "$ht_diplomats_give_remove$ [CMMV('ht__diplomats_amount')|+0V]@diplomacy! $ht_diplomats_to_from$ $ht_display_recipient$."
@@ -134,6 +134,13 @@
  ht_white_peace_effect_text_past: "White peace between $ht_display_recipient$ and $ht_display_target$."
  PROPOSE_ht_white_peace: "White peace between $ht_display_recipient$ and $ht_display_target$?"
 
+ ht_add_casus_belli: "@g3c!Add #V [CMMV('ht__casus_belli_discount')]%#! Casus Belli"
+ ht_add_casus_belli_desc: "Give a country a [casus_belli|e] against another. Peace deal demands cost #V [CMMV('ht__casus_belli_discount')]%#! less [war_score|e] and generate that much less [antagonism|e]. #V \n$ht__casus_belli_discount_name$ configurable in CMM settings.#!"
+ ht_add_casus_belli_act: "$ht_display_recipient$ gains a #V [CMMV('ht__casus_belli_discount')]%#! casus belli against $ht_display_target$."
+ ht_add_casus_belli_effect_text: "$ht_display_recipient$ will gain a #V [CMMV('ht__casus_belli_discount')]%#! casus belli against $ht_display_target$."
+ ht_add_casus_belli_effect_text_past: "$ht_display_recipient$ gained a #V [CMMV('ht__casus_belli_discount')]%#! casus belli against $ht_display_target$."
+ PROPOSE_ht_add_casus_belli: "Give $ht_display_recipient$ a casus belli against $ht_display_target$?"
+
  # ── Country Management ───────────────────────────────────────────────────────
  ht_make_vassal: "@g4a!Grant Vassal"
  ht_make_vassal_desc: "Make one country a [subject|e] of another."
@@ -156,7 +163,7 @@
  ht_convert_pops_effect_text_past: "Converted [CMMV('ht__religion_conversion_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_religion$."
  PROPOSE_ht_convert_pops: "Convert [CMMV('ht__religion_conversion_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_religion$?"
 
- ht_assimilate_pops: "@g5a!Assimilate #V [CMMV('ht__culture_assimilation_percentage')]%#! of Pops"
+ ht_assimilate_pops: "@g5b!Assimilate #V [CMMV('ht__culture_assimilation_percentage')]%#! of Pops"
  ht_assimilate_pops_desc: "Assimilate [CMMV('ht__culture_assimilation_percentage')]% of $ht_display_recipient$'s pops to $ht_display_recipient_culture$. #V \n$ht__culture_assimilation_percentage_name$ configurable in CMM settings.#!"
  ht_assimilate_pops_act: "Assimilate [CMMV('ht__culture_assimilation_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_culture$."
  ht_assimilate_pops_effect_text: "Assimilate [CMMV('ht__culture_assimilation_percentage')]% of pops in $ht_display_recipient$ to $ht_display_recipient_culture$."
