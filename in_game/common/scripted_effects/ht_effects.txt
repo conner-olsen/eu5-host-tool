@@ -161,30 +161,52 @@ ht_add_war_exhaustion_effect = {
 
 # Two-target: recipient = casus belli holder, target = who it is against
 ht_add_casus_belli_effect = {
-	set_local_variable = {
-		name = ht_cb_discount
-		value = "global_variable_map(cmm|flag:ht__casus_belli_discount)"
-	}
+	set_local_variable = { name = ht_cb_cost value = 100 }
+	change_local_variable = { name = ht_cb_cost subtract = "global_variable_map(cmm|flag:ht__casus_belli_discount)" }
+	round_local_variable = { name = ht_cb_cost nearest = 5 }
+	clamp_local_variable = { name = ht_cb_cost min = 0 max = 200 }
 	scope:recipient = {
-		if = {
-			limit = { local_var:ht_cb_discount >= 100 }
-			add_casus_belli = { target = scope:target type = casus_belli:ht_cb_discount_100 }
-		}
-		else_if = {
-			limit = { local_var:ht_cb_discount >= 75 }
-			add_casus_belli = { target = scope:target type = casus_belli:ht_cb_discount_75 }
-		}
-		else_if = {
-			limit = { local_var:ht_cb_discount >= 50 }
-			add_casus_belli = { target = scope:target type = casus_belli:ht_cb_discount_50 }
-		}
-		else_if = {
-			limit = { local_var:ht_cb_discount >= 25 }
-			add_casus_belli = { target = scope:target type = casus_belli:ht_cb_discount_25 }
-		}
-		else = {
-			add_casus_belli = { target = scope:target type = casus_belli:ht_cb_discount_0 }
-		}
+		if = { limit = { local_var:ht_cb_cost = 0 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_0 } }
+		if = { limit = { local_var:ht_cb_cost = 5 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_5 } }
+		if = { limit = { local_var:ht_cb_cost = 10 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_10 } }
+		if = { limit = { local_var:ht_cb_cost = 15 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_15 } }
+		if = { limit = { local_var:ht_cb_cost = 20 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_20 } }
+		if = { limit = { local_var:ht_cb_cost = 25 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_25 } }
+		if = { limit = { local_var:ht_cb_cost = 30 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_30 } }
+		if = { limit = { local_var:ht_cb_cost = 35 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_35 } }
+		if = { limit = { local_var:ht_cb_cost = 40 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_40 } }
+		if = { limit = { local_var:ht_cb_cost = 45 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_45 } }
+		if = { limit = { local_var:ht_cb_cost = 50 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_50 } }
+		if = { limit = { local_var:ht_cb_cost = 55 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_55 } }
+		if = { limit = { local_var:ht_cb_cost = 60 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_60 } }
+		if = { limit = { local_var:ht_cb_cost = 65 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_65 } }
+		if = { limit = { local_var:ht_cb_cost = 70 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_70 } }
+		if = { limit = { local_var:ht_cb_cost = 75 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_75 } }
+		if = { limit = { local_var:ht_cb_cost = 80 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_80 } }
+		if = { limit = { local_var:ht_cb_cost = 85 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_85 } }
+		if = { limit = { local_var:ht_cb_cost = 90 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_90 } }
+		if = { limit = { local_var:ht_cb_cost = 95 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_95 } }
+		if = { limit = { local_var:ht_cb_cost = 100 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_100 } }
+		if = { limit = { local_var:ht_cb_cost = 105 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_105 } }
+		if = { limit = { local_var:ht_cb_cost = 110 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_110 } }
+		if = { limit = { local_var:ht_cb_cost = 115 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_115 } }
+		if = { limit = { local_var:ht_cb_cost = 120 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_120 } }
+		if = { limit = { local_var:ht_cb_cost = 125 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_125 } }
+		if = { limit = { local_var:ht_cb_cost = 130 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_130 } }
+		if = { limit = { local_var:ht_cb_cost = 135 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_135 } }
+		if = { limit = { local_var:ht_cb_cost = 140 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_140 } }
+		if = { limit = { local_var:ht_cb_cost = 145 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_145 } }
+		if = { limit = { local_var:ht_cb_cost = 150 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_150 } }
+		if = { limit = { local_var:ht_cb_cost = 155 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_155 } }
+		if = { limit = { local_var:ht_cb_cost = 160 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_160 } }
+		if = { limit = { local_var:ht_cb_cost = 165 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_165 } }
+		if = { limit = { local_var:ht_cb_cost = 170 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_170 } }
+		if = { limit = { local_var:ht_cb_cost = 175 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_175 } }
+		if = { limit = { local_var:ht_cb_cost = 180 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_180 } }
+		if = { limit = { local_var:ht_cb_cost = 185 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_185 } }
+		if = { limit = { local_var:ht_cb_cost = 190 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_190 } }
+		if = { limit = { local_var:ht_cb_cost = 195 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_195 } }
+		if = { limit = { local_var:ht_cb_cost = 200 } add_casus_belli = { target = scope:target type = casus_belli:ht_cb_cost_200 } }
 	}
 	scope:recipient = { save_scope_as = cmf_log_arg1 }
 	scope:target = { save_scope_as = cmf_log_arg2 }

@@ -134,11 +134,11 @@
  ht_white_peace_effect_text_past: "White peace between $ht_display_recipient$ and $ht_display_target$."
  PROPOSE_ht_white_peace: "White peace between $ht_display_recipient$ and $ht_display_target$?"
 
- ht_add_casus_belli: "@g3c!Add #V [CMMV('ht__casus_belli_discount')]%#! Casus Belli"
- ht_add_casus_belli_desc: "Give a country a [casus_belli|e] against another. Peace deal demands cost #V [CMMV('ht__casus_belli_discount')]%#! less [war_score|e] and generate that much less [antagonism|e]. #V \n$ht__casus_belli_discount_name$ configurable in the mod menu.#!"
- ht_add_casus_belli_act: "$ht_display_recipient$ gains a #V [CMMV('ht__casus_belli_discount')]%#! casus belli against $ht_display_target$."
- ht_add_casus_belli_effect_text: "$ht_display_recipient$ will gain a #V [CMMV('ht__casus_belli_discount')]%#! casus belli against $ht_display_target$."
- ht_add_casus_belli_effect_text_past: "$ht_display_recipient$ gained a #V [CMMV('ht__casus_belli_discount')]%#! casus belli against $ht_display_target$."
+ ht_add_casus_belli: "@g3c!Add #V [CMMV('ht__casus_belli_discount')|+0V]%#! Casus Belli"
+ ht_add_casus_belli_desc: "Give a country a [casus_belli|e] against another, carrying a #V [CMMV('ht__casus_belli_discount')|+0V]%#! discount on the [war_score|e] cost of taking land and subjects in the peace deal. A negative discount makes them cost more. #V \n$ht__casus_belli_discount_name$ configurable in the mod menu.#!"
+ ht_add_casus_belli_act: "$ht_display_recipient$ gains a casus belli against $ht_display_target$ at a #V [CMMV('ht__casus_belli_discount')|+0V]%#! discount."
+ ht_add_casus_belli_effect_text: "$ht_display_recipient$ will gain a casus belli against $ht_display_target$ at a #V [CMMV('ht__casus_belli_discount')|+0V]%#! discount."
+ ht_add_casus_belli_effect_text_past: "$ht_display_recipient$ gained a casus belli against $ht_display_target$ at a #V [CMMV('ht__casus_belli_discount')|+0V]%#! discount."
  PROPOSE_ht_add_casus_belli: "Give $ht_display_recipient$ a casus belli against $ht_display_target$?"
 
  # ── Country Management ───────────────────────────────────────────────────────

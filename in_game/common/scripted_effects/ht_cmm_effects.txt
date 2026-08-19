@@ -107,9 +107,9 @@ ht_register_cmf_mod = {
 		tab_id = settings
 		group_id = amounts
 		default_value = 50
-		min_value = 0
+		min_value = -100
 		max_value = 100
-		step_value = 25
+		step_value = 5
 	}
 }
 
