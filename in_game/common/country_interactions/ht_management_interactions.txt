@@ -321,6 +321,75 @@ ht_kill_ruler = {
 	}
 }
 
+# ── Single-target: recipient = country whose parliament is called ────────────────
+
+ht_call_parliament = {
+	type = diplomacy
+	category = CATEGORY_HT_ACTIONS
+	ai_tick = never
+	use_enroute = no
+	block_when_at_war = no
+	show_message = no
+	show_message_to_target = no
+
+	potential = {
+		scope:actor = { cmf_can_use_unrestricted_tools = yes }
+	}
+
+	allow = { }
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_target
+
+
+		show_if = {
+			NOT = { has_global_variable = ht_target_self }
+		}
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+
+		enabled = {
+			is_active_parliament = no
+			NOT = {
+				modifier:parliament_abolished = yes
+				modifier:has_a_parliamentary_system = no
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { has_global_variable = ht_target_self }
+				scope:actor = { save_scope_as = recipient }
+			}
+			if = {
+				limit = {
+					exists = scope:recipient
+					scope:recipient = {
+						is_active_parliament = no
+						NOT = {
+							modifier:parliament_abolished = yes
+							modifier:has_a_parliamentary_system = no
+						}
+					}
+				}
+				ht_call_parliament_effect = yes
+			}
+		}
+	}
+}
+
 # ── Two-target: recipient = source, target = country to change ───────────────────
 
 ht_change_religion = {

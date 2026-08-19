@@ -270,6 +270,13 @@ ht_end_regency_effect = {
 	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_ended_regency } }
 }
 
+# Single-target: recipient = country whose parliament is called
+ht_call_parliament_effect = {
+	scope:recipient = { start_parliament_effect = yes }
+	scope:recipient = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_called_parliament } }
+}
+
 # Two-target: recipient = source country, target = country to change
 ht_change_religion_effect = {
 	scope:target = {

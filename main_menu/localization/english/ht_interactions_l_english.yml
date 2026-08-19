@@ -205,6 +205,13 @@
  ht_end_regency_effect_text_past: "Ended $ht_display_recipient$'s regency."
  PROPOSE_ht_end_regency: "End $ht_display_recipient$'s regency?"
 
+ ht_call_parliament: "@g6c!Call Parliament"
+ ht_call_parliament_desc: "Call the target country's [parliament|e] on a random [parliament_issue|e], bypassing the normal cooldown."
+ ht_call_parliament_act: "Call $ht_display_recipient$'s parliament."
+ ht_call_parliament_effect_text: "Call $ht_display_recipient$'s parliament."
+ ht_call_parliament_effect_text_past: "Called $ht_display_recipient$'s parliament."
+ PROPOSE_ht_call_parliament: "Call $ht_display_recipient$'s parliament?"
+
  ht_annex: "@g7a!Annex Country"
  ht_annex_desc: "Annex one country into another."
  ht_annex_act: "$ht_display_recipient$ annexes $ht_display_target$."
