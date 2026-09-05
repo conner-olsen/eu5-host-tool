@@ -119,9 +119,7 @@ ht_grant_independence = {
 	effect = {
 		hidden_effect = {
 			if = {
-				limit = {
-					exists = scope:recipient
-				}
+				limit = { exists = scope:recipient }
 				ht_grant_independence_effect = yes
 			}
 		}
@@ -305,6 +303,28 @@ ht_kill_ruler = {
 		}
 	}
 
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_target
+
+
+		show_if = {
+			 NOT = { exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+
 	effect = {
 		hidden_effect = {
 			if = {
@@ -312,9 +332,7 @@ ht_kill_ruler = {
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
-				limit = {
-					exists = scope:recipient
-				}
+				limit = { exists = scope:recipient }
 				ht_kill_ruler_effect = yes
 			}
 		}
@@ -618,6 +636,28 @@ ht_change_government = {
 		}
 	}
 
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_target
+
+
+		show_if = {
+			 NOT = { exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+
 	effect = {
 		hidden_effect = {
 			if = {
@@ -673,6 +713,28 @@ ht_convert_pops = {
 		}
 	}
 
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_target
+
+
+		show_if = {
+			 NOT = { exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+
 	effect = {
 		hidden_effect = {
 			if = {
@@ -680,9 +742,7 @@ ht_convert_pops = {
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
-				limit = {
-					exists = scope:recipient
-				}
+				limit = { exists = scope:recipient }
 				ht_convert_pops_effect = yes
 			}
 		}
@@ -732,9 +792,7 @@ ht_assimilate_pops = {
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
-				limit = {
-					exists = scope:recipient
-				}
+				limit = { exists = scope:recipient }
 				ht_assimilate_pops_effect = yes
 			}
 		}

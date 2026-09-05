@@ -222,11 +222,13 @@
  # Note to translators: leave the below lines as is.
  # NO-TRANSLATE BELOW
  ht_current_target_label: "[SelectLocalization(GetGlobalVariable('ht_target_self').IsSet, 'ht_target_label_self', 'ht_target_label_selected')]"
- ht_current_target_label_act: "[SCOPE.sCountry('recipient').Custom('ht_get_current_target')]"
+ ht_current_target_label_act: "[SelectLocalization(GetGlobalVariable('ht_target_self').IsSet, 'ht_display_actor_target', 'ht_display_recipient_target')]"
  ht_target_label_self: "[GetPlayer.GetNameWithFlag] (Self)"
  ht_target_label_selected: "Selected"
  ht_target_label_selected_act: "[ROOT.GetCountry.GetNameWithFlag]"
  ht_display_recipient: "[SCOPE.sCountry('recipient').Custom('ht_get_recipient_country')]"
+ ht_display_actor_target: "[GetPlayer.Custom('ht_get_current_target')]"
+ ht_display_recipient_target: "[SCOPE.sCountry('recipient').Custom('ht_get_current_target')]"
  ht_display_recipient_religion: "[SCOPE.sCountry('recipient').Custom('ht_get_recipient_country_religion')]"
  ht_display_recipient_culture: "[SCOPE.sCountry('recipient').Custom('ht_get_recipient_country_culture')]"
  ht_display_target: "[Custom('ht_get_target_country')]"

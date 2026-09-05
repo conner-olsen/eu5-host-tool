@@ -203,6 +203,28 @@ ht_add_war_exhaustion = {
 		}
 	}
 
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_target
+
+
+		show_if = {
+			 NOT = { exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			NOR = {
+				country_type = building
+				country_type = pop
+			}
+		}
+	}
+
+
 	effect = {
 		hidden_effect = {
 			if = {
@@ -210,9 +232,7 @@ ht_add_war_exhaustion = {
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
-				limit = {
-					exists = scope:recipient
-				}
+				limit = { exists = scope:recipient }
 				ht_add_war_exhaustion_effect = yes
 			}
 		}
