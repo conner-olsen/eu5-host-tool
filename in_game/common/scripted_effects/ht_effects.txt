@@ -382,3 +382,140 @@ ht_assimilate_pops_effect = {
 	scope:recipient = { save_scope_as = cmf_log_arg2 }
 	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_assimilated_pops } }
 }
+
+# -- Give Land Effects ---------------------------------------------------------
+
+ht_give_land_location_sources = {
+	$receiver$ = {
+		every_owned_location = {
+			every_neighbor_location = {
+				limit = {
+					is_ownable = yes
+					has_owner = yes
+					NOT = { owner ?= $receiver$ }
+				}
+				add_to_list = source
+			}
+		}
+	}
+}
+
+ht_give_land_province_sources = {
+	$receiver$ = {
+		every_owned_location = {
+			every_neighbor_location = {
+				limit = {
+					is_ownable = yes
+					has_owner = yes
+					NOT = { owner ?= $receiver$ }
+				}
+				province = { add_to_list = source }
+			}
+		}
+	}
+}
+
+# The receiver's own areas go in too, since they can still hold foreign land.
+ht_give_land_area_sources = {
+	$receiver$ = {
+		every_area_with_owned_province = {
+			every_neighbor_area = {
+				add_to_list = source
+			}
+			add_to_list = source
+		}
+	}
+}
+
+ht_transfer_location_to_receiver = {
+	$target_location$ = {
+		change_location_owner = $receiver$
+		change_integration_level = integrated
+	}
+}
+
+ht_give_location_effect = {
+	ht_transfer_location_to_receiver = {
+		receiver = $receiver$
+		target_location = $target_location$
+	}
+	$receiver$ = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_gave_location } }
+}
+
+ht_give_province_effect = {
+	$target_province$ = {
+		every_location_in_province = {
+			limit = {
+				is_ownable = yes
+				has_owner = yes
+			}
+			ht_transfer_location_to_receiver = {
+				receiver = $receiver$
+				target_location = this
+			}
+		}
+	}
+	$receiver$ = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_gave_province } }
+}
+
+ht_give_area_effect = {
+	$target_area$ = {
+		every_location_in_area = {
+			limit = {
+				is_ownable = yes
+				has_owner = yes
+			}
+			ht_transfer_location_to_receiver = {
+				receiver = $receiver$
+				target_location = this
+			}
+		}
+	}
+	$receiver$ = { save_scope_as = cmf_log_arg2 }
+	scope:actor = { cmf_log_with_scope_arg = { action = ht_log_gave_area } }
+}
+
+# Runs the transfer for the size picked in ht_give_land.
+ht_run_give_land = {
+	if = {
+		limit = { exists = scope:ht_size_choice }
+
+		if = {
+			limit = { scope:ht_size_choice = situation:ht_size_location }
+			ht_give_location_effect = {
+				receiver = scope:actor.var:ht_land_receiver
+				target_location = scope:ht_target_location
+			}
+			fire_generic_action = {
+				type = ht_give_land_location_action
+				actor = scope:actor
+			}
+		}
+
+		if = {
+			limit = { scope:ht_size_choice = situation:ht_size_province }
+			ht_give_province_effect = {
+				receiver = scope:actor.var:ht_land_receiver
+				target_province = scope:ht_target_province
+			}
+			fire_generic_action = {
+				type = ht_give_land_province_action
+				actor = scope:actor
+			}
+		}
+
+		if = {
+			limit = { scope:ht_size_choice = situation:ht_size_area }
+			ht_give_area_effect = {
+				receiver = scope:actor.var:ht_land_receiver
+				target_area = scope:ht_target_area
+			}
+			fire_generic_action = {
+				type = ht_give_land_area_action
+				actor = scope:actor
+			}
+		}
+	}
+}

@@ -17,6 +17,14 @@
  ht_select_second_country: "Select Second Country"
  ht_select_source_country: "Select Source Country"
  ht_select_target_country: "Select Target Country"
+ ht_select_land_receiver: "Select Country to Give Land To"
+ ht_select_land_size: "Select Size of Land to Give"
+ ht_select_location_to_give: "Select a Location to Give"
+ ht_select_province_to_give: "Select a Province to Give"
+ ht_select_area_to_give: "Select an Area to Give"
+ ht_no_valid_locations: "@trigger_no! No valid locations available"
+ ht_no_valid_provinces: "@trigger_no! No valid provinces available"
+ ht_no_valid_areas: "@trigger_no! No valid areas available"
 
  # ── Nation Currencies ──────────────────────────────────────────────────────────────────
  ht_add_gold: "@g1a!$ht_gold_give_remove$ [CMMV('ht__gold_amount')|+0V]@gold!"
@@ -218,6 +226,28 @@
  ht_annex_effect_text: "$ht_display_recipient$ will annex $ht_display_target$."
  ht_annex_effect_text_past: "$ht_display_recipient$ annexed $ht_display_target$."
  PROPOSE_ht_annex: "$ht_display_recipient$ annexes $ht_display_target$?"
+
+ ht_give_land: "@g7b!Give Land"
+ ht_give_land_desc: "Give neighboring land to a country. Keep picking to give more."
+ ht_give_land_act: "Give land to $ht_display_recipient$."
+ ht_give_land_effect_text: "Give land to $ht_display_recipient$."
+ ht_give_land_effect_text_past: "Gave land to $ht_display_recipient$."
+ PROPOSE_ht_give_land: "Give land to $ht_display_recipient$?"
+
+ # Note to translators: keep the #D #! and similar prefixes, they set the order of the list.
+ ht_size_location: "#D #!Location"
+ ht_size_location_desc: "Give one location at a time."
+ ht_size_province: "#E #!Province"
+ ht_size_province_desc: "Give one province at a time."
+ ht_size_area: "#F #!Area"
+ ht_size_area_desc: "Give one area at a time."
+
+ ht_give_land_location_action: "Give Location"
+ ht_give_land_location_action_desc: "Give a location to the country you are giving land to."
+ ht_give_land_province_action: "Give Province"
+ ht_give_land_province_action_desc: "Give a province to the country you are giving land to."
+ ht_give_land_area_action: "Give Area"
+ ht_give_land_area_action_desc: "Give an area to the country you are giving land to."
 
  # Note to translators: leave the below lines as is.
  # NO-TRANSLATE BELOW

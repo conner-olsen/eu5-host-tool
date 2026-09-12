@@ -34,3 +34,6 @@
  ht_log_changed_government: "copied government to"
  ht_log_converted_pops: "converted [CMMV('ht__religion_conversion_percentage')]% of pops in"
  ht_log_assimilated_pops: "assimilated [CMMV('ht__culture_assimilation_percentage')]% of pops in"
+ ht_log_gave_location: "gave a location to"
+ ht_log_gave_province: "gave a province to"
+ ht_log_gave_area: "gave an area to"
