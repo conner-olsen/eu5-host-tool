@@ -37,6 +37,25 @@ ht_annex = {
 	}
 
 	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
+		}
+	}
+
+	select_trigger = {
 		allow_self = no
 		looking_for_a = country
 		target_flag = target
@@ -44,10 +63,8 @@ ht_annex = {
 
 
 		show_if = {
-			OR = {
-				has_global_variable = ht_target_self
-				country_exists = scope:recipient
-			}
+			NOT = { has_global_variable = ht_target_self }
+			country_exists = scope:recipient
 		}
 
 		column = { data = name }
@@ -65,6 +82,10 @@ ht_annex = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
+				if = {
+					limit = { country_exists = scope:recipient }
+					scope:recipient = { save_scope_as = target }
+				}
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
@@ -165,6 +186,25 @@ ht_make_vassal = {
 	}
 
 	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
+		}
+	}
+
+	select_trigger = {
 		allow_self = no
 		looking_for_a = country
 		target_flag = target
@@ -172,10 +212,8 @@ ht_make_vassal = {
 
 
 		show_if = {
-			OR = {
-				has_global_variable = ht_target_self
-				country_exists = scope:recipient
-			}
+			NOT = { has_global_variable = ht_target_self }
+			country_exists = scope:recipient
 		}
 
 		column = { data = name }
@@ -193,6 +231,10 @@ ht_make_vassal = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
+				if = {
+					limit = { country_exists = scope:recipient }
+					scope:recipient = { save_scope_as = target }
+				}
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
@@ -241,6 +283,29 @@ ht_end_regency = {
 				country_type = building
 				country_type = pop
 			}
+		}
+
+		enabled = {
+			has_regent = yes
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
 		}
 
 		enabled = {
@@ -303,6 +368,25 @@ ht_kill_ruler = {
 		}
 	}
 
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
+		}
+	}
+
 	effect = {
 		hidden_effect = {
 			if = {
@@ -352,6 +436,33 @@ ht_call_parliament = {
 				country_type = building
 				country_type = pop
 			}
+		}
+
+		enabled = {
+			is_active_parliament = no
+			NOT = {
+				modifier:parliament_abolished = yes
+				modifier:has_a_parliamentary_system = no
+			}
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
 		}
 
 		enabled = {
@@ -427,15 +538,32 @@ ht_change_religion = {
 	select_trigger = {
 		allow_self = yes
 		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
 		target_flag = target
 		name = ht_select_target_country
 
 
 		show_if = {
-			OR = {
-				has_global_variable = ht_target_self
-				country_exists = scope:recipient
-			}
+			NOT = { has_global_variable = ht_target_self }
+			country_exists = scope:recipient
 		}
 
 		column = { data = name }
@@ -445,10 +573,6 @@ ht_change_religion = {
 				country_type = building
 				country_type = pop
 			}
-			OR = {
-				NOT = { has_global_variable = ht_target_self }
-				NOT = { this = scope:actor }
-			}
 		}
 	}
 
@@ -456,6 +580,10 @@ ht_change_religion = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
+				if = {
+					limit = { country_exists = scope:recipient }
+					scope:recipient = { save_scope_as = target }
+				}
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
@@ -508,15 +636,32 @@ ht_change_culture = {
 	select_trigger = {
 		allow_self = yes
 		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
 		target_flag = target
 		name = ht_select_target_country
 
 
 		show_if = {
-			OR = {
-				has_global_variable = ht_target_self
-				country_exists = scope:recipient
-			}
+			NOT = { has_global_variable = ht_target_self }
+			country_exists = scope:recipient
 		}
 
 		column = { data = name }
@@ -526,10 +671,6 @@ ht_change_culture = {
 				country_type = building
 				country_type = pop
 			}
-			OR = {
-				NOT = { has_global_variable = ht_target_self }
-				NOT = { this = scope:actor }
-			}
 		}
 	}
 
@@ -537,6 +678,10 @@ ht_change_culture = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
+				if = {
+					limit = { country_exists = scope:recipient }
+					scope:recipient = { save_scope_as = target }
+				}
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
@@ -589,15 +734,32 @@ ht_change_government = {
 	select_trigger = {
 		allow_self = yes
 		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
 		target_flag = target
 		name = ht_select_target_country
 
 
 		show_if = {
-			OR = {
-				has_global_variable = ht_target_self
-				country_exists = scope:recipient
-			}
+			NOT = { has_global_variable = ht_target_self }
+			country_exists = scope:recipient
 		}
 
 		column = { data = name }
@@ -607,10 +769,6 @@ ht_change_government = {
 				country_type = building
 				country_type = pop
 			}
-			OR = {
-				NOT = { has_global_variable = ht_target_self }
-				NOT = { this = scope:actor }
-			}
 		}
 	}
 
@@ -618,6 +776,10 @@ ht_change_government = {
 		hidden_effect = {
 			if = {
 				limit = { has_global_variable = ht_target_self }
+				if = {
+					limit = { country_exists = scope:recipient }
+					scope:recipient = { save_scope_as = target }
+				}
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
@@ -666,6 +828,25 @@ ht_convert_pops = {
 				country_type = building
 				country_type = pop
 			}
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
 		}
 	}
 
@@ -719,6 +900,25 @@ ht_assimilate_pops = {
 		}
 	}
 
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
+		}
+	}
+
 	effect = {
 		hidden_effect = {
 			if = {
@@ -768,6 +968,29 @@ ht_give_land = {
 				country_type = building
 				country_type = pop
 			}
+		}
+
+		enabled = {
+			num_locations > 0
+		}
+	}
+
+	select_trigger = {
+		allow_self = yes
+		looking_for_a = country
+		target_flag = recipient
+		name = ht_select_self_to_continue
+
+
+		show_if = {
+			has_global_variable = ht_target_self
+			NOT = { country_exists = scope:recipient }
+		}
+
+		column = { data = name }
+
+		visible = {
+			this = scope:actor
 		}
 
 		enabled = {

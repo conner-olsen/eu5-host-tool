@@ -44,10 +44,14 @@ ht_get_recipient_country_culture = {
 		fallback = yes
 	}
 }
-# Picked-target display name. type = none keeps it null-safe when scope:target is null at preview
-# time before the user picks.
+# Picked-target display name; in Target: Self the recipient slot is the target. type = none keeps
+# it null-safe when scope:target is null at preview time before the user picks.
 ht_get_target_country = {
 	type = none
+	text = {
+		trigger = { has_global_variable = ht_target_self }
+		localization_key = ht_recipient_country_name
+	}
 	text = {
 		trigger = { country_exists = scope:target }
 		localization_key = ht_picked_country_name

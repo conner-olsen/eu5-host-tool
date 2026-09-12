@@ -12,6 +12,7 @@
 
  # ── Select Trigger Names ─────────────────────────────────────────────────────
  ht_select_any_to_continue: "Select Any Country"
+ ht_select_self_to_continue: "Select Your Country"
  ht_select_target: "Select Target Country"
  ht_select_first_country: "Select First Country"
  ht_select_second_country: "Select Second Country"
