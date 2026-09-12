@@ -46,7 +46,7 @@ ht_annex = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -174,7 +174,7 @@ ht_make_vassal = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -302,28 +302,6 @@ ht_kill_ruler = {
 			}
 		}
 	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = recipient
-		name = ht_select_target
-
-
-		show_if = {
-			 NOT = { exists = scope:recipient }
-		}
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
 
 	effect = {
 		hidden_effect = {
@@ -456,7 +434,7 @@ ht_change_religion = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -537,7 +515,7 @@ ht_change_culture = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -618,7 +596,7 @@ ht_change_government = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -635,28 +613,6 @@ ht_change_government = {
 			}
 		}
 	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = recipient
-		name = ht_select_target
-
-
-		show_if = {
-			 NOT = { exists = scope:recipient }
-		}
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
 
 	effect = {
 		hidden_effect = {
@@ -712,28 +668,6 @@ ht_convert_pops = {
 			}
 		}
 	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = recipient
-		name = ht_select_target
-
-
-		show_if = {
-			 NOT = { exists = scope:recipient }
-		}
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
 
 	effect = {
 		hidden_effect = {
@@ -825,31 +759,6 @@ ht_give_land = {
 
 		show_if = {
 			NOT = { has_global_variable = ht_target_self }
-		}
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-
-		enabled = {
-			num_locations > 0
-		}
-	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = recipient
-		name = ht_select_land_receiver
-
-
-		show_if = {
-			NOT = { exists = scope:recipient }
 		}
 
 		column = { data = name }

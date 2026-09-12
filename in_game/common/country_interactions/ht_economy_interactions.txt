@@ -34,49 +34,6 @@
 		}
 	}
 
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = recipient
-		name = ht_select_target
-
-
-		show_if = {
-			 NOT = { exists = scope:recipient }
-		}
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = recipient
-		name = ht_select_target
-
-
-		show_if = {
-			 NOT = { exists = scope:recipient }
-		}
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
 	effect = {
 		hidden_effect = {
 			if = {
@@ -126,28 +83,6 @@ ht_add_manpower = {
 			}
 		}
 	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = recipient
-		name = ht_select_target
-
-
-		show_if = {
-			 NOT = { exists = scope:recipient }
-		}
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
 
 	effect = {
 		hidden_effect = {
@@ -199,28 +134,6 @@ ht_add_stability = {
 		}
 	}
 
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = recipient
-		name = ht_select_target
-
-
-		show_if = {
-			 NOT = { exists = scope:recipient }
-		}
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
-
 	effect = {
 		hidden_effect = {
 			if = {
@@ -271,28 +184,6 @@ ht_add_prestige = {
 		}
 	}
 
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = recipient
-		name = ht_select_target
-
-
-		show_if = {
-			 NOT = { exists = scope:recipient }
-		}
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
-
 	effect = {
 		hidden_effect = {
 			if = {
@@ -342,28 +233,6 @@ ht_add_diplomats = {
 			}
 		}
 	}
-
-	select_trigger = {
-		allow_self = yes
-		looking_for_a = country
-		target_flag = recipient
-		name = ht_select_target
-
-
-		show_if = {
-			 NOT = { exists = scope:recipient }
-		}
-
-		column = { data = name }
-
-		visible = {
-			NOR = {
-				country_type = building
-				country_type = pop
-			}
-		}
-	}
-
 
 	effect = {
 		hidden_effect = {

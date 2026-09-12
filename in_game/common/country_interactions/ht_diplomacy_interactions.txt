@@ -44,7 +44,7 @@
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -126,7 +126,7 @@ ht_break_alliance = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -221,7 +221,7 @@ ht_force_guarantee = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -303,7 +303,7 @@ ht_break_guarantee = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -404,7 +404,7 @@ ht_add_truce = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -486,7 +486,7 @@ ht_remove_truce = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -568,7 +568,7 @@ ht_add_rival = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
@@ -650,7 +650,7 @@ ht_remove_rival = {
 		show_if = {
 			OR = {
 				has_global_variable = ht_target_self
-				exists = scope:recipient
+				country_exists = scope:recipient
 			}
 		}
 
