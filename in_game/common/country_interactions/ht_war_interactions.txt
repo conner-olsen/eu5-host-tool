@@ -17,7 +17,7 @@
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -57,7 +57,7 @@
 		allow_self = no
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -116,7 +116,7 @@ ht_white_peace = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -156,7 +156,7 @@ ht_white_peace = {
 		allow_self = no
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -220,7 +220,7 @@ ht_add_war_exhaustion = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_target
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -289,7 +289,7 @@ ht_add_casus_belli = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -329,7 +329,7 @@ ht_add_casus_belli = {
 		allow_self = no
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {

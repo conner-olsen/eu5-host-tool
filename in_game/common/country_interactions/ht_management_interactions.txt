@@ -19,7 +19,7 @@ ht_annex = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -59,7 +59,7 @@ ht_annex = {
 		allow_self = no
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -120,7 +120,7 @@ ht_grant_independence = {
 		allow_self = no
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_target
+		name = ht_select_recipient_country
 
 
 		column = { data = name }
@@ -168,7 +168,7 @@ ht_make_vassal = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -208,7 +208,7 @@ ht_make_vassal = {
 		allow_self = no
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -269,7 +269,7 @@ ht_end_regency = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_target
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -351,7 +351,7 @@ ht_kill_ruler = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_target
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -422,7 +422,7 @@ ht_call_parliament = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_target
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -497,7 +497,7 @@ ht_call_parliament = {
 	}
 }
 
-# ── Two-target: recipient = source, target = country to change ───────────────────
+# ── Two-target: recipient = country to change, target = source ───────────────────
 
 ht_change_religion = {
 	type = diplomacy
@@ -518,7 +518,7 @@ ht_change_religion = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_source_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -558,7 +558,7 @@ ht_change_religion = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_target_country
+		name = ht_select_source_country
 
 
 		show_if = {
@@ -616,7 +616,7 @@ ht_change_culture = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_source_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -656,7 +656,7 @@ ht_change_culture = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_target_country
+		name = ht_select_source_country
 
 
 		show_if = {
@@ -714,7 +714,7 @@ ht_change_government = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_source_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -754,7 +754,7 @@ ht_change_government = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_target_country
+		name = ht_select_source_country
 
 
 		show_if = {
@@ -814,7 +814,7 @@ ht_convert_pops = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_target
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -883,7 +883,7 @@ ht_assimilate_pops = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_target
+		name = ht_select_recipient_country
 
 
 		show_if = {

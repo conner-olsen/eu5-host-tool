@@ -17,7 +17,7 @@
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -57,7 +57,7 @@
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -116,7 +116,7 @@ ht_break_alliance = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -156,7 +156,7 @@ ht_break_alliance = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -220,7 +220,7 @@ ht_force_guarantee = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -260,7 +260,7 @@ ht_force_guarantee = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -319,7 +319,7 @@ ht_break_guarantee = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -359,7 +359,7 @@ ht_break_guarantee = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -378,7 +378,7 @@ ht_break_guarantee = {
 		}
 
 		enabled = {
-			receiving_scripted_relation = {
+			giving_scripted_relation = {
 				type = relation_type:guarantee
 				target = scope:recipient
 			}
@@ -400,7 +400,7 @@ ht_break_guarantee = {
 					country_exists = scope:recipient
 					country_exists = scope:target
 					scope:target = {
-						receiving_scripted_relation = {
+						giving_scripted_relation = {
 							type = relation_type:guarantee
 							target = scope:recipient
 						}
@@ -431,7 +431,7 @@ ht_add_truce = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -471,7 +471,7 @@ ht_add_truce = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -530,7 +530,7 @@ ht_remove_truce = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -570,7 +570,7 @@ ht_remove_truce = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -629,7 +629,7 @@ ht_add_rival = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -669,7 +669,7 @@ ht_add_rival = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
@@ -728,7 +728,7 @@ ht_remove_rival = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = recipient
-		name = ht_select_first_country
+		name = ht_select_recipient_country
 
 
 		show_if = {
@@ -768,7 +768,7 @@ ht_remove_rival = {
 		allow_self = yes
 		looking_for_a = country
 		target_flag = target
-		name = ht_select_second_country
+		name = ht_select_target_country
 
 
 		show_if = {
