@@ -486,7 +486,7 @@ ht_run_give_land = {
 			limit = { scope:ht_size_choice = situation:ht_size_location }
 			ht_give_location_effect = {
 				receiver = scope:actor.var:ht_land_receiver
-				target_location = scope:ht_target_location
+				target_location = scope:target_location
 			}
 			fire_generic_action = {
 				type = ht_give_land_location_action
@@ -498,7 +498,7 @@ ht_run_give_land = {
 			limit = { scope:ht_size_choice = situation:ht_size_province }
 			ht_give_province_effect = {
 				receiver = scope:actor.var:ht_land_receiver
-				target_province = scope:ht_target_province
+				target_province = scope:target_province
 			}
 			fire_generic_action = {
 				type = ht_give_land_province_action
@@ -510,7 +510,7 @@ ht_run_give_land = {
 			limit = { scope:ht_size_choice = situation:ht_size_area }
 			ht_give_area_effect = {
 				receiver = scope:actor.var:ht_land_receiver
-				target_area = scope:ht_target_area
+				target_area = scope:target_area
 			}
 			fire_generic_action = {
 				type = ht_give_land_area_action

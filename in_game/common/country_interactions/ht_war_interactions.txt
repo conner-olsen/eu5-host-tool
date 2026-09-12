@@ -88,8 +88,8 @@
 			}
 			if = {
 				limit = {
-					exists = scope:recipient
-					exists = scope:target
+					country_exists = scope:recipient
+					country_exists = scope:target
 				}
 				ht_declare_war_effect = yes
 			}
@@ -191,8 +191,8 @@ ht_white_peace = {
 			}
 			if = {
 				limit = {
-					exists = scope:recipient
-					exists = scope:target
+					country_exists = scope:recipient
+					country_exists = scope:target
 					scope:target = { is_at_war_with = scope:recipient }
 				}
 				ht_white_peace_effect = yes
@@ -263,7 +263,7 @@ ht_add_war_exhaustion = {
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
-				limit = { exists = scope:recipient }
+				limit = { country_exists = scope:recipient }
 				ht_add_war_exhaustion_effect = yes
 			}
 		}
@@ -360,8 +360,8 @@ ht_add_casus_belli = {
 			}
 			if = {
 				limit = {
-					exists = scope:recipient
-					exists = scope:target
+					country_exists = scope:recipient
+					country_exists = scope:target
 				}
 				ht_add_casus_belli_effect = yes
 			}

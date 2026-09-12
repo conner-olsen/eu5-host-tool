@@ -60,7 +60,7 @@
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
-				limit = { exists = scope:recipient }
+				limit = { country_exists = scope:recipient }
 				ht_add_gold_effect = yes
 			}
 		}
@@ -129,7 +129,7 @@ ht_add_manpower = {
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
-				limit = { exists = scope:recipient }
+				limit = { country_exists = scope:recipient }
 				ht_add_manpower_effect = yes
 			}
 		}
@@ -198,7 +198,7 @@ ht_add_stability = {
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
-				limit = { exists = scope:recipient }
+				limit = { country_exists = scope:recipient }
 				ht_add_stability_effect = yes
 			}
 		}
@@ -267,7 +267,7 @@ ht_add_prestige = {
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
-				limit = { exists = scope:recipient }
+				limit = { country_exists = scope:recipient }
 				ht_add_prestige_effect = yes
 			}
 		}
@@ -336,7 +336,7 @@ ht_add_diplomats = {
 				scope:actor = { save_scope_as = recipient }
 			}
 			if = {
-				limit = { exists = scope:recipient }
+				limit = { country_exists = scope:recipient }
 				ht_add_diplomats_effect = yes
 			}
 		}
